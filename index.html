@@ -173,13 +173,13 @@
 					$('#detect_text').html('<p>There are relatively many detection rules available for this attacker technique across 13 public resources included in this dataset.</p>');
 				};
 				if (suggestion.splunk != null) {
-					$('#splunk').html("<strong>" + suggestion.splunk + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/splunk/security_content"><strong>Splunk</strong></a>');
+					$('#splunk').html("<strong>" + suggestion.splunk + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/splunk/security_content/tree/develop/detections"><strong>Splunk</strong></a>');
 				};
 				if (suggestion.splunk == null) {
 					$('#splunk').html("");
 				};
 				if (suggestion.splunk_threatHunting != null) {
-					$('#splunk_threatHunting').html("<strong>" + suggestion.splunk_threatHunting + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/olafhartong/ThreatHunting/tree/master/attack_matrix"><strong>ThreatHunting Splunk app</strong></a>');
+					$('#splunk_threatHunting').html("<strong>" + suggestion.splunk_threatHunting + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/olafhartong/ThreatHunting/blob/master/default/savedsearches.conf"><strong>ThreatHunting Splunk app</strong></a>');
 				};
 				if (suggestion.splunk_threatHunting == null) {
 					$('#splunk_threatHunting').html("");
