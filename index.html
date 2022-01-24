@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.27/jquery.autocomplete.min.js"></script>
+  <title>Control Validation Compass</title>
+  <style>
+  .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+	.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+	.autocomplete-selected { background: #F0F0F0; }
+	.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+	.autocomplete-group { padding: 2px 5px; }
+	.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+  </style>
+</head>
+<body>
+  <div class="container" style="padding:10px 10px">
+    <h1 style="text-align:center">Control Validation Compass</h1>
+	<h4 style="padding:15px;text-align:center">Pointing cybersecurity teams to <b>7,800+</b> publicly-accessible detection rules and nearly <b>1,300</b> offensive security tests, aligned with over <b>500</b> common attacker techniques</h4>
+	<div class="container">
+		<div class="row">
+		<form class="form-group">
+			<div class="form-group col-sm-10">
+			  <label><a style="text-decoration:underline" target="_blank" href="https://attack.mitre.org/techniques/enterprise/">MITRE ATT&CK Identifier</a>:</label>
+			  <input type="text" name="in" id="autocomplete" size="39" autofocus placeholder="e.g. T1027, T1059.001, OS Credential Dumping"/>
+			</div>
+		</form>
+                </div>
+		<div>
+			<span id="value"></span>
+		</div>
+		<div>
+			<span id="tactics"></span>
+		</div>
+		<div>
+			<span id="detect_header"></span>
+		</div>
+		<div>
+			<span id="detect_text"></span>
+		</div>
+		<div>
+			<span id="splunk"></span>
+		</div>
+		<div>
+			<span id="splunk_threatHunting"></span>
+		</div>
+		<div>
+			<span id="elastic"></span>
+		</div>
+		<div>
+			<span id="eql_analytics"></span>
+		</div>
+		<div>
+			<span id="azure_fullStack"></span>
+		</div>
+		<div>
+			<span id="azure_sentinel"></span>
+		</div>
+		<div>
+			<span id="proofpoint_emergingThreats"></span>
+		</div>
+		<div>
+			<span id="tanium_threatResponse"></span>
+		</div>
+		<div>
+			<span id="aws"></span>
+		</div>
+		<div>
+			<span id="car"></span>
+		</div>
+		<div>
+			<span id="atc"></span>
+		</div>
+		<div>
+			<span id="sigma"></span>
+		</div>
+		<div>
+			<span id="th_playbook"></span>
+		</div>
+		<div>
+			<span id="test_header"></span>
+		</div>
+		<div>
+			<span id="test_text"></span>
+		</div>
+		<div>
+			<span id="art"></span>
+		</div>
+		<div>
+			<span id="rta"></span>
+		</div>
+		<div>
+			<span id="prelude"></span>
+		</div>
+		<div>
+			<span id="stockpile"></span>
+		</div>
+		<div>
+			<span id="validate_header"></span>
+		</div>
+		<div>
+			<span id="validate_text1"></span>
+		</div>
+	  	<div>
+			<span id="validate_text2"></span>
+		</div>
+	</div>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc.js"></script>
