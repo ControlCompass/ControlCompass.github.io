@@ -1,7 +1,7 @@
   $(document).ready(function(){
 	var arrayReturn = [];
 	$.ajax({
-		url: "https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc.json",
+		url: "cvc.json",
 		async: true,
 		dataType: 'json',
 		success: function (data) {
