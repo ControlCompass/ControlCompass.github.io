@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.27/jquery.autocomplete.min.js"></script>
-  <title>Control Validation Compass</title>
+  <title>Control Validation Compass - Home</title>
   <style>
   .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
 	.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
@@ -13,6 +13,10 @@
 	.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
 	.autocomplete-group { padding: 2px 5px; }
 	.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+  .btn { color: black; padding: 11px; cursor: pointer; text-align:center }
+	.emphasis { border: 2px solid black; border-color: #e7e7e7; color: black; }
+	.emphasis:hover { background: #e7e7e7; }
+	.choice:hover { background: #e7e7e7; }
   </style>
 </head>
 <body>
@@ -21,13 +25,15 @@
 	<h4 style="padding:15px;text-align:center">Pointing cybersecurity teams to <b>7,800+</b> publicly-accessible detection rules and nearly <b>1,300</b> offensive security tests, aligned with over <b>500</b> common attacker techniques</h4>
 	 <div class="row">
 		 <div class="col-md-12 text-center">
-			<a href="https://controlcompass.github.io/" class="button" style="padding:15px;text-align:center"><strong>Home</strong></a>
-			 <a href="https://controlcompass.github.io/risk" class="button" style="padding:15px;text-align:center"><strong>Risk (Threat-Control Alignment)</strong></a>
+			<a href="https://controlcompass.github.io/" class="btn emphasis"><strong>Lookup by Technique</strong></a>
+			 <a href="https://controlcompass.github.io/controls" class="btn choice"><strong>Lookup by Controls</strong></a>
+			 <a href="https://controlcompass.github.io/risk" class="btn choice"><strong>Threat Alignment</strong></a>
+			 <a href="https://controlcompass.github.io/resources" class="btn choice"><strong>Resources</strong></a>
 		 </div>
 	 </div>
 	<div class="container">
 		<div class="row">
-		<form class="form-group">
+		<form class="form-group col-sm-10">
 			<div class="form-group col-sm-10">
 			  <br>
 				<label><a style="text-decoration:underline" target="_blank" href="https://attack.mitre.org/techniques/enterprise/">MITRE ATT&CK Identifier</a>:</label>
@@ -64,6 +70,9 @@
 		</div>
 		<div>
 			<span id="azure_sentinel"></span>
+		</div>
+		<div>
+			<span id="logpoint"></span>
 		</div>
 		<div>
 			<span id="proofpoint_emergingThreats"></span>
@@ -103,6 +112,9 @@
 		</div>
 		<div>
 			<span id="stockpile"></span>
+		</div>
+		<div>
+			<span id="scythe"></span>
 		</div>
 		<div>
 			<span id="validate_header"></span>
