@@ -193,12 +193,12 @@
 				};
 				if (suggestion.validate_potential == 0) {
 					$('#validate_header').html('<h4 style="padding-top:20px"><b style="color:#7466BF">Validation Potential:</b><b> N/A</b></h4>');
-					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 17 publicly-accessible resources included in this dataset.</p>');
+					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 19 publicly-accessible resources included in this dataset.</p>');
 				    $('#validate_text2').html('<p>For this technique, there are currently neither any detection rules nor any offensive tests available in the resources included in this dataset.</p>');
 				};
 				if (suggestion.validate_potential == 1) {
 					$('#validate_header').html('<h4 style="padding-top:20px"><b style="color:#7466BF">Validation Potential:</b><b> Low</b></h4>');
-					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 17 publicly-accessible resources included in this dataset.</p>');
+					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 19 publicly-accessible resources included in this dataset.</p>');
 					if (suggestion.detect_volume == 3 && suggestion.test_volume == 0) {
 					    $('#validate_text2').html('<p>For this technique, there is a relatively high volume of defensive detection rules available in the resources included in this dataset. However, no offensive tests are currently available in these resources.</p>');
 					};
@@ -223,7 +223,7 @@
 				};
 				if (suggestion.validate_potential == 2) {
 					$('#validate_header').html('<h4 style="padding-top:20px"><b style="color:#7466BF">Validation Potential:</b><b> Medium</b></h4>');
-					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 17 publicly-accessible resources included in this dataset.</p>');
+					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 19 publicly-accessible resources included in this dataset.</p>');
 					if (suggestion.detect_volume == 3 && suggestion.test_volume == 1) {
 					    $('#validate_text2').html('<p>For this technique, there is a relatively high volume of defensive detection rules; however, there are relatively few offensive tests available in the resources included in this dataset.</p>');
 					};
@@ -236,7 +236,7 @@
 				};
 				if (suggestion.validate_potential == 3) {
 					$('#validate_header').html('<h4 style="padding-top:20px"><b style="color:#7466BF">Validation Potential:</b><b> High</b></h4>');
-					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 17 publicly-accessible resources included in this dataset.</p>');
+					$('#validate_text1').html('<p>This represents a <i> purely conceptual</i> measure of the ability to validate the effectiveness of security controls (detections) aligned with this attacker technique. This is based entirely on the presence (or lack) of defensive detection rules and offensive tests in the 19 publicly-accessible resources included in this dataset.</p>');
 					if (suggestion.detect_volume == 3 && suggestion.test_volume == 3) {
 					    $('#validate_text2').html('<p>For this technique, there is a relatively high volume of both defensive detection rules and offensive tests available in the resources included in this dataset.</p>');
 					};
