@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.27/jquery.autocomplete.min.js"></script>
+  <title>Control Validation Compass - Lookup by Controls</title>
+  <style>
+  .btn { color: black; padding: 11px; cursor: pointer; text-align:center }
+	.emphasis { border: 2px solid black; border-color: #e7e7e7; color: black; }
+	.emphasisCheck { border: 2px solid black; border-color: #e7e7e7; color: black; }
+	.emphasis:hover { background: #e7e7e7; }
+	.choice:hover { background: #e7e7e7; }
+	.run { font-size:18px; border: 2px solid #1565c0; background: #ffffff; color: #1565c0 }
+	.run:hover { background: #ACCDE7;  color: #1565c0 }
+  .details { height: auto; overflow: hidden; transition: max-height ease-in-out; transition-duration: var(--duration, 0.3s); }
+  .summary { cursor: pointer; display: list-item; }
+  	.choice_red:hover { background: #efc9d0; }
+  	.choice_blue:hover { background: #ACCDE7; }
+  </style>
+ </head>
+<body>
+  <div class="container" style="padding:10px 10px">
+    <h1 style="text-align:center">Control Validation Compass</h1>
+	 <div class="row">
+		 <div class="col-md-12 text-center">
+			<a href="https://controlcompass.github.io/" class="btn choice"><strong>Lookup by Technique</strong></a>
+			 <a href="https://controlcompass.github.io/controls" class="btn emphasis"><strong>Lookup by Controls</strong></a>
+			 <a href="https://controlcompass.github.io/risk" class="btn choice"><strong>Threat Alignment</strong></a>
+			 <a href="https://controlcompass.github.io/resources" class="btn choice"><strong>Resources</strong></a>
+		 </div>
+	 </div>
+	  <div class="row">
+		<p style="padding:15px;text-align:center;font-size:16px">View detections and tests for multiple techniques at once</p>
+			<br>
+			<div class="row">
+			<div class="col-md-12">
+				<p style="font-size:14px">Toggle the controls & testing capabilities used in your environment or otherwise relevant to you.</p>
+				<button type="button" id="uncheck-box" class="button" style="background:#e7e7e7">Uncheck all boxes</button>
+				<button type="button" id="check-all" class="button" style="background:#e7e7e7">Check all boxes</button>
+				<h4>Defensive Capabilities</h4>
+				<p>Network & Endpoint Telemetry</p>
+				<label><input type="checkbox" value="" id="splunk" style="margin-right:5px" checked>Splunk</label>
+				<label><input type="checkbox" value="" id="splunk_threatHunting" style="margin-right:5px;margin-left:10px" checked>Threat Hunting Splunk App</label>
+				<label><input type="checkbox" value="" id="elastic" style="margin-right:5px;margin-left:10px" checked>Elastic Stack</label>
+				<label><input type="checkbox" value="" id="eql_analytics" style="margin-right:5px;margin-left:10px" checked>EQL Analytics Library</label>
+				<label><input type="checkbox" value="" id="azure_sentinel" style="margin-right:5px;margin-left:10px" checked>Sentinel detection mappings</label>
+				<label><input type="checkbox" value="" id="logpoint" style="margin-right:5px;margin-left:10px" checked>LogPoint</label>
+				<br>
+				<label><input type="checkbox" value="" id="car" style="margin-right:5px" checked>Cyber Analytics Repository</label>
+				<label><input type="checkbox" value="" id="atc" style="margin-right:5px;margin-left:10px" checked>Atomic Threat Coverage</label>
+				<label><input type="checkbox" value="" id="sigma" style="margin-right:5px;margin-left:10px" checked>Sigma rules public repository</label>
+				<label><input type="checkbox" value="" id="th_playbook" style="margin-right:5px;margin-left:10px" checked>ThreatHunter Playbook</label>
+				<p>Network Telemetry</p>
+				<label><input type="checkbox" value="" id="proofpoint_emergingThreats" style="margin-right:5px" checked>Network Security Monitoring rule mappings</label>
+				<p>Endpoint Telemetry</p>
+				<label><input type="checkbox" value="" id="tanium_threatResponse" style="margin-right:5px" checked>Tanium Threat Response</label>
+				<p>Cloud</p>
+				<label><input type="checkbox" value="" id="azure_fullStack" style="margin-right:5px" checked>Azure full stack mappings</label>
+				<label><input type="checkbox" value="" id="aws" style="margin-right:5px;margin-left:10px" checked>AWS security control mappings</label>
+				<h4>Offensive Capabilities</h4>
+				<label><input type="checkbox" value="" id="art" style="margin-right:5px" checked>Atomic Red Team</label>
+				<label><input type="checkbox" value="" id="rta" style="margin-right:5px;margin-left:10px" checked>Red Team Automation</label>
+				<label><input type="checkbox" value="" id="prelude" style="margin-right:5px;margin-left:10px" checked>Prelude Community TTPs</label>
+				<label><input type="checkbox" value="" id="stockpile" style="margin-right:5px;margin-left:10px" checked>CALDERA Stockpile</label>
+				<label><input type="checkbox" value="" id="scythe" style="margin-right:5px;margin-left:10px" checked>Scythe</label>
+			</div>
+		</div>
+			<br>
+			<div class="row">
+			<div class="col-md-12 text-center">
+				<button type="button" id="process-data" class="btn run" style="padding:3px 10px;width:22%">Show me the mappings!
+					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+				</button>
+			</div>
+		</div>
+			<br>
+			<div class="col-md-12">
+				<p id="cvc-output_header" style="text-align:center"></p>
+				<div style="width:49%;float:left">
+					<p id="cvc-output_blue"></p>
+				</div>
+				<div style="width:49%;float:right">
+					<p id="cvc-output_red"></p>
+				</div>
+			</div>
+</div>
+  </div>
+</body>
+</html>
+<script type="text/javascript">
+	function uncheckAll() {
+  		$("input[type='checkbox']:checked").prop("checked", false)
+	}
+	$('#uncheck-box').on('click', uncheckAll)
+	function checkAll() {
+  		$("input[type='checkbox']").prop("checked", true)
+	}
+	$('#check-all').on('click', checkAll)
+</script>
+<script type="text/javascript" src="controls.js"></script>
