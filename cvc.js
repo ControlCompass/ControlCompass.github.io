@@ -1,7 +1,7 @@
   $(document).ready(function(){
 	var arrayReturn = [];
 	$.ajax({
-		url: "cvc.json",
+		url: "https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc.json",
 		async: true,
 		dataType: 'json',
 		success: function (data) {
@@ -17,6 +17,7 @@
                               	  'eql_analytics' : data[i].eql_analytics,
                               	  'azure_fullStack' : data[i].azure_fullStack,
                               	  'azure_sentinel' : data[i].azure_sentinel,
+                              	  'logpoint' : data[i].logpoint,
                               	  'proofpoint_emergingThreats' : data[i].proofpoint_emergingThreats,
                               	  'tanium_threatResponse' : data[i].tanium_threatResponse,
                               	  'aws' : data[i].aws,
@@ -28,6 +29,7 @@
                               	  'rta' : data[i].rta,
                               	  'prelude' : data[i].prelude,
                               	  'stockpile' : data[i].stockpile,
+                              	  'scythe' : data[i].scythe,
 							  	  'detect_volume' : data[i].detect_volume,
 							  	  'test_volume' : data[i].test_volume,
 							  	  'validate_potential' : data[i].validate_potential
@@ -45,22 +47,22 @@
 				$('#tactics').html('<p><b>MITRE ATT&CK Tactic(s):</b> ' + suggestion.tactics + '</p>');
 				if (suggestion.detect_volume == 0) {
 					$('#detect_header').html('<h4 style="padding-top:20px"><b style="color:#1565c0">Volume of Detection Rules:</b><b> N/A</b></h4>');
-					$('#detect_text').html('<p>There are no detection rules available for this attacker technique across 13 public resources included in this dataset.</p>');
+					$('#detect_text').html('<p>There are no detection rules available for this attacker technique across 14 public resources included in this dataset.</p>');
 				};
 				if (suggestion.detect_volume == 1) {
 					$('#detect_header').html('<h4 style="padding-top:20px"><b style="color:#1565c0">Volume of Detection Rules:</b><b> Low</b></h4>');
-					$('#detect_text').html('<p>There are relatively few detection rules available for this attacker technique across 13 public resources included in this dataset.</p>');
+					$('#detect_text').html('<p>There are relatively few detection rules available for this attacker technique across 14 public resources included in this dataset.</p>');
 				};
 				if (suggestion.detect_volume == 2) {
 					$('#detect_header').html('<h4 style="padding-top:20px"><b style="color:#1565c0">Volume of Detection Rules:</b><b> Medium</b></h4>');
-					$('#detect_text').html('<p>There are some detection rules available for this attacker technique across 13 public resources included in this dataset.</p>');
+					$('#detect_text').html('<p>There are some detection rules available for this attacker technique across 14 public resources included in this dataset.</p>');
 				};
 				if (suggestion.detect_volume == 3) {
 					$('#detect_header').html('<h4 style="padding-top:20px"><b style="color:#1565c0">Volume of Detection Rules:</b><b> High</b></h4>');
-					$('#detect_text').html('<p>There are relatively many detection rules available for this attacker technique across 13 public resources included in this dataset.</p>');
+					$('#detect_text').html('<p>There are relatively many detection rules available for this attacker technique across 14 public resources included in this dataset.</p>');
 				};
 				if (suggestion.splunk != null) {
-					$('#splunk').html("<strong>" + suggestion.splunk + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/splunk/security_content"><strong>Splunk</strong></a>');
+					$('#splunk').html("<strong>" + suggestion.splunk + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/splunk/security_content/tree/develop/detections"><strong>Splunk</strong></a>');
 				};
 				if (suggestion.splunk == null) {
 					$('#splunk').html("");
@@ -94,6 +96,12 @@
 				};
 				if (suggestion.azure_sentinel == null) {
 					$('#azure_sentinel').html("");
+				};
+				if (suggestion.logpoint != null) {
+					$('#logpoint').html("<strong>" + suggestion.logpoint + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html"><strong>LogPoint</strong></a>');
+				};
+				if (suggestion.logpoint == null) {
+					$('#logpoint').html("");
 				};
 				if (suggestion.proofpoint_emergingThreats != null) {
 					$('#proofpoint_emergingThreats').html("<strong>" + suggestion.proofpoint_emergingThreats + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/0xtf/nsm-attack"><strong>Network Security Monitoring rule mappings</strong></a>');
@@ -139,19 +147,19 @@
 				};
 				if (suggestion.test_volume == 0) {
 					$('#test_header').html('<h4 style="padding-top:20px"><b style="color:#bf2026ff">Volume of Offensive Tests:</b><b> N/A</b></h4>');
-					$('#test_text').html('<p>There are no offensive security tests available for this attacker technique across 4 public resources included in this dataset.</p>');
+					$('#test_text').html('<p>There are no offensive security tests available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.test_volume == 1) {
 					$('#test_header').html('<h4 style="padding-top:20px"><b style="color:#bf2026ff">Volume of Offensive Tests:</b><b> Low</b></h4>');
-					$('#test_text').html('<p>There are relatively few detection rules available for this attacker technique across 4 public resources included in this dataset.</p>');
+					$('#test_text').html('<p>There are relatively few detection rules available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.test_volume == 2) {
 					$('#test_header').html('<h4 style="padding-top:20px"><b style="color:#bf2026ff">Volume of Offensive Tests:</b><b> Medium</b></h4>');
-					$('#test_text').html('<p>There are some detection rules available for this attacker technique across 4 public resources included in this dataset.</p>');
+					$('#test_text').html('<p>There are some detection rules available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.test_volume == 3) {
 					$('#test_header').html('<h4 style="padding-top:20px"><b style="color:#bf2026ff">Volume of Offensive Tests:</b><b> High</b></h4>');
-					$('#test_text').html('<p>There are relatively many detection rules available for this attacker technique across 4 public resources included in this dataset.</p>');
+					$('#test_text').html('<p>There are relatively many detection rules available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.art != null) {
 					$('#art').html("<strong>" + suggestion.art + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics"><strong>Atomic Red Team</strong></a>');
@@ -172,10 +180,16 @@
 					$('#prelude').html("");
 				};
 				if (suggestion.stockpile != null) {
-					$('#stockpile').html("<strong>" + suggestion.stockpile + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows"><strong>CALDERA Stockpile</strong></a>');
+					$('#stockpile').html("<strong>" + suggestion.stockpile + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/mitre/stockpile/tree/master/data/abilities"><strong>CALDERA Stockpile</strong></a>');
 				};
 				if (suggestion.stockpile == null) {
 					$('#stockpile').html("");
+				};
+				if (suggestion.scythe != null) {
+					$('#scythe').html("<strong>" + suggestion.scythe + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/scythe-io/community-threats"><strong>Scythe</strong></a>');
+				};
+				if (suggestion.scythe == null) {
+					$('#scythe').html("");
 				};
 				if (suggestion.validate_potential == 0) {
 					$('#validate_header').html('<h4 style="padding-top:20px"><b style="color:#7466BF">Validation Potential:</b><b> N/A</b></h4>');
