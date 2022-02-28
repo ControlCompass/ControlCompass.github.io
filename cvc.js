@@ -62,85 +62,85 @@
 					$('#detect_text').html('<p>There are relatively many detection rules available for this attacker technique across 14 public resources included in this dataset.</p>');
 				};
 				if (suggestion.splunk != null) {
-					$('#splunk').html("<strong>" + suggestion.splunk + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/splunk/security_content/tree/develop/detections"><strong>Splunk</strong></a>');
+					$('#splunk').html("<strong>" + suggestion.splunk + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/splunk/security_content/tree/develop/detections"><strong>Splunk</strong></a>');
 				};
 				if (suggestion.splunk == null) {
 					$('#splunk').html("");
 				};
 				if (suggestion.splunk_threatHunting != null) {
-					$('#splunk_threatHunting').html("<strong>" + suggestion.splunk_threatHunting + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/olafhartong/ThreatHunting/tree/master/attack_matrix"><strong>ThreatHunting Splunk app</strong></a>');
+					$('#splunk_threatHunting').html("<strong>" + suggestion.splunk_threatHunting + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/olafhartong/ThreatHunting/tree/master/attack_matrix"><strong>ThreatHunting Splunk app</strong></a>');
 				};
 				if (suggestion.splunk_threatHunting == null) {
 					$('#splunk_threatHunting').html("");
 				};
 				if (suggestion.elastic != null) {
-					$('#elastic').html("<strong>" + suggestion.elastic + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/elastic/detection-rules"><strong>Elastic Stack</strong></a>');
+					$('#elastic').html("<strong>" + suggestion.elastic + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/elastic/detection-rules"><strong>Elastic Stack</strong></a>');
 				};
 				if (suggestion.elastic == null) {
 					$('#elastic').html("");
 				};
 				if (suggestion.eql_analytics != null) {
-					$('#eql_analytics').html("<strong>" + suggestion.eql_analytics + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline" target="_blank" href="https://eqllib.readthedocs.io/en/latest/analytics.html#"><strong>EQL Analytics Library</strong></a>');
+					$('#eql_analytics').html("<strong>" + suggestion.eql_analytics + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://eqllib.readthedocs.io/en/latest/analytics.html#"><strong>EQL Analytics Library</strong></a>');
 				};
 				if (suggestion.eql_analytics == null) {
 					$('#eql_analytics').html("");
 				};
 				if (suggestion.azure_fullStack != null) {
-					$('#azure_fullStack').html("<strong>" + suggestion.azure_fullStack + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html"><strong>Azure full stack mappings</strong></a>');
+					$('#azure_fullStack').html("<strong>" + suggestion.azure_fullStack + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html"><strong>Azure full stack mappings</strong></a>');
 				};
 				if (suggestion.azure_fullStack == null) {
 					$('#azure_fullStack').html("");
 				};
 				if (suggestion.azure_sentinel != null) {
-					$('#azure_sentinel').html("<strong>" + suggestion.azure_sentinel + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections"><strong>Sentinel detection mappings</strong></a>');
+					$('#azure_sentinel').html("<strong>" + suggestion.azure_sentinel + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections"><strong>Sentinel detection mappings</strong></a>');
 				};
 				if (suggestion.azure_sentinel == null) {
 					$('#azure_sentinel').html("");
 				};
 				if (suggestion.logpoint != null) {
-					$('#logpoint').html("<strong>" + suggestion.logpoint + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html"><strong>LogPoint</strong></a>');
+					$('#logpoint').html("<strong>" + suggestion.logpoint + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html"><strong>LogPoint</strong></a>');
 				};
 				if (suggestion.logpoint == null) {
 					$('#logpoint').html("");
 				};
 				if (suggestion.proofpoint_emergingThreats != null) {
-					$('#proofpoint_emergingThreats').html("<strong>" + suggestion.proofpoint_emergingThreats + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/0xtf/nsm-attack"><strong>Network Security Monitoring rule mappings</strong></a>');
+					$('#proofpoint_emergingThreats').html("<strong>" + suggestion.proofpoint_emergingThreats + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/0xtf/nsm-attack"><strong>Network Security Monitoring rule mappings</strong></a>');
 				};
 				if (suggestion.proofpoint_emergingThreats == null) {
 					$('#proofpoint_emergingThreats').html("");
 				};
 				if (suggestion.tanium_threatResponse != null) {
-					$('#tanium_threatResponse').html("<strong>" + suggestion.tanium_threatResponse + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html"><strong>Tanium Threat Response</strong></a>');
+					$('#tanium_threatResponse').html("<strong>" + suggestion.tanium_threatResponse + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html"><strong>Tanium Threat Response</strong></a>');
 				};
 				if (suggestion.tanium_threatResponse == null) {
 					$('#tanium_threatResponse').html("");
 				};
 				if (suggestion.aws != null) {
-					$('#aws').html("<strong>" + suggestion.aws + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html"><strong>AWS security control mappings</strong></a>');
+					$('#aws').html("<strong>" + suggestion.aws + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html"><strong>AWS security control mappings</strong></a>');
 				};
 				if (suggestion.aws == null) {
 					$('#aws').html("");
 				};
 				if (suggestion.car != null) {
-					$('#car').html("<strong>" + suggestion.car + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/mitre-attack/car/tree/master/analytics"><strong>Cyber Analytics Repository</strong></a>');
+					$('#car').html("<strong>" + suggestion.car + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/mitre-attack/car/tree/master/analytics"><strong>Cyber Analytics Repository</strong></a>');
 				};
 				if (suggestion.car == null) {
 					$('#car').html("");
 				};
 				if (suggestion.atc != null) {
-					$('#atc').html("<strong>" + suggestion.atc + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules"><strong>Atomic Threat Coverage</strong></a>');
+					$('#atc').html("<strong>" + suggestion.atc + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules"><strong>Atomic Threat Coverage</strong></a>');
 				};
 				if (suggestion.atc == null) {
 					$('#atc').html("");
 				};
 				if (suggestion.sigma != null) {
-					$('#sigma').html("<strong>" + suggestion.sigma + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/SigmaHQ/sigma/tree/master/rules"><strong>Sigma rules public repository</strong></a>');
+					$('#sigma').html("<strong>" + suggestion.sigma + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/SigmaHQ/sigma/tree/master/rules"><strong>Sigma rules public repository</strong></a>');
 				};
 				if (suggestion.sigma == null) {
 					$('#sigma').html("");
 				};
 				if (suggestion.th_playbook != null) {
-					$('#th_playbook').html("<strong>" + suggestion.th_playbook + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows"><strong>ThreatHunter Playbook</strong></a>');
+					$('#th_playbook').html("<strong>" + suggestion.th_playbook + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows"><strong>ThreatHunter Playbook</strong></a>');
 				};
 				if (suggestion.th_playbook == null) {
 					$('#th_playbook').html("");
@@ -162,31 +162,31 @@
 					$('#test_text').html('<p>There are relatively many detection rules available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.art != null) {
-					$('#art').html("<strong>" + suggestion.art + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics"><strong>Atomic Red Team</strong></a>');
+					$('#art').html("<strong>" + suggestion.art + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics"><strong>Atomic Red Team</strong></a>');
 				};
 				if (suggestion.art == null) {
 					$('#art').html("");
 				};
 				if (suggestion.rta != null) {
-					$('#rta').html("<strong>" + suggestion.rta + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/endgameinc/RTA/tree/master/red_ttp"><strong>Red Team Automation</strong></a>');
+					$('#rta').html("<strong>" + suggestion.rta + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/endgameinc/RTA/tree/master/red_ttp"><strong>Red Team Automation</strong></a>');
 				};
 				if (suggestion.rta == null) {
 					$('#rta').html("");
 				};
 				if (suggestion.prelude != null) {
-					$('#prelude').html("<strong>" + suggestion.prelude + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/preludeorg/community/tree/master/ttps"><strong>Prelude Community TTPs</strong></a>');
+					$('#prelude').html("<strong>" + suggestion.prelude + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/preludeorg/community/tree/master/ttps"><strong>Prelude Community TTPs</strong></a>');
 				};
 				if (suggestion.prelude == null) {
 					$('#prelude').html("");
 				};
 				if (suggestion.stockpile != null) {
-					$('#stockpile').html("<strong>" + suggestion.stockpile + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/mitre/stockpile/tree/master/data/abilities"><strong>CALDERA Stockpile</strong></a>');
+					$('#stockpile').html("<strong>" + suggestion.stockpile + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/mitre/stockpile/tree/master/data/abilities"><strong>CALDERA Stockpile</strong></a>');
 				};
 				if (suggestion.stockpile == null) {
 					$('#stockpile').html("");
 				};
 				if (suggestion.scythe != null) {
-					$('#scythe').html("<strong>" + suggestion.scythe + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline" target="_blank" href="https://github.com/scythe-io/community-threats"><strong>Scythe</strong></a>');
+					$('#scythe').html("<strong>" + suggestion.scythe + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/scythe-io/community-threats"><strong>Scythe</strong></a>');
 				};
 				if (suggestion.scythe == null) {
 					$('#scythe').html("");
