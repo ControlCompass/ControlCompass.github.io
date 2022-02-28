@@ -19,12 +19,16 @@
   .summary { cursor: pointer; display: list-item; }
   	.choice_red:hover { background: #efc9d0; }
   	.choice_blue:hover { background: #ACCDE7; }
+  	.output_red { padding-left:150px }
+  	.output_red:hover { border: 2px solid #efc9d0; border-radius:5px }
+  	.output_blue { padding-left:150px }
+  	.output_blue:hover { border: 2px solid #ACCDE7; border-radius:5px }
   </style>
  </head>
 <body>
   <div class="container" style="padding:10px 10px">
 	  <p class="aligncenter">
-	  	<img src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc-banner.png" alt="Control Validation Compass"width="654px" height="90px">
+		  <a href="https://controlcompass.github.io/"><img src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc-banner.png" alt="Control Validation Compass"width="654px" height="90px"></a>
 	  </p>
 	 <div class="row">
 		 <div class="col-md-12 text-center">
@@ -73,7 +77,7 @@
 			<br>
 			<div class="row">
 			<div class="col-md-12 text-center">
-				<button type="button" id="process-data" class="btn run" style="padding:3px 10px;width:22%">Show me the mappings!
+				<button type="button" id="process-data" class="btn run" style="padding:3px 10px;width:22%">Show Me the Mappings!
 					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
 				</button>
 			</div>
@@ -81,15 +85,25 @@
 			<br>
 			<div class="col-md-12">
 				<p id="cvc-output_header" style="text-align:center"></p>
-				<div style="width:49%;float:left">
+				<div style="width:50%;float:left">
 					<p id="cvc-output_blue"></p>
 				</div>
-				<div style="width:49%;float:right">
+				<div style="width:50%;float:right">
 					<p id="cvc-output_red"></p>
 				</div>
 			</div>
 </div>
   </div>
+
+<footer style="font-size:13px">
+	<p>
+		<br>
+		MITRE ATT&CK® is a registered trademark of The MITRE Corporation<br>
+		Feedback & improvement suggestions welcome! Get in touch on <a target="_blank" href="https://twitter.com/IntelScott" >Twitter</a> or <a target="_blank" href="https://github.com/ControlCompass">Github</a> (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/issues">submit an issue</a>)<br>
+		View the raw data (csv, <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json">json</a>) and <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io">site source code</a><br>
+	</p>
+</footer>
+
 </body>
 </html>
 <script type="text/javascript">
