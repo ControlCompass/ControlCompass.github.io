@@ -61,7 +61,7 @@ $(document).ready(function(){
 
             if ($('#splunk').is(":checked")) {
                 splunk = arrayCvc[i].splunk;
-                splunkDetails = '<a target="_blank" href="https://github.com/splunk/security_content/tree/develop/detections">Splunk</a>: ' + arrayCvc[i].splunk;
+                splunkDetails = '<a target="_blank" style="color:#1565c0" href="https://github.com/splunk/security_content/tree/develop/detections">Splunk</a>: ' + arrayCvc[i].splunk;
             } else {
                 splunk = 0;
                 splunkDetails = ""
@@ -69,7 +69,7 @@ $(document).ready(function(){
 
             if ($('#splunk_threatHunting').is(":checked")) {
                 splunk_threatHunting = arrayCvc[i].splunk_threatHunting;
-                splunk_threatHuntingDetails = '<a target="_blank" href="https://github.com/olafhartong/ThreatHunting/tree/master/attack_matrix">ThreatHunting Splunk app</a>: ' + arrayCvc[i].splunk_threatHunting;
+                splunk_threatHuntingDetails = '<a target="_blank" style="color:#1565c0" href="https://github.com/olafhartong/ThreatHunting/tree/master/attack_matrix">ThreatHunting Splunk app</a>: ' + arrayCvc[i].splunk_threatHunting;
             } else {
                 splunk_threatHunting = 0;
                 splunk_threatHuntingDetails = "";
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
             if ($('#elastic').is(":checked")) {
                 elastic = arrayCvc[i].elastic;
-                elasticDetails = '<a target="_blank" href="https://github.com/elastic/detection-rules">Elastic Stack</a>: ' + arrayCvc[i].elastic;
+                elasticDetails = '<a target="_blank" style="color:#1565c0"  href="https://github.com/elastic/detection-rules">Elastic Stack</a>: ' + arrayCvc[i].elastic;
             } else {
                 elastic = 0;
                 elasticDetails = "";
@@ -85,7 +85,7 @@ $(document).ready(function(){
 
             if ($('#eql_analytics').is(":checked")) {
                 eql_analytics = arrayCvc[i].eql_analytics;
-                eql_analyticsDetails = '<a target="_blank" href="https://eqllib.readthedocs.io/en/latest/analytics.html#">EQL Analytics Library</a>: ' + arrayCvc[i].eql_analytics;
+                eql_analyticsDetails = '<a target="_blank" style="color:#1565c0"  href="https://eqllib.readthedocs.io/en/latest/analytics.html#">EQL Analytics Library</a>: ' + arrayCvc[i].eql_analytics;
             } else {
                 eql_analytics = 0;
                 eql_analyticsDetails = "";
@@ -93,7 +93,7 @@ $(document).ready(function(){
 
             if ($('#azure_fullStack').is(":checked")) {
                 azure_fullStack = arrayCvc[i].azure_fullStack;
-                azure_fullStackDetails = '<a target="_blank" href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html">Azure full stack mappings</a>: ' + arrayCvc[i].azure_fullStack;
+                azure_fullStackDetails = '<a target="_blank" style="color:#1565c0"  href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html">Azure full stack mappings</a>: ' + arrayCvc[i].azure_fullStack;
             } else {
                 azure_fullStack = 0;
                 azure_fullStackDetails = "";
@@ -101,7 +101,7 @@ $(document).ready(function(){
 
             if ($('#azure_sentinel').is(":checked")) {
                 azure_sentinel = arrayCvc[i].azure_sentinel;
-                azure_sentinelDetails = '<a target="_blank" href="https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections">Sentinel detection mappings</a>: ' + arrayCvc[i].azure_sentinel;
+                azure_sentinelDetails = '<a target="_blank" style="color:#1565c0"  href="https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections">Sentinel detection mappings</a>: ' + arrayCvc[i].azure_sentinel;
             } else {
                 azure_sentinel = 0;
                 azure_sentinelDetails = "";
@@ -109,7 +109,7 @@ $(document).ready(function(){
 
             if ($('#logpoint').is(":checked")) {
                 logpoint = arrayCvc[i].logpoint;
-                logpointDetails = '<a target="_blank" href="https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html">LogPoint</a>: ' + arrayCvc[i].logpoint;
+                logpointDetails = '<a target="_blank" style="color:#1565c0"  href="https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html">LogPoint</a>: ' + arrayCvc[i].logpoint;
             } else {
                 logpoint = 0;
                 logpointDetails = "";
@@ -117,7 +117,7 @@ $(document).ready(function(){
 
             if ($('#proofpoint_emergingThreats').is(":checked")) {
                 proofpoint_emergingThreats = arrayCvc[i].proofpoint_emergingThreats;
-                proofpoint_emergingThreatsDetails = '<a target="_blank" href="https://github.com/0xtf/nsm-attack">Network Security Monitoring rule mappings</a>: ' + arrayCvc[i].proofpoint_emergingThreats;
+                proofpoint_emergingThreatsDetails = '<a target="_blank" style="color:#1565c0"  href="https://github.com/0xtf/nsm-attack">Network Security Monitoring rule mappings</a>: ' + arrayCvc[i].proofpoint_emergingThreats;
             } else {
                 proofpoint_emergingThreats = 0;
                 proofpoint_emergingThreatsDetails = "";
@@ -125,7 +125,7 @@ $(document).ready(function(){
 
             if ($('#tanium_threatResponse').is(":checked")) {
                 tanium_threatResponse = arrayCvc[i].tanium_threatResponse;
-                tanium_threatResponseDetails = '<a target="_blank" href="https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html">Tanium Threat Response</a>: ' + arrayCvc[i].tanium_threatResponse;
+                tanium_threatResponseDetails = '<a target="_blank" style="color:#1565c0"  href="https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html">Tanium Threat Response</a>: ' + arrayCvc[i].tanium_threatResponse;
             } else {
                 tanium_threatResponse = 0;
                 tanium_threatResponseDetails = "";
@@ -133,7 +133,7 @@ $(document).ready(function(){
 
             if ($('#aws').is(":checked")) {
                 aws = arrayCvc[i].aws;
-                awsDetails = '<a target="_blank" href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html">AWS security control mappings</a>: ' + arrayCvc[i].aws;
+                awsDetails = '<a target="_blank" style="color:#1565c0"  href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html">AWS security control mappings</a>: ' + arrayCvc[i].aws;
             } else {
                 aws = 0;
                 awsDetails = "";
@@ -141,7 +141,7 @@ $(document).ready(function(){
 
             if ($('#car').is(":checked")) {
                 car = arrayCvc[i].car;
-                carDetails = '<a target="_blank" href="https://github.com/mitre-attack/car/tree/master/analytics">Cyber Analytics Repository</a>: ' + arrayCvc[i].car;
+                carDetails = '<a target="_blank" style="color:#1565c0"  href="https://github.com/mitre-attack/car/tree/master/analytics">Cyber Analytics Repository</a>: ' + arrayCvc[i].car;
             } else {
                 car = 0;
                 carDetails = "";
@@ -149,7 +149,7 @@ $(document).ready(function(){
 
             if ($('#atc').is(":checked")) {
                 atc = arrayCvc[i].atc;
-                atcDetails = '<a target="_blank" href="https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules">Atomic Threat Coverage</a>: ' + arrayCvc[i].atc;
+                atcDetails = '<a target="_blank" style="color:#1565c0"  href="https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules">Atomic Threat Coverage</a>: ' + arrayCvc[i].atc;
             } else {
                 atc = 0;
                 atcDetails = "";
@@ -157,7 +157,7 @@ $(document).ready(function(){
 
             if ($('#sigma').is(":checked")) {
                 sigma = arrayCvc[i].sigma;
-                sigmaDetails = '<a target="_blank" href="https://github.com/SigmaHQ/sigma/tree/master/rules">Sigma rules public repository</a>: ' + arrayCvc[i].sigma;
+                sigmaDetails = '<a target="_blank" style="color:#1565c0"  href="https://github.com/SigmaHQ/sigma/tree/master/rules">Sigma rules public repository</a>: ' + arrayCvc[i].sigma;
             } else {
                 sigma = 0;
                 sigmaDetails = "";
@@ -165,7 +165,7 @@ $(document).ready(function(){
 
             if ($('#th_playbook').is(":checked")) {
                 th_playbook = arrayCvc[i].th_playbook;
-                th_playbookDetails = '<a target="_blank" href="https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows">ThreatHunter Playbook</a>: ' + arrayCvc[i].th_playbook;
+                th_playbookDetails = '<a target="_blank" style="color:#1565c0"  href="https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows">ThreatHunter Playbook</a>: ' + arrayCvc[i].th_playbook;
             } else {
                 th_playbook = 0;
                 th_playbookDetails = "";
@@ -173,7 +173,7 @@ $(document).ready(function(){
 
             if ($('#art').is(":checked")) {
                 art = arrayCvc[i].art;
-                artDetails = '<a target="_blank" href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics">Atomic Red Team</a>: ' + arrayCvc[i].art;
+                artDetails = '<a target="_blank" style="color:#bf2026ff" href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics">Atomic Red Team</a>: ' + arrayCvc[i].art;
             } else {
                 art = 0;
                 artDetails = "";
@@ -181,7 +181,7 @@ $(document).ready(function(){
 
             if ($('#rta').is(":checked")) {
                 rta = arrayCvc[i].rta;
-                rtaDetails = '<a target="_blank" href="https://github.com/endgameinc/RTA/tree/master/red_ttp">Red Team Automation</a>: ' + arrayCvc[i].rta;
+                rtaDetails = '<a target="_blank" style="color:#bf2026ff" href="https://github.com/endgameinc/RTA/tree/master/red_ttp">Red Team Automation</a>: ' + arrayCvc[i].rta;
             } else {
                 rta = 0;
                 rtaDetails = "";
@@ -189,7 +189,7 @@ $(document).ready(function(){
 
             if ($('#prelude').is(":checked")) {
                 prelude = arrayCvc[i].prelude;
-                preludeDetails = '<a target="_blank" href="https://github.com/preludeorg/community/tree/master/ttps">Prelude Community TTPs</a>: ' + arrayCvc[i].prelude;
+                preludeDetails = '<a target="_blank" style="color:#bf2026ff" href="https://github.com/preludeorg/community/tree/master/ttps">Prelude Community TTPs</a>: ' + arrayCvc[i].prelude;
             } else {
                 prelude = 0;
                 preludeDetails = "";
@@ -197,7 +197,7 @@ $(document).ready(function(){
 
             if ($('#stockpile').is(":checked")) {
                 stockpile = arrayCvc[i].stockpile;
-                stockpileDetails = '<a target="_blank" href="https://github.com/mitre/stockpile/tree/master/data/abilities">CALDERA Stockpile</a>: ' + arrayCvc[i].stockpile;
+                stockpileDetails = '<a target="_blank" style="color:#bf2026ff" href="https://github.com/mitre/stockpile/tree/master/data/abilities">CALDERA Stockpile</a>: ' + arrayCvc[i].stockpile;
             } else {
                 stockpile = 0;
                 stockpileDetails = "";
@@ -205,7 +205,7 @@ $(document).ready(function(){
 
             if ($('#scythe').is(":checked")) {
                 scythe = arrayCvc[i].scythe;
-                scytheDetails = '<a target="_blank" href="https://github.com/scythe-io/community-threats">Scythe</a>: ' + arrayCvc[i].scythe;
+                scytheDetails = '<a target="_blank" style="color:#bf2026ff" href="https://github.com/scythe-io/community-threats">Scythe</a>: ' + arrayCvc[i].scythe;
             } else {
                 scythe = 0;
                 scytheDetails = "";
@@ -275,15 +275,15 @@ $(document).ready(function(){
 
         allTech.sort((a, b) => b.ruleTest_total - a.ruleTest_total);
 
-        arrayTech_blue.push('<h4 style="color:#1565c0"><strong>Detection Rules</strong></h4>')
-        arrayTech_red.push('<h4 style="color:#bf2026ff"><strong>Offensive Tests</strong></h4>')
+        arrayTech_blue.push('<h4 style="color:#1565c0;text-align:center"><strong>Detection Rules</strong></h4>')
+        arrayTech_red.push('<h4 style="color:#bf2026ff;text-align:center"><strong>Offensive Tests</strong></h4>')
 
         for (item in allTech) {
 
             rulesDetails = []
             testDetails = []
 
-            rulesDetails.push('<p style="margin-left:24px;padding:6px">' +
+            rulesDetails.push('<p style="margin-left:24px;padding:6px 6px 6px 150px">' +
                               allTech[item].splunkDetails + '<br>' +
                               allTech[item].splunk_threatHuntingDetails + '<br>' +
                               allTech[item].elasticDetails + '<br>' +
@@ -301,7 +301,7 @@ $(document).ready(function(){
                               '</p>'
             )
 
-            testDetails.push('<p style="margin-left:24px;padding:6px">' +
+            testDetails.push('<p style="margin-left:24px;padding:6px 6px 6px 150px">' +
                               allTech[item].artDetails + '<br>' +
                               allTech[item].rtaDetails + '<br>' +
                               allTech[item].preludeDetails + '<br>' +
@@ -311,7 +311,7 @@ $(document).ready(function(){
             )
 
             arrayTech_blue.push(
-                '<details><summary class="summary"><a target="_blank" href="' +
+                '<details><summary class="summary output_blue" style="padding:3px 3px 3px 150px"><a target="_blank" style="color:#1565c0;text-decoration:underline" href="' +
                 allTech[item].url + '">' +
                 allTech[item].techID +
                 ' (' + allTech[item].techName +
@@ -323,7 +323,7 @@ $(document).ready(function(){
             )
 
             arrayTech_red.push(
-                '<details><summary class="summary"><a target="_blank" href="' +
+                '<details><summary class="summary output_red" style="padding:3px 3px 3px 150px"><a target="_blank" style="color:#bf2026ff;text-decoration:underline" href="' +
                 allTech[item].url + '">' +
                 allTech[item].techID +
                 ' (' + allTech[item].techName +
