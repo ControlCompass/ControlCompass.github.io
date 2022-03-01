@@ -151,15 +151,15 @@
 				};
 				if (suggestion.test_volume == 1) {
 					$('#test_header').html('<h4 style="padding-top:20px"><b style="color:#bf2026ff">Volume of Offensive Tests:</b><b> Low</b></h4>');
-					$('#test_text').html('<p>There are relatively few detection rules available for this attacker technique across 5 public resources included in this dataset.</p>');
+					$('#test_text').html('<p>There are relatively few offensive security tests available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.test_volume == 2) {
 					$('#test_header').html('<h4 style="padding-top:20px"><b style="color:#bf2026ff">Volume of Offensive Tests:</b><b> Medium</b></h4>');
-					$('#test_text').html('<p>There are some detection rules available for this attacker technique across 5 public resources included in this dataset.</p>');
+					$('#test_text').html('<p>There are some offensive security tests available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.test_volume == 3) {
 					$('#test_header').html('<h4 style="padding-top:20px"><b style="color:#bf2026ff">Volume of Offensive Tests:</b><b> High</b></h4>');
-					$('#test_text').html('<p>There are relatively many detection rules available for this attacker technique across 5 public resources included in this dataset.</p>');
+					$('#test_text').html('<p>There are relatively many offensive security tests available for this attacker technique across 5 public resources included in this dataset.</p>');
 				};
 				if (suggestion.art != null) {
 					$('#art').html("<strong>" + suggestion.art + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics"><strong>Atomic Red Team</strong></a>');
