@@ -280,13 +280,13 @@
     "atc": null,
     "sigma": 8,
     "th_playbook": null,
-    "art": null,
+    "art": 1,
     "rta": null,
     "prelude": null,
     "stockpile": null,
     "scythe": null,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -605,7 +605,7 @@
     "stockpile": 1,
     "scythe": 35,
     "detect_volume": 3,
-    "test_volume": 2,
+    "test_volume": 3,
     "validate_potential": 3
   },
   {
@@ -837,7 +837,7 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 2,
-    "test_volume": 1,
+    "test_volume": 2,
     "validate_potential": 2
   },
   {
@@ -1330,7 +1330,7 @@
     "stockpile": 4,
     "scythe": 26,
     "detect_volume": 3,
-    "test_volume": 2,
+    "test_volume": 3,
     "validate_potential": 3
   },
   {
@@ -1852,8 +1852,8 @@
     "stockpile": 1,
     "scythe": 19,
     "detect_volume": 2,
-    "test_volume": 2,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1043",
@@ -2200,7 +2200,7 @@
     "stockpile": null,
     "scythe": 16,
     "detect_volume": 3,
-    "test_volume": 2,
+    "test_volume": 3,
     "validate_potential": 3
   },
   {
@@ -2693,7 +2693,7 @@
     "stockpile": null,
     "scythe": 3,
     "detect_volume": 2,
-    "test_volume": 1,
+    "test_volume": 2,
     "validate_potential": 2
   },
   {
@@ -2780,7 +2780,7 @@
     "stockpile": null,
     "scythe": 9,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 3,
     "validate_potential": 1
   },
   {
@@ -2924,7 +2924,7 @@
     "prelude": 3,
     "stockpile": 9,
     "scythe": 19,
-    "detect_volume": 3,
+    "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
   },
@@ -2954,8 +2954,8 @@
     "stockpile": null,
     "scythe": 30,
     "detect_volume": 3,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1059.001",
@@ -3041,8 +3041,8 @@
     "stockpile": null,
     "scythe": 32,
     "detect_volume": 2,
-    "test_volume": 1,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1059.004",
@@ -3301,9 +3301,9 @@
     "prelude": null,
     "stockpile": null,
     "scythe": 2,
-    "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "detect_volume": 3,
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1069",
@@ -3650,8 +3650,8 @@
     "stockpile": null,
     "scythe": 6,
     "detect_volume": 3,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1071.001",
@@ -3853,7 +3853,7 @@
     "stockpile": 2,
     "scythe": 17,
     "detect_volume": 1,
-    "test_volume": 2,
+    "test_volume": 3,
     "validate_potential": 1
   },
   {
@@ -3910,9 +3910,9 @@
     "prelude": 1,
     "stockpile": null,
     "scythe": 15,
-    "detect_volume": 2,
-    "test_volume": 1,
-    "validate_potential": 2
+    "detect_volume": 3,
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1078.001",
@@ -3969,8 +3969,8 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1078.003",
@@ -4114,8 +4114,8 @@
     "stockpile": 4,
     "scythe": 33,
     "detect_volume": 2,
-    "test_volume": 2,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1087",
@@ -4143,7 +4143,7 @@
     "stockpile": null,
     "scythe": 9,
     "detect_volume": 3,
-    "test_volume": 2,
+    "test_volume": 3,
     "validate_potential": 3
   },
   {
@@ -4201,8 +4201,8 @@
     "stockpile": 2,
     "scythe": 10,
     "detect_volume": 2,
-    "test_volume": 2,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1087.003",
@@ -5071,8 +5071,8 @@
     "stockpile": null,
     "scythe": 9,
     "detect_volume": 3,
-    "test_volume": 1,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1113",
@@ -5100,7 +5100,7 @@
     "stockpile": 1,
     "scythe": 13,
     "detect_volume": 1,
-    "test_volume": 2,
+    "test_volume": 3,
     "validate_potential": 1
   },
   {
@@ -5506,7 +5506,7 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -5622,8 +5622,8 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1134.001",
@@ -6636,7 +6636,7 @@
     "prelude": null,
     "stockpile": null,
     "scythe": 1,
-    "detect_volume": 2,
+    "detect_volume": 3,
     "test_volume": 1,
     "validate_potential": 2
   },
@@ -6695,8 +6695,8 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1204.001",
@@ -7594,8 +7594,8 @@
     "stockpile": null,
     "scythe": 24,
     "detect_volume": 2,
-    "test_volume": 1,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1220",
@@ -7942,8 +7942,8 @@
     "stockpile": null,
     "scythe": 10,
     "detect_volume": 2,
-    "test_volume": 1,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1486",
@@ -7971,8 +7971,8 @@
     "stockpile": null,
     "scythe": 22,
     "detect_volume": 2,
-    "test_volume": 1,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1489",
@@ -8000,8 +8000,8 @@
     "stockpile": 1,
     "scythe": 12,
     "detect_volume": 2,
-    "test_volume": 2,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1490",
@@ -8087,7 +8087,7 @@
     "stockpile": null,
     "scythe": 8,
     "detect_volume": 1,
-    "test_volume": 1,
+    "test_volume": 2,
     "validate_potential": 1
   },
   {
@@ -8290,7 +8290,7 @@
     "stockpile": 1,
     "scythe": 1,
     "detect_volume": 0,
-    "test_volume": 1,
+    "test_volume": 2,
     "validate_potential": 1
   },
   {
@@ -8812,8 +8812,8 @@
     "stockpile": null,
     "scythe": 2,
     "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1529",
@@ -8899,7 +8899,7 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 2,
-    "test_volume": 1,
+    "test_volume": 2,
     "validate_potential": 2
   },
   {
@@ -9856,8 +9856,8 @@
     "stockpile": null,
     "scythe": 3,
     "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1547.001",
@@ -10319,7 +10319,7 @@
     "prelude": null,
     "stockpile": null,
     "scythe": null,
-    "detect_volume": 2,
+    "detect_volume": 3,
     "test_volume": 0,
     "validate_potential": 1
   },
@@ -10900,8 +10900,8 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1553.003",
@@ -11074,7 +11074,7 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 2,
-    "test_volume": 1,
+    "test_volume": 2,
     "validate_potential": 2
   },
   {
@@ -12872,8 +12872,8 @@
     "stockpile": 2,
     "scythe": 9,
     "detect_volume": 2,
-    "test_volume": 2,
-    "validate_potential": 2
+    "test_volume": 3,
+    "validate_potential": 3
   },
   {
     "techID": "T1568",
@@ -12901,7 +12901,7 @@
     "stockpile": null,
     "scythe": 1,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -13017,8 +13017,8 @@
     "stockpile": null,
     "scythe": 2,
     "detect_volume": 2,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1569.001",
