@@ -18,8 +18,7 @@
 	.run:hover { background: #C7C2E5;  color: #7466BF }
   .details { height: auto; overflow: hidden; transition: max-height ease-in-out; transition-duration: var(--duration, 0.3s); }
   .summary { cursor: pointer; display: list-item; }
-  	.choice_red:hover { background: #efc9d0; }
-  	.choice_blue:hover { background: #ACCDE7; }
+  	.block { display: block }
   	.output_red { padding-left:150px }
   	.output_red:hover { border: 2px solid #efc9d0; border-radius:5px }
   	.output_blue { padding-left:150px }
@@ -39,18 +38,79 @@
 			 <a href="https://controlcompass.github.io/resources" class="btn choice"><strong>Resources</strong></a>
 		 </div>
 	 </div>
-	  <div class="row">
+	 <div class="row">
 		<p style="padding:15px;text-align:center;font-size:16px">Instantly identify relevant controls directly aligned with threats that matter to you</p>
-		<details>
-			<summary class="summary choice_red" style="color:#bf2026ff;font-size:18px;border:2px solid #bf2026ff;border-radius:5px;padding:3px 10px;width:17%;margin:auto;text-align:center">
-				Threat Intelligence
-			</summary>
-		<br>
-		<p>Add your own threat intelligence in <a style="text-decoration:underline" target="_blank" href="https://mitre-attack.github.io/attack-navigator/">ATT&CK Navigator</a> 'layer' format (learn more <a style="text-decoration:underline" target="_blank" href="https://github.com/mitre-attack/attack-navigator/blob/master/USAGE.md">here</a>). This utility simply matches techniques from our <a  style="text-decoration:underline" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json">dataset</a> against your input. <em>No input data is transferred or stored anywhere - this site has no database (see the relevant code <a style="text-decoration:underline" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/risk.js">here</a>)</em>.</p>
-		</details>
-		<div class="col-md-8 col-md-offset-2">
-		  <br>
-		  <textarea class="form-control" id="JSONinput" rows="8">
+		<p style="text-align:center;font-size:15px">Click <b style="color:#7466BF">Line It Up!</b> below to immediately begin exploring controls & tests available for an example threat: <a style="text-decoration:underline" target="_blank" href="https://attack.mitre.org/software/S0266/">Trickbot</a>, a <a style="text-decoration:underline" target="_blank" href="https://therecord.media/trickbot-new-attacks-see-the-botnet-deploy-new-banking-module-new-ransomware/">prolific malware</a>. Or click the Controls, Threat Intelligence, or Advanced Options dropdowns to reveal numerous ways to customize your input threat intelligence and your output results.</p>
+		<div class="row" style="width:50%;float:left">
+			<div class="col-md-12">
+				<details>
+					<summary class="summary block" style="text-align:center;color: #1565c0;font-size:22px">
+						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Controls
+					</summary>
+						<p style="font-size:13px">Toggle the controls & testing capabilities used in your environment or otherwise relevant to you. Click the triangles to reveal more options within each category.</p>
+						<button type="button" id="uncheck-box" class="button" style="background:#e7e7e7">Uncheck all boxes</button>
+						<button type="button" id="check-all" class="button" style="background:#e7e7e7">Check all boxes</button>
+						<h4>Defensive Capabilities</h4>
+						<details open>
+							<summary class="summary" style="font-size:16px;margin:5px 0px">
+								Network & Endpoint Telemetry - Native Controls
+							</summary>
+								<label><input type="checkbox" value="" id="splunk" style="margin-right:5px" checked>Splunk</label>
+								<label><input type="checkbox" value="" id="splunk_threatHunting" style="margin-right:5px;margin-left:10px" checked>Threat Hunting Splunk App</label>
+								<label><input type="checkbox" value="" id="elastic" style="margin-right:5px;margin-left:10px" checked>Elastic Stack</label>
+								<label><input type="checkbox" value="" id="eql_analytics" style="margin-right:5px;margin-left:10px" checked>EQL Analytics Library</label>
+								<label><input type="checkbox" value="" id="azure_sentinel" style="margin-right:5px;margin-left:10px" checked>Sentinel detection mappings</label>
+								<label><input type="checkbox" value="" id="logpoint" style="margin-right:5px;margin-left:10px" checked>LogPoint</label>
+						</details>
+						<details>
+							<summary class="summary" style="font-size:16px;margin:5px 0px">
+								Network & Endpoint Telemetry - External Rule Repositories
+							</summary>
+								<label><input type="checkbox" value="" id="car" style="margin-right:5px" checked>Cyber Analytics Repository</label>
+								<label><input type="checkbox" value="" id="atc" style="margin-right:5px;margin-left:10px" checked>Atomic Threat Coverage</label>
+								<label><input type="checkbox" value="" id="sigma" style="margin-right:5px;margin-left:10px" checked>Sigma rules public repository</label>
+								<label><input type="checkbox" value="" id="th_playbook" style="margin-right:5px;margin-left:10px" checked>ThreatHunter Playbook</label>
+						</details>
+						<details>
+							<summary class="summary" style="font-size:16px;margin:5px 0px">
+								Network Telemetry
+							</summary>
+								<label><input type="checkbox" value="" id="proofpoint_emergingThreats" style="margin-right:5px" checked>Network Security Monitoring rule mappings</label>
+						</details>
+						<details>
+							<summary class="summary" style="font-size:16px;margin:5px 0px">
+								Endpoint Telemetry
+							</summary>
+								<label><input type="checkbox" value="" id="tanium_threatResponse" style="margin-right:5px" checked>Tanium Threat Response</label>
+						</details>
+						<details>
+							<summary class="summary" style="font-size:16px;margin:5px 0px">
+								Cloud
+							</summary>
+								<label><input type="checkbox" value="" id="azure_fullStack" style="margin-right:5px" checked>Azure full stack mappings</label>
+								<label><input type="checkbox" value="" id="aws" style="margin-right:5px;margin-left:10px" checked>AWS security control mappings</label>
+						</details>
+						<h4>Offensive Capabilities</h4>
+						<details>
+							<summary class="summary" style="font-size:16px;margin:5px 0px">
+								Unit Tests
+							</summary>
+								<label><input type="checkbox" value="" id="art" style="margin-right:5px" checked>Atomic Red Team</label>
+								<label><input type="checkbox" value="" id="rta" style="margin-right:5px;margin-left:10px" checked>Red Team Automation</label>
+								<label><input type="checkbox" value="" id="prelude" style="margin-right:5px;margin-left:10px" checked>Prelude Community TTPs</label>
+								<label><input type="checkbox" value="" id="stockpile" style="margin-right:5px;margin-left:10px" checked>CALDERA Stockpile</label>
+								<label><input type="checkbox" value="" id="scythe" style="margin-right:5px;margin-left:10px" checked>Scythe</label>
+						</details>
+				</details>
+			</div>
+		</div>
+		<div style="width:50%;float:right">
+			<details>
+				<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:22px">
+					<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Threat Intelligence
+				</summary>
+					<p style="font-size:13px">Add your own threat intelligence in <a style="text-decoration:underline" target="_blank" href="https://mitre-attack.github.io/attack-navigator/">ATT&CK Navigator</a> 'layer' format (learn more <a style="text-decoration:underline" target="_blank" href="https://github.com/mitre-attack/attack-navigator/blob/master/USAGE.md">here</a>). This utility simply matches techniques from our <a  style="text-decoration:underline" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json">dataset</a> against your input. <em>No input data is transferred or stored anywhere - this site has no database (see the relevant code <a style="text-decoration:underline" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/risk.js">here</a>)</em>.</p>
+					<textarea class="form-control" id="JSONinput" rows="10">
 {
 	"name": "layer",
 	"versions": {
@@ -786,68 +846,72 @@
 	"selectTechniquesAcrossTactics": true,
 	"selectSubtechniquesWithParent": false
 }</textarea>
-				</div>
-			<br>
-			<div class="row">
-			<div class="col-md-12">
-				<br>
-				<details>
-					<summary class="summary choice_blue" style="color: #1565c0;font-size:18px;border:2px solid #1565c0;border-radius:5px;padding:3px 10px;width:17%;margin:auto;text-align:center">
-						Controls
-					</summary>
-						<br>
-						<p style="font-size:14px">Toggle the controls & testing capabilities used in your environment or otherwise relevant to you.</p>
-						<button type="button" id="uncheck-box" class="button" style="background:#e7e7e7">Uncheck all boxes</button>
-						<button type="button" id="check-all" class="button" style="background:#e7e7e7">Check all boxes</button>
-						<h4>Defensive Capabilities</h4>
-						<p style="font-size:16px;margin:5px 0px">Network & Endpoint Telemetry</p>
-						<label><input type="checkbox" value="" id="splunk" style="margin-right:5px" checked>Splunk</label>
-						<label><input type="checkbox" value="" id="splunk_threatHunting" style="margin-right:5px;margin-left:10px" checked>Threat Hunting Splunk App</label>
-						<label><input type="checkbox" value="" id="elastic" style="margin-right:5px;margin-left:10px" checked>Elastic Stack</label>
-						<label><input type="checkbox" value="" id="eql_analytics" style="margin-right:5px;margin-left:10px" checked>EQL Analytics Library</label>
-						<label><input type="checkbox" value="" id="azure_sentinel" style="margin-right:5px;margin-left:10px" checked>Sentinel detection mappings</label>
-						<label><input type="checkbox" value="" id="logpoint" style="margin-right:5px;margin-left:10px" checked>LogPoint</label>
-						<br>
-						<label><input type="checkbox" value="" id="car" style="margin-right:5px" checked>Cyber Analytics Repository</label>
-						<label><input type="checkbox" value="" id="atc" style="margin-right:5px;margin-left:10px" checked>Atomic Threat Coverage</label>
-						<label><input type="checkbox" value="" id="sigma" style="margin-right:5px;margin-left:10px" checked>Sigma rules public repository</label>
-						<label><input type="checkbox" value="" id="th_playbook" style="margin-right:5px;margin-left:10px" checked>ThreatHunter Playbook</label>
-						<p style="font-size:16px;margin:5px 0px">Network Telemetry</p>
-						<label><input type="checkbox" value="" id="proofpoint_emergingThreats" style="margin-right:5px" checked>Network Security Monitoring rule mappings</label>
-						<p style="font-size:16px;margin:5px 0px">Endpoint Telemetry</p>
-						<label><input type="checkbox" value="" id="tanium_threatResponse" style="margin-right:5px" checked>Tanium Threat Response</label>
-						<p style="font-size:16px;margin:5px 0px">Cloud</p>
-						<label><input type="checkbox" value="" id="azure_fullStack" style="margin-right:5px" checked>Azure full stack mappings</label>
-						<label><input type="checkbox" value="" id="aws" style="margin-right:5px;margin-left:10px" checked>AWS security control mappings</label>
-						<h4>Offensive Capabilities</h4>
-						<label><input type="checkbox" value="" id="art" style="margin-right:5px" checked>Atomic Red Team</label>
-						<label><input type="checkbox" value="" id="rta" style="margin-right:5px;margin-left:10px" checked>Red Team Automation</label>
-						<label><input type="checkbox" value="" id="prelude" style="margin-right:5px;margin-left:10px" checked>Prelude Community TTPs</label>
-						<label><input type="checkbox" value="" id="stockpile" style="margin-right:5px;margin-left:10px" checked>CALDERA Stockpile</label>
-						<label><input type="checkbox" value="" id="scythe" style="margin-right:5px;margin-left:10px" checked>Scythe</label>
-				</details>
-			</div>
+			</details>
 		</div>
-			<br>
-			<div class="row">
+		<div class="col-md-12 text-center">
+			<details>
+			<summary class="summary block" style="font-size:18px">
+				<br>
+				<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Advanced Options
+			</summary>
+				<div class="col-md-12 text-center" style="padding:10px">
+				<span id="modify" style="text-align:center;margin-right:10px;font-size:13px">The output has the following settings by default. You can modify them as desired to expand or further refine the techniques covered:</span>
+			</div>
+				<div class="col-md-12 text-center" style="padding:4px">
+					<label><input type="checkbox" value="" id="lowestLevel" style="margin-right:5px;padding:5px" checked><a href="https://controlcompass.github.io/resources" style="text-decoration:underline" target="_blank">'Lowest-level'</a> techniques only</label>
+				</div>
+				<div class="col-md-12 text-center" style="padding:10px 0px 5px 0px">
+					<span id="tactics" style="text-align:center;margin-right:10px;font-size:16px"><a href="https://attack.mitre.org/tactics/enterprise/" style="text-decoration:underline" target="_blank">Tactics</a>:</span>
+					<label><input type="checkbox" value="" id="reconnaissance" style="margin-right:5px;padding:5px">Reconnaissance</label>
+					<label><input type="checkbox" value="" id="resourceDevelopment" style="margin-right:5px;padding:5px">Resource Development</label>
+					<label><input type="checkbox" value="" id="initialAccess" style="margin-right:5px;padding:5px" checked>Initial Access</label>
+					<label><input type="checkbox" value="" id="defenseEvasion" style="margin-right:5px;padding:5px" checked>Defense Evasion</label>
+					<label><input type="checkbox" value="" id="commandAndControl" style="margin-right:5px;padding:5px" checked>Command and Control</label>
+					<label><input type="checkbox" value="" id="discovery" style="margin-right:5px;padding:5px" checked>Discovery</label>
+					<label><input type="checkbox" value="" id="collection" style="margin-right:5px;padding:5px" checked>Collection</label>
+					<label><input type="checkbox" value="" id="persistence" style="margin-right:5px;padding:5px" checked>Persistence</label>
+					<label><input type="checkbox" value="" id="credentialAccess" style="margin-right:5px;padding:5px" checked>Credential Access</label>
+					<label><input type="checkbox" value="" id="privilegeEscalation" style="margin-right:5px;padding:5px" checked>Privilege Escalation</label>
+					<label><input type="checkbox" value="" id="lateralMovement" style="margin-right:5px;padding:5px" checked>Lateral Movement</label>
+					<label><input type="checkbox" value="" id="execution" style="margin-right:5px;padding:5px" checked>Execution</label>
+					<label><input type="checkbox" value="" id="exfiltration" style="margin-right:5px;padding:5px">Exfiltration</label>
+					<label><input type="checkbox" value="" id="impact" style="margin-right:5px;padding:5px">Impact</label>
+				</div>
+		</details>
+		</div>
+		<div class="row">
 			<div class="col-md-12 text-center">
-				<p style="text-align:center;font-size:16px">Click <b>Line It Up!</b> to explore the example, a list of techniques associated with <a style="text-decoration:underline" target="_blank" href="https://attack.mitre.org/software/S0266/">Trickbot</a>, a <a style="text-decoration:underline" target="_blank" href="https://therecord.media/trickbot-new-attacks-see-the-botnet-deploy-new-banking-module-new-ransomware/">prolific malware</a>. Or click the red or blue buttons above to show instructions for customizing your output.</p>
-				<button type="button" id="process-data" class="btn run" style="padding:3px 10px;width:17%">Line It Up!
+				<br>
+				<button type="button" id="process-data" class="btn run" style="padding:8px 10px;width:17%;font-size:21px">Line It Up!
 					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
 				</button>
 			</div>
 		</div>
-			<br>
-			<div class="col-md-12">
-				<p id="cvc-output_header" style="text-align:center"></p>
+		<br>
+		<div class="col-md-12">
+				<p id="cvc-output_header" style="text-align:center;padding:0px 0px 10px 0px;font-size:15px"></p>
+				<div id="sort-buttons1" style="text-align:center;visibility:hidden">
+					<span id="sort1" style="text-align:center;margin-right:15px">Sort Low-to-High by:</span>
+					<button id="totalLow" style="text-align:center;margin-right:15px"><span style="color:#7466BF">Rules & Tests Total</span></button>
+					<button id="rulesLow" style="text-align:center;margin-right:15px"><span style="color:#1565c0">Rules Total</span></button>
+					<button id="testsLow" style="text-align:center;margin-right:15px"><span style="color:#bf2026ff">Tests Total</span></button>
+					<button id="alphaLow" style="text-align:center;margin-right:15px"><span>Identifier</span></button>
+				</div>
+				<div id="sort-buttons2" style="text-align:center;padding:15px;visibility:hidden">
+					<span id="sort2" style="text-align:center;margin-right:15px">Sort High-to-Low by:</span>
+					<button id="totalHigh" style="text-align:center;margin-right:15px"><span style="color:#7466BF">Rules & Tests Total</span></button>
+					<button id="rulesHigh" style="text-align:center;margin-right:15px"><span style="color:#1565c0">Rules Total</span></button>
+					<button id="testsHigh" style="text-align:center;margin-right:15px"><span style="color:#bf2026ff">Tests Total</span></button>
+					<button id="alphaHigh" style="text-align:center;margin-right:15px"><span>Identifier</span></button>
+				</div>
 				<div style="width:50%;float:left">
 					<p id="cvc-output_blue"></p>
 				</div>
 				<div style="width:50%;float:right">
-					<p id="cvc-output_red"></p>
+					<p id="cvc-output_red" id="output_red"></p>
 				</div>
 			</div>
-</div>
+	 </div>
   </div>
 
 <footer style="font-size:13px;text-align:center">
@@ -863,12 +927,48 @@
 </html>
 <script type="text/javascript">
 	function uncheckAll() {
-  		$("input[type='checkbox']:checked").prop("checked", false)
+  		$("input[id='splunk']:checked").prop("checked", false)
+  		$("input[id='splunk_threatHunting']:checked").prop("checked", false)
+  		$("input[id='elastic']:checked").prop("checked", false)
+  		$("input[id='eql_analytics']:checked").prop("checked", false)
+  		$("input[id='azure_sentinel']:checked").prop("checked", false)
+  		$("input[id='logpoint']:checked").prop("checked", false)
+  		$("input[id='car']:checked").prop("checked", false)
+  		$("input[id='atc']:checked").prop("checked", false)
+  		$("input[id='sigma']:checked").prop("checked", false)
+  		$("input[id='th_playbook']:checked").prop("checked", false)
+  		$("input[id='proofpoint_emergingThreats']:checked").prop("checked", false)
+  		$("input[id='tanium_threatResponse']:checked").prop("checked", false)
+  		$("input[id='azure_fullStack']:checked").prop("checked", false)
+  		$("input[id='aws']:checked").prop("checked", false)
+  		$("input[id='art']:checked").prop("checked", false)
+  		$("input[id='rta']:checked").prop("checked", false)
+  		$("input[id='prelude']:checked").prop("checked", false)
+  		$("input[id='stockpile']:checked").prop("checked", false)
+  		$("input[id='scythe']:checked").prop("checked", false)
 	}
 	$('#uncheck-box').on('click', uncheckAll)
 	function checkAll() {
-  		$("input[type='checkbox']").prop("checked", true)
+  		$("input[id='splunk']").prop("checked", true)
+  		$("input[id='splunk_threatHunting']").prop("checked", true)
+  		$("input[id='elastic']").prop("checked", true)
+  		$("input[id='eql_analytics']").prop("checked", true)
+  		$("input[id='azure_sentinel']").prop("checked", true)
+  		$("input[id='logpoint']").prop("checked", true)
+  		$("input[id='car']").prop("checked", true)
+  		$("input[id='atc']").prop("checked", true)
+  		$("input[id='sigma']").prop("checked", true)
+  		$("input[id='th_playbook']").prop("checked", true)
+  		$("input[id='proofpoint_emergingThreats']").prop("checked", true)
+  		$("input[id='tanium_threatResponse']").prop("checked", true)
+  		$("input[id='azure_fullStack']").prop("checked", true)
+  		$("input[id='aws']").prop("checked", true)
+  		$("input[id='art']").prop("checked", true)
+  		$("input[id='rta']").prop("checked", true)
+  		$("input[id='prelude']").prop("checked", true)
+  		$("input[id='stockpile']").prop("checked", true)
+  		$("input[id='scythe']").prop("checked", true)
 	}
 	$('#check-all').on('click', checkAll)
 </script>
-<script type="text/javascript" src="risk.js"></script>
+<script defer type="text/javascript" src="risk.js"></script>
