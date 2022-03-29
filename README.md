@@ -15,6 +15,7 @@ Offensive Security / Red Teams: Red teams can use CVC to identify where control 
 
 
 MITRE ATT&CK® is a registered trademark of The MITRE Corporation
+
 View the raw data
 - csv: https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv
 - json: https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json
