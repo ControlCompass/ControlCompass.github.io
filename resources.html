@@ -50,6 +50,8 @@
 				<h4><a style="color:black">Limitations</a></h4>
 				<p>CVC simply points teams to relevant detections and tests - it does not centrally compile or host the detections/tests. The structure of and ATT&CK-mapping formats contained within the source repositories differ widely. The details below offer guidance on how to surface detections/tests within each repository. <i>Teams seeking faster navigation are highly encouraged to download the repositories locally</i> and update them over time where relevant. Internal- or non-public data/mappings/etc could also be added for internal use.</p>
 				<p>Resources included in CVC provide "out-of-the-box" detection capabilities for the tools they cover. The detections activated by default will vary depending on the tool, and many teams may have added supplemental capabilities. CVC should not be considered a replacement for a more comprehensive, validated internal control "mapping" exercise, although it may serve as a great starting point.</p>
+				<br>
+				<p id="lowestLevelSummary">The <b>Lowest Level</b> checkbox on the Lookup by Controls and Threat Alignment pages refers to ATT&CK sub-techniques, and to ATT&CK techniques for which no sub-techniques exist. In contrast, T1001 is not considered a "lowest level" technique since it contains sub-techniques. This label was created to describe techniques that the author generally finds to have the highest amount of detail or granularity in their description. The label is not formalized within MITRE ATT&CK (or, to the author's knowledge, within the wider community).</p>
 			</div>
 			<div>
 				<h3 style="color:black">Detection & Test Resources</h3>
@@ -179,10 +181,6 @@
 				<p><b>Last accessed by CVC:</b> February 16, 2022</p>
 				<p><b>Description:</b> The Community Threats Library contains publicly-accessible, open source files outlining "attack chains", each of which contain multiple discrete simulations of adversary TTPs. The chains are intended for use in the SCYTHE adversary emulation platform. The repository is updated regularly.</p>
 				<p><b>Navigation:</b> Attack chains are organized by adversary in the linked <code>community-threats</code> repository. Where relevant, ATT&CK mappings are provided in the <code>rtags</code> field of the attack chain's json file (usually in the format <code>[ADVERSARY]_scythe_threat.json</code>.</p>
-			</div>
-			<div style="padding:0px 0px 1px 0px">
-				<br>
-				<p id="lowestLevelSummary">The <b>Lowest Level</b> checkbox on the Lookup by Controls and Threat Alignment pages refers to ATT&CK sub-techniques, and to ATT&CK techniques for which no sub-techniques exist. In contrast, T1001 is not considered a "lowest level" technique since it contains sub-techniques. This label was created to describe techniques that the author generally finds to have the highest amount of detail or granularity in their description. The label is not formalized within MITRE ATT&CK (or, to the author's knowledge, within the wider community).</p>
 			</div>
 		</div>
   </div>
