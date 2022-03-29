@@ -40,18 +40,16 @@
 				<p style="font-size:13px"><i>This page was last updated in March 2022</i></p>
 			</div>
 			<div style="padding:0px 0px 1px 0px">
-				<h4><a style="color:black" href="#about">What is Control Validation Compass?</a></h4>
-				<p>Control Validation Compass ("CVC") is an open source tool designed speed up... CVC instantly points you to...increase grasp on , and to promote purple teaming mindset</p>
-				<p>CVC is built with intelligence teams in mind first</p>
-				<p>The idea behind a web app was born from </p>
-				<h4><a style="color:black" href="#use-cases">Anticipated Use Cases</a></h4>
-				<p><b>Intelligence Teams:</b> </p>
-				<p><b>Defenders / Blue Teams:</b> </p>
-				<p><b>Offensive Security / Red Teams:</b> </p>
-				<p><b>Usefulness for broader trends research (data sources, gaps, etc)</b> </p>
-				<p>Limitations</p>
-				<h4><a style="color:black" href="#learn-more">Learn More</a></h4>
-				<p>Example text</p>
+				<h4><a style="color:black">What is Control Validation Compass?</a></h4>
+				<p>Control Validation Compass ("CVC") is an open source tool and <a href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv" target="_blank">dataset</a> designed to speed the process of a) identifying security control gaps and b) closing those gaps by pointing teams to relevant detections. CVC promotes a control validation or "purple team" approach and mindset by also pointing teams to relevant offensive security tests, so they can immediately validate the effectiveness of new (or existing) controls.</p>
+				<h4><a style="color:black">Anticipated Uses</a></h4>
+				<p><b>Intelligence Teams:</b> CVC was built with intelligence teams in mind. These teams identify threats to the organizations they support, but often have less immediate visibility into their internal controls landscape (or may have little/no visibility into detection capabilities if using a managed service). CVC puts more resources and potential context directly into these teams' hands.</p>
+				<p><b>Defenders / Blue Teams:</b> The <a href="https://controlcompass.github.io/risk" target="_blank">Threat Alignment</a> page provides a quick & easy way for any team to instantly identify potential gaps in control coverage that should be filled with new detections and then tested. If new detections must be created, each page of CVC points teams to many resources with potentially relevant logic.</p>
+				<p><b>Offensive Security / Red Teams:</b> Red teams can use CVC to identify where control coverage may be lighter, and build simulation/emulation exercises around this knowledge. CVC's author used the tool to identify many cases where detection logic exists around a given technique, yet no offensive tests exist yet (publicly) - this led to quick new development of tests that were published in the resources below!</p>
+				<p>The CVC dataset could be analyzed at a higher level to see if commonalities or trends exist among techniques with the highest or lowest volumes of detections or tests, within certain ATT&CK Tactic categories, or for techniques visible through certain types of <a href="https://attack.mitre.org/datasources/" target="_blank">data sources</a>.</p>
+				<h4><a style="color:black">Limitations</a></h4>
+				<p>CVC simply points teams to relevant detections and tests - it does not centrally compile or host the detections/tests. The structure of and ATT&CK-mapping formats contained within the source repositories differ widely. The details below offer guidance on how to surface detections/tests within each repository. <i>Teams seeking faster navigation are highly encouraged to download the repositories locally</i> and update them over time where relevant. Internal- or non-public data/mappings/etc could also be added for internal use.</p>
+				<p>Resources included in CVC provide "out-of-the-box" detection capabilities for the tools they cover. The detections activated by default will vary depending on the tool, and many teams may have added supplemental capabilities. CVC should not be considered a replacement for a more comprehensive, validated internal control "mapping" exercise, although it may serve as a great starting point.</p>
 			</div>
 			<div>
 				<h3 style="color:black">Detection & Test Resources</h3>
