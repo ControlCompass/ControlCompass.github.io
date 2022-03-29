@@ -1,7 +1,7 @@
 # Control Validation Compass
 https://controlcompass.github.io/
 
-Pointing cybersecurity teams to thousands of detection rules and offensive security tests aligned with common attacker techniques
+Pointing cybersecurity teams to to 9,000+ publicly-accessible detection rules and 2,100+ offensive security tests, aligned with over 500 common attacker techniques
 
 # What is Control Validation Compass?
 Control Validation Compass ("CVC") is an open source tool and dataset designed to speed the process of a) identifying security control gaps and b) closing those gaps by pointing teams to relevant detections. CVC promotes a control validation or "purple team" approach and mindset by also pointing teams to relevant offensive security tests, so they can immediately validate the effectiveness of new (or existing) controls.
