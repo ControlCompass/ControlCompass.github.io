@@ -26,7 +26,7 @@
 	  <p class="aligncenter">
 		  <a href="https://controlcompass.github.io/"><img src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc-banner.png" alt="Control Validation Compass"width="654px" height="90px"></a>
 	  </p>
-	<h4 style="padding:15px;text-align:center">Pointing cybersecurity teams to <b>9,000+</b> publicly-accessible detection rules and <b>2,100+</b> offensive security tests, aligned with over <b>500</b> common attacker techniques</h4>
+	<h4 style="padding:15px;text-align:center">Pointing cybersecurity teams to <b>9,000+</b> publicly-accessible technical and policy controls and <b>2,100+</b> offensive security tests, aligned with over <b>500</b> common attacker techniques</h4>
 	 <div class="row">
 		 <div class="col-md-12 text-center">
 			<a href="https://controlcompass.github.io/" class="btn choice"><strong>Lookup by Technique</strong></a>
@@ -37,7 +37,7 @@
 	 </div>
 		<div class="row">
 			<div style="padding:0px 0px 3px 0px">
-				<p style="font-size:13px"><i>This page was last updated in March 2022</i></p>
+				<p style="font-size:13px"><i>This page was last updated in April 2022</i></p>
 			</div>
 			<div style="padding:0px 0px 1px 0px">
 				<h4><a style="color:black">What is Control Validation Compass?</a></h4>
@@ -54,6 +54,37 @@
 				<p id="lowestLevelSummary">The <b>Lowest Level</b> checkbox on the Lookup by Controls and Threat Alignment pages refers to ATT&CK sub-techniques, and to ATT&CK techniques for which no sub-techniques exist. In contrast, T1001 is not considered a "lowest level" technique since it contains sub-techniques. This label was created to describe techniques that the author generally finds to have the highest amount of detail or granularity in their description. The label is not formalized within MITRE ATT&CK (or, to the author's knowledge, within the wider community).</p>
 			</div>
 			<div>
+				<h3 style="color:black">Policy & Process Control Resources</h3>
+				<h4><a style="color:black" id="mitigations">MITRE ATT&CK Mitigations</a></h4>
+				<p><b>URL:</b> <a href="https://attack.mitre.org/mitigations/enterprise/" target="_blank">https://attack.mitre.org/mitigations/enterprise/</a></p>
+				<p><b>Repository last updated:</b> November 2021</p>
+				<p><b>Last accessed by CVC:</b> March 11, 2022</p>
+				<p><b>Overview:</b> Per the link above, "Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed."</p>
+				<p><b>How to navigate:</b> ATT&CK technique/sub-technique mappings can be surfaced by navigating into a particular mitigation's dedicated page.</p>
+				<h4><a style="color:black" id="nist">NIST 800-53 Revision 5 Control Mappings</a></h4>
+				<p><b>URL:</b> <a href="https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/blob/main/frameworks/attack_9_0/nist800_53_r5/layers/nist800-53-r5-overview.json" target="_blank">https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/blob/main/frameworks/attack_9_0/nist800_53_r5/layers/nist800-53-r5-overview.json</a></p>
+				<p><b>Repository last updated:</b> January 2022</p>
+				<p><b>Last accessed by CVC:</b> September 26, 2021</p>
+				<p><b>Overview:</b> A comprehensive, community-sourced set of mappings of the <a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank">NIST Special Publication (SP) 800-53 Revision 5</a> security and policy controls to MITRE ATT&CK v9.0.</p>
+				<p><b>How to navigate:</b> Mappings between NIST controls and ATT&CK can be found in the linked json file or spreadsheet format <a href="https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/releases/download/v1.5.0/attack-9.0-nist800-53-r5-mappings.xlsx" target="_blank">here</a>.</p>
+				<h4><a style="color:black" id="cis">CIS Controls v8 ATT&CK Mappings</a></h4>
+				<p><b>URL:</b> <a href="https://www.cisecurity.org/controls/cis-controls-navigator/" target="_blank">https://www.cisecurity.org/controls/cis-controls-navigator/</a></p>
+				<p><b>Repository last updated:</b> April 2021</p>
+				<p><b>Last accessed by CVC:</b> September 25, 2021</p>
+				<p><b>Overview:</b> Per the CIS site, "CIS Critical Security Controls (CIS Controls) are a prioritized set of Safeguards to mitigate the most prevalent cyber-attacks against systems and networks".</p>
+				<p><b>How to navigate:</b> Mappings to ATT&CK v8.2 can be surfaced by adding/checking the appropriate box in the linked Navigator tool (<code>Add</code> > Select <code>MITRE Enterprise ATT&CK v8.2</code> > <code>Apply Mappings</code>).</p>
+				<h4><a style="color:black" id="d3fend">MITRE D3FEND</a></h4>
+				<p><b>URL:</b> <a href="https://d3fend.mitre.org/tools/attack-mapper" target="_blank">https://d3fend.mitre.org/tools/attack-mapper</a></p>
+				<p><b>Repository last updated:</b> June 2021</p>
+				<p><b>Last accessed by CVC:</b> April 1, 2022</p>
+				<p><b>Overview:</b> MITRE D3FEND is a framework/knowledge base of encoded cybersecurity countermeasure components and capabilities.</p>
+				<p><b>How to navigate:</b> Surface ATT&CK mappings by adding techniques/sub-techniques in the linked tool and running it.</p>
+				<h4><a style="color:black" id="engage">MITRE Engage</a></h4>
+				<p><b>URL:</b> <a href="https://github.com/mitre/engage/blob/main/Data/json/attack_mapping.json" target="_blank">https://github.com/mitre/engage/blob/main/Data/json/attack_mapping.json</a></p>
+				<p><b>Repository last updated:</b> February 2022</p>
+				<p><b>Last accessed by CVC:</b> April 1, 2022</p>
+				<p><b>Overview:</b> Per its website, MITRE Engage "is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals." The framework is organized into "Adversary Vulnerabilities" and defender "Engagement Activities", which are mapped to MITRE ATT&CK.</p>
+				<p><b>How to navigate:</b> Mappings to Adversary Vulnerabilities (<code>eav</code>) and Engagement Activities (<code>eac</code>) are contained in the linked json file.</p>
 				<h3 style="color:black">Detection & Test Resources</h3>
 				<h4><a style="color:black" id="splunk">Splunk</a></h4>
 				<p><b>URL:</b> <a href="https://github.com/splunk/security_content/tree/develop/detections" target="_blank">https://github.com/splunk/security_content/tree/develop/detections</a></p>
@@ -188,7 +219,7 @@
 <footer style="font-size:13px;text-align:center">
 	<p>
 		<br>
-		MITRE ATT&CK® is a registered trademark of The MITRE Corporation<br>
+		MITRE ATT&CK® is a registered trademark of The MITRE Corporation, and MITRE D3FEND is a trademark of The MITRE Corporation.<br>
 		Feedback & improvement suggestions welcome! Get in touch on <a target="_blank" href="https://twitter.com/IntelScott" >Twitter</a> or <a target="_blank" href="https://github.com/ControlCompass">Github</a> (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/issues">submit an issue</a>)<br>
 		View the raw data (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv">csv</a>, <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json">json</a>) and <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io">site source code</a><br>
 	</p>
