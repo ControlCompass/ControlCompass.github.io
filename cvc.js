@@ -32,6 +32,12 @@
                               	  'prelude' : data[i].prelude,
                               	  'stockpile' : data[i].stockpile,
                               	  'scythe' : data[i].scythe,
+                              	  'mitigations' : data[i].mitigations,
+                              	  'nist' : data[i].nist,
+                              	  'cis' : data[i].cis,
+                              	  'd3fend' : data[i].d3fend,
+                              	  'engage' : data[i].engage,
+                              	  'policy_process_volume' : data[i].policy_process_volume,
 							  	  'detect_volume' : data[i].detect_volume,
 							  	  'test_volume' : data[i].test_volume,
 							  	  'validate_potential' : data[i].validate_potential
@@ -47,6 +53,52 @@
 			onSelect: function (suggestion) {
 				$('#value').html('<h4 style="padding-top:5px"><a style="text-decoration:underline;color:#333333" target="_blank" href="' + suggestion.url + '"><strong>' + suggestion.value + '</strong></h4>');
 				$('#tactics').html('<p><b>MITRE ATT&CK Tactic(s):</b> ' + suggestion.tactics + '</p>');
+				if (suggestion.policy_process_volume == 0) {
+					$('#policy-process_header').html('<h4 style="padding-top:20px"><b style="color:#000000">Volume of Policy/Process Controls:</b><b> N/A</b></h4>');
+					$('#policy-process_text').html('<p>There are no policy- or process-related controls available for this attacker technique across 5 public resources included in this dataset.</p>');
+				};
+				if (suggestion.policy_process_volume == 1) {
+					$('#policy-process_header').html('<h4 style="padding-top:20px"><b style="color:#000000">Volume of Policy/Process Controls:</b><b> Low</b></h4>');
+					$('#policy-process_text').html('<p>There are relatively few policy- or process-related controls available for this attacker technique across 5 public resources included in this dataset.</p>');
+				};
+				if (suggestion.policy_process_volume == 2) {
+					$('#policy-process_header').html('<h4 style="padding-top:20px"><b style="color:#000000">Volume of Policy/Process Controls:</b><b> Medium</b></h4>');
+					$('#policy-process_text').html('<p>There are some policy- or process-related controls available for this attacker technique across 5 public resources included in this dataset.</p>');
+				};
+				if (suggestion.policy_process_volume == 3) {
+					$('#policy-process_header').html('<h4 style="padding-top:20px"><b style="color:#000000">Volume of Policy/Process Controls:</b><b> High</b></h4>');
+					$('#policy-process_text').html('<p>There are relatively many policy- or process-related controls available for this attacker technique across 5 public resources included in this dataset.</p>');
+				};
+				if (suggestion.mitigations != null) {
+					$('#mitigations').html("<strong>" + suggestion.mitigations + "</strong>" + " mitigation(s) are available from " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#mitigations"><strong>MITRE ATT&CK Mitigations</strong></a>');
+				};
+				if (suggestion.mitigations == null) {
+					$('#mitigations').html("");
+				};
+				if (suggestion.nist != null) {
+					$('#nist').html("<strong>" + suggestion.nist + "</strong>" + " control(s) are available from the " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#nist"><strong>NIST 800-53 Mappings</strong></a>');
+				};
+				if (suggestion.nist == null) {
+					$('#nist').html("");
+				};
+				if (suggestion.cis != null) {
+					$('#cis').html("<strong>" + suggestion.cis + "</strong>" + " Safeguard(s) are available from " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#cis"><strong>CIS Controls</strong></a>');
+				};
+				if (suggestion.cis == null) {
+					$('#cis').html("");
+				};
+				if (suggestion.d3fend != null) {
+					$('#d3fend').html("<strong>" + suggestion.d3fend + "</strong>" + " countermeasure(s) are available from the " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#d3fend"><strong>MITRE D3FEND</strong></a>');
+				};
+				if (suggestion.d3fend == null) {
+					$('#d3fend').html("");
+				};
+				if (suggestion.engage != null) {
+					$('#engage').html("<strong>" + suggestion.engage + "</strong>" + " adversary engagement activities are available from " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#engage"><strong>MITRE Engage™</strong></a>');
+				};
+				if (suggestion.engage == null) {
+					$('#engage').html("");
+				};
 				if (suggestion.detect_volume == 0) {
 					$('#detect_header').html('<h4 style="padding-top:20px"><b style="color:#1565c0">Volume of Detection Rules:</b><b> N/A</b></h4>');
 					$('#detect_text').html('<p>There are no detection rules available for this attacker technique across 15 public resources included in this dataset.</p>');
