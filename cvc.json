@@ -30,7 +30,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": 1,
+    "d3fend": 9,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 1
@@ -66,8 +68,10 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
-    "detect_volume": null,
+    "policy-process_volume": 3,
+    "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
   },
@@ -102,7 +106,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -138,7 +144,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -174,7 +182,9 @@
     "mitigations": 8,
     "nist": 21,
     "cis": 24,
+    "d3fend": 26,
     "engage": 7,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -210,7 +220,9 @@
     "mitigations": 6,
     "nist": 16,
     "cis": null,
+    "d3fend": 12,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -246,7 +258,9 @@
     "mitigations": 4,
     "nist": 15,
     "cis": null,
+    "d3fend": 12,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -282,7 +296,9 @@
     "mitigations": 4,
     "nist": 18,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -318,7 +334,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": null,
+    "d3fend": 10,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -354,7 +372,9 @@
     "mitigations": 5,
     "nist": 17,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -390,7 +410,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -426,7 +448,9 @@
     "mitigations": 2,
     "nist": 14,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -462,7 +486,9 @@
     "mitigations": 2,
     "nist": 14,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -498,7 +524,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 8,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -534,7 +562,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 1,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -570,7 +600,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 9,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -606,7 +638,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": 1,
+    "d3fend": 9,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -642,7 +676,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -678,7 +714,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": 2,
+    "d3fend": 8,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -714,7 +752,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -750,7 +790,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 5,
+    "policy-process_volume": 1,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -786,7 +828,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 7,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -822,7 +866,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 8,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -858,7 +904,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -894,7 +942,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 7,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -930,7 +980,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 8,
     "engage": 10,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -966,7 +1018,9 @@
     "mitigations": 1,
     "nist": 12,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -1002,7 +1056,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": 15,
+    "d3fend": 9,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -1038,7 +1094,9 @@
     "mitigations": 8,
     "nist": 24,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -1074,7 +1132,9 @@
     "mitigations": 4,
     "nist": 16,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -1110,7 +1170,9 @@
     "mitigations": 4,
     "nist": 19,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -1146,7 +1208,9 @@
     "mitigations": 3,
     "nist": 15,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -1182,7 +1246,9 @@
     "mitigations": 4,
     "nist": 23,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -1218,7 +1284,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -1254,7 +1322,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": 5,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -1290,7 +1360,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -1326,7 +1398,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": 4,
+    "d3fend": 7,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -1362,7 +1436,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -1398,7 +1474,9 @@
     "mitigations": null,
     "nist": 4,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -1434,7 +1512,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -1470,7 +1550,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -1506,7 +1588,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -1542,7 +1626,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -1578,7 +1664,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": 1,
+    "d3fend": 8,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -1614,7 +1702,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": 1,
+    "d3fend": 8,
     "engage": 8,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -1650,7 +1740,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 7,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -1686,7 +1778,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -1722,7 +1816,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": 10,
+    "d3fend": 11,
     "engage": 1,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -1758,7 +1854,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -1794,7 +1892,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -1830,7 +1930,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -1866,7 +1968,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -1902,7 +2006,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -1938,7 +2044,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -1974,7 +2082,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -2010,7 +2120,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": 4,
+    "d3fend": 9,
     "engage": 1,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 1,
     "validate_potential": 2
@@ -2046,7 +2158,9 @@
     "mitigations": null,
     "nist": 2,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -2082,7 +2196,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -2118,7 +2234,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -2154,7 +2272,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -2190,7 +2310,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -2226,7 +2348,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": 7,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -2262,7 +2386,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": 11,
+    "d3fend": 1,
     "engage": 12,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -2298,7 +2424,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": 1,
+    "d3fend": 12,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -2334,7 +2462,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -2370,7 +2500,9 @@
     "mitigations": 3,
     "nist": 11,
     "cis": 13,
+    "d3fend": null,
     "engage": 11,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -2406,7 +2538,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": 17,
+    "d3fend": null,
     "engage": 8,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -2442,7 +2576,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": 8,
+    "d3fend": 13,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -2478,7 +2614,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -2514,7 +2652,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": null,
+    "d3fend": 13,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -2550,7 +2690,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -2586,7 +2728,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 8,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -2622,7 +2766,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -2658,7 +2804,9 @@
     "mitigations": 2,
     "nist": 10,
     "cis": 8,
+    "d3fend": 1,
     "engage": 11,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -2694,7 +2842,9 @@
     "mitigations": 2,
     "nist": 10,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -2730,7 +2880,9 @@
     "mitigations": 4,
     "nist": 15,
     "cis": 38,
+    "d3fend": 7,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -2766,7 +2918,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -2802,7 +2956,9 @@
     "mitigations": 4,
     "nist": 14,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -2838,7 +2994,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -2874,7 +3032,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -2910,7 +3070,9 @@
     "mitigations": 4,
     "nist": 14,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -2946,7 +3108,9 @@
     "mitigations": 3,
     "nist": 9,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -2982,7 +3146,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -3018,7 +3184,9 @@
     "mitigations": 2,
     "nist": 12,
     "cis": 7,
+    "d3fend": 15,
     "engage": 1,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -3054,7 +3222,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -3090,7 +3260,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -3126,7 +3298,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -3162,7 +3336,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -3198,7 +3374,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -3234,7 +3412,9 @@
     "mitigations": 1,
     "nist": 12,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -3270,7 +3450,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -3306,7 +3488,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -3342,7 +3526,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -3378,7 +3564,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -3414,7 +3602,9 @@
     "mitigations": null,
     "nist": 6,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -3450,7 +3640,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 8,
     "engage": 4,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -3486,7 +3678,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -3522,7 +3716,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -3558,7 +3754,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -3594,7 +3792,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -3630,7 +3830,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -3666,7 +3868,9 @@
     "mitigations": 6,
     "nist": 21,
     "cis": 3,
+    "d3fend": 7,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -3702,7 +3906,9 @@
     "mitigations": 5,
     "nist": 16,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -3738,7 +3944,9 @@
     "mitigations": 3,
     "nist": 11,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -3774,7 +3982,9 @@
     "mitigations": 3,
     "nist": 4,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -3810,7 +4020,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -3846,7 +4058,9 @@
     "mitigations": 4,
     "nist": 11,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -3882,7 +4096,9 @@
     "mitigations": 4,
     "nist": 10,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -3918,7 +4134,9 @@
     "mitigations": 3,
     "nist": 10,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -3954,7 +4172,9 @@
     "mitigations": 3,
     "nist": 11,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -3990,7 +4210,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -4026,7 +4248,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -4062,7 +4286,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -4098,7 +4324,9 @@
     "mitigations": 4,
     "nist": 25,
     "cis": 6,
+    "d3fend": 6,
     "engage": 8,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 1,
     "validate_potential": 2
@@ -4134,7 +4362,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 5,
+    "policy-process_volume": 1,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -4170,7 +4400,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -4206,7 +4438,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -4242,7 +4476,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -4278,7 +4514,9 @@
     "mitigations": 3,
     "nist": 21,
     "cis": 12,
+    "d3fend": 5,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -4314,7 +4552,9 @@
     "mitigations": 3,
     "nist": 21,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -4350,7 +4590,9 @@
     "mitigations": 3,
     "nist": 21,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -4386,7 +4628,9 @@
     "mitigations": 2,
     "nist": 10,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -4422,7 +4666,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -4458,7 +4704,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -4494,7 +4742,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -4530,7 +4780,9 @@
     "mitigations": 1,
     "nist": 15,
     "cis": 1,
+    "d3fend": 19,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 1,
     "validate_potential": 2
@@ -4566,7 +4818,9 @@
     "mitigations": 1,
     "nist": 15,
     "cis": null,
+    "d3fend": 13,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -4602,7 +4856,9 @@
     "mitigations": 1,
     "nist": 15,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -4638,7 +4894,9 @@
     "mitigations": 1,
     "nist": 15,
     "cis": null,
+    "d3fend": 13,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -4674,7 +4932,9 @@
     "mitigations": 2,
     "nist": 18,
     "cis": null,
+    "d3fend": 18,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -4710,7 +4970,9 @@
     "mitigations": 9,
     "nist": 24,
     "cis": 42,
+    "d3fend": 5,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -4746,7 +5008,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": 2,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -4782,7 +5046,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -4818,7 +5084,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -4854,7 +5122,9 @@
     "mitigations": 3,
     "nist": 24,
     "cis": 46,
+    "d3fend": 12,
     "engage": 11,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -4890,7 +5160,9 @@
     "mitigations": 1,
     "nist": 14,
     "cis": null,
+    "d3fend": 10,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -4926,7 +5198,9 @@
     "mitigations": 2,
     "nist": 12,
     "cis": null,
+    "d3fend": 11,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -4962,7 +5236,9 @@
     "mitigations": 2,
     "nist": 19,
     "cis": null,
+    "d3fend": 11,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -4998,7 +5274,9 @@
     "mitigations": 4,
     "nist": 22,
     "cis": null,
+    "d3fend": 10,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -5034,7 +5312,9 @@
     "mitigations": 3,
     "nist": 10,
     "cis": 8,
+    "d3fend": 1,
     "engage": 7,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5070,7 +5350,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -5106,7 +5388,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 11,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -5142,7 +5426,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": 2,
+    "d3fend": null,
     "engage": 7,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -5178,7 +5464,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -5214,7 +5502,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -5250,7 +5540,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5286,7 +5578,9 @@
     "mitigations": 2,
     "nist": 6,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5322,7 +5616,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": 1,
+    "d3fend": 10,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -5358,7 +5654,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -5394,7 +5692,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -5430,7 +5730,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -5466,7 +5768,9 @@
     "mitigations": 1,
     "nist": 1,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -5502,7 +5806,9 @@
     "mitigations": 2,
     "nist": 10,
     "cis": 11,
+    "d3fend": 1,
     "engage": 8,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -5538,7 +5844,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": 10,
+    "d3fend": 1,
     "engage": 8,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -5574,7 +5882,9 @@
     "mitigations": 3,
     "nist": 11,
     "cis": 8,
+    "d3fend": 9,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -5610,7 +5920,9 @@
     "mitigations": 4,
     "nist": 12,
     "cis": 18,
+    "d3fend": 20,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 1,
     "validate_potential": 2
@@ -5646,7 +5958,9 @@
     "mitigations": 3,
     "nist": 15,
     "cis": null,
+    "d3fend": 19,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -5682,7 +5996,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5718,7 +6034,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5754,7 +6072,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -5790,7 +6110,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": 6,
+    "d3fend": 9,
     "engage": 6,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5826,7 +6148,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5862,7 +6186,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5898,7 +6224,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5934,7 +6262,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": 1,
+    "d3fend": 9,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -5970,7 +6300,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": 1,
+    "d3fend": 9,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -6006,7 +6338,9 @@
     "mitigations": 1,
     "nist": 1,
     "cis": 3,
+    "d3fend": 2,
     "engage": 2,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -6042,7 +6376,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -6078,7 +6414,9 @@
     "mitigations": 4,
     "nist": 14,
     "cis": 13,
+    "d3fend": 17,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -6114,7 +6452,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -6150,7 +6490,9 @@
     "mitigations": 2,
     "nist": 14,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -6186,7 +6528,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": null,
+    "d3fend": 13,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -6222,7 +6566,9 @@
     "mitigations": 4,
     "nist": 14,
     "cis": null,
+    "d3fend": 13,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -6258,7 +6604,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": 9,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -6294,7 +6642,9 @@
     "mitigations": null,
     "nist": 2,
     "cis": 2,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -6330,7 +6680,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -6366,7 +6718,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": 30,
+    "d3fend": 10,
     "engage": 7,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -6402,7 +6756,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -6438,7 +6794,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -6474,7 +6832,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -6510,7 +6870,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -6546,7 +6908,9 @@
     "mitigations": 2,
     "nist": 17,
     "cis": 8,
+    "d3fend": 3,
     "engage": 7,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -6582,7 +6946,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -6618,7 +6984,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 2,
     "engage": 7,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 1,
     "validate_potential": 2
@@ -6654,7 +7022,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -6690,7 +7060,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 2,
     "engage": 8,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -6726,7 +7098,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": 11,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -6762,7 +7136,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -6798,7 +7174,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": 3,
+    "d3fend": null,
     "engage": 1,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -6834,7 +7212,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": 1,
+    "d3fend": 9,
     "engage": 6,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -6870,7 +7250,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -6906,7 +7288,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -6942,7 +7326,9 @@
     "mitigations": 4,
     "nist": 18,
     "cis": 29,
+    "d3fend": 13,
     "engage": 8,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -6978,7 +7364,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": 17,
+    "d3fend": 8,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -7014,7 +7402,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -7050,7 +7440,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -7086,7 +7478,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -7122,7 +7516,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -7158,7 +7554,9 @@
     "mitigations": 1,
     "nist": 12,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -7194,7 +7592,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": null,
     "engage": 10,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -7230,7 +7630,9 @@
     "mitigations": 4,
     "nist": 15,
     "cis": 18,
+    "d3fend": 7,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -7266,7 +7668,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -7302,7 +7706,9 @@
     "mitigations": 4,
     "nist": 15,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -7338,7 +7744,9 @@
     "mitigations": 3,
     "nist": 15,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -7374,7 +7782,9 @@
     "mitigations": 4,
     "nist": 9,
     "cis": 13,
+    "d3fend": 8,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -7410,7 +7820,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -7446,7 +7858,9 @@
     "mitigations": 2,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -7482,7 +7896,9 @@
     "mitigations": 1,
     "nist": 2,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -7518,7 +7934,9 @@
     "mitigations": 1,
     "nist": 2,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -7554,7 +7972,9 @@
     "mitigations": 1,
     "nist": 2,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -7590,7 +8010,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -7626,7 +8048,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 10,
     "engage": 1,
+    "policy-process_volume": 2,
     "detect_volume": 3,
     "test_volume": 2,
     "validate_potential": 3
@@ -7662,7 +8086,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -7698,7 +8124,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -7734,7 +8162,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -7770,7 +8200,9 @@
     "mitigations": 4,
     "nist": 15,
     "cis": 37,
+    "d3fend": 1,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -7806,7 +8238,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": 19,
+    "d3fend": 8,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -7842,7 +8276,9 @@
     "mitigations": 2,
     "nist": 10,
     "cis": 4,
+    "d3fend": 6,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -7878,7 +8314,9 @@
     "mitigations": 6,
     "nist": 18,
     "cis": 11,
+    "d3fend": 13,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -7914,7 +8352,9 @@
     "mitigations": 6,
     "nist": 29,
     "cis": 21,
+    "d3fend": 12,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -7950,7 +8390,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": 7,
+    "d3fend": 1,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -7986,7 +8428,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8022,7 +8466,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8058,7 +8504,9 @@
     "mitigations": 1,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -8094,7 +8542,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": 15,
+    "d3fend": 11,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -8130,7 +8580,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": 5,
+    "d3fend": 9,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -8166,7 +8618,9 @@
     "mitigations": 2,
     "nist": 5,
     "cis": 15,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8202,7 +8656,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": 1,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -8238,7 +8694,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 1,
     "detect_volume": 3,
     "test_volume": 1,
     "validate_potential": 2
@@ -8274,7 +8732,9 @@
     "mitigations": 2,
     "nist": 14,
     "cis": 3,
+    "d3fend": 6,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -8310,7 +8770,9 @@
     "mitigations": 4,
     "nist": 13,
     "cis": 18,
+    "d3fend": 18,
     "engage": 6,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -8346,7 +8808,9 @@
     "mitigations": 3,
     "nist": 11,
     "cis": null,
+    "d3fend": 11,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8382,7 +8846,9 @@
     "mitigations": 2,
     "nist": 12,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -8418,7 +8884,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8454,7 +8922,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": 3,
+    "d3fend": 8,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8490,7 +8960,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8526,7 +8998,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 10,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -8562,7 +9036,9 @@
     "mitigations": 8,
     "nist": 32,
     "cis": 29,
+    "d3fend": 15,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -8598,7 +9074,9 @@
     "mitigations": 4,
     "nist": 23,
     "cis": 5,
+    "d3fend": 6,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -8634,7 +9112,9 @@
     "mitigations": 4,
     "nist": 24,
     "cis": 6,
+    "d3fend": 8,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -8670,7 +9150,9 @@
     "mitigations": 3,
     "nist": 24,
     "cis": 38,
+    "d3fend": 1,
     "engage": 6,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8706,7 +9188,9 @@
     "mitigations": 3,
     "nist": 24,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8742,7 +9226,9 @@
     "mitigations": 3,
     "nist": 24,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -8778,7 +9264,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -8814,7 +9302,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": 3,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -8850,7 +9340,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -8886,7 +9378,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -8922,7 +9416,9 @@
     "mitigations": 4,
     "nist": 15,
     "cis": 10,
+    "d3fend": 18,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -8958,7 +9454,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -8994,7 +9492,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9030,7 +9530,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 11,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9066,7 +9568,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -9102,7 +9606,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9138,7 +9644,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9174,7 +9682,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9210,7 +9720,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9246,7 +9758,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -9282,7 +9796,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -9318,7 +9834,9 @@
     "mitigations": 3,
     "nist": 13,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -9354,7 +9872,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -9390,7 +9910,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -9426,7 +9948,9 @@
     "mitigations": 3,
     "nist": 13,
     "cis": 7,
+    "d3fend": 9,
     "engage": 7,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -9462,7 +9986,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": 3,
+    "d3fend": 10,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9498,7 +10024,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": 22,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -9534,7 +10062,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -9570,7 +10100,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -9606,7 +10138,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -9642,7 +10176,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -9678,7 +10214,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -9714,7 +10252,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": 23,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -9750,7 +10290,9 @@
     "mitigations": 3,
     "nist": 13,
     "cis": 29,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -9786,7 +10328,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -9822,7 +10366,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -9858,7 +10404,9 @@
     "mitigations": 1,
     "nist": 10,
     "cis": 5,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -9894,7 +10442,9 @@
     "mitigations": 1,
     "nist": 11,
     "cis": 5,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -9930,7 +10480,9 @@
     "mitigations": 3,
     "nist": 13,
     "cis": 20,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -9966,7 +10518,9 @@
     "mitigations": 2,
     "nist": 12,
     "cis": 7,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -10002,7 +10556,9 @@
     "mitigations": 1,
     "nist": 10,
     "cis": 5,
+    "d3fend": 1,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -10038,7 +10594,9 @@
     "mitigations": null,
     "nist": 10,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -10074,7 +10632,9 @@
     "mitigations": null,
     "nist": 10,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -10110,7 +10670,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": 11,
+    "d3fend": null,
     "engage": 1,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -10146,7 +10708,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -10182,7 +10746,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 3,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -10218,7 +10784,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -10254,7 +10822,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -10290,7 +10860,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 2,
     "validate_potential": 1
@@ -10326,7 +10898,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": 3,
+    "d3fend": 9,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -10362,7 +10936,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -10398,7 +10974,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -10434,7 +11012,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": 3,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -10470,7 +11050,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -10506,7 +11088,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -10542,7 +11126,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -10578,7 +11164,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -10614,7 +11202,9 @@
     "mitigations": 3,
     "nist": 21,
     "cis": 29,
+    "d3fend": 18,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -10650,7 +11240,9 @@
     "mitigations": 3,
     "nist": 21,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -10686,7 +11278,9 @@
     "mitigations": 3,
     "nist": 21,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -10722,7 +11316,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -10758,7 +11354,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -10794,7 +11392,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -10830,7 +11430,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -10866,7 +11468,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": 29,
+    "d3fend": 3,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -10902,7 +11506,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -10938,7 +11544,9 @@
     "mitigations": 4,
     "nist": 19,
     "cis": 43,
+    "d3fend": 5,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -10974,7 +11582,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -11010,7 +11620,9 @@
     "mitigations": 6,
     "nist": 33,
     "cis": 47,
+    "d3fend": null,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -11046,7 +11658,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 5,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -11082,7 +11696,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11118,7 +11734,9 @@
     "mitigations": 2,
     "nist": 1,
     "cis": 2,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11154,7 +11772,9 @@
     "mitigations": 3,
     "nist": 20,
     "cis": 14,
+    "d3fend": null,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -11190,7 +11810,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": 10,
+    "d3fend": null,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11226,7 +11848,9 @@
     "mitigations": 4,
     "nist": 10,
     "cis": 16,
+    "d3fend": 4,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11262,7 +11886,9 @@
     "mitigations": 3,
     "nist": 19,
     "cis": null,
+    "d3fend": 6,
     "engage": 1,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11298,7 +11924,9 @@
     "mitigations": 3,
     "nist": 18,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11334,7 +11962,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -11370,7 +12000,9 @@
     "mitigations": 2,
     "nist": 18,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11406,7 +12038,9 @@
     "mitigations": 3,
     "nist": 20,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -11442,7 +12076,9 @@
     "mitigations": 6,
     "nist": 24,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -11478,7 +12114,9 @@
     "mitigations": 4,
     "nist": 21,
     "cis": null,
+    "d3fend": 4,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -11514,7 +12152,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -11550,7 +12190,9 @@
     "mitigations": 4,
     "nist": 16,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -11586,7 +12228,9 @@
     "mitigations": 2,
     "nist": 15,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -11622,7 +12266,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -11658,7 +12304,9 @@
     "mitigations": null,
     "nist": 4,
     "cis": null,
+    "d3fend": 27,
     "engage": 2,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -11694,7 +12342,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -11730,7 +12380,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -11766,7 +12418,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 10,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -11802,7 +12456,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -11838,7 +12494,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -11874,7 +12532,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -11910,7 +12570,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -11946,7 +12608,9 @@
     "mitigations": 3,
     "nist": 6,
     "cis": null,
+    "d3fend": 17,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -11982,7 +12646,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -12018,7 +12684,9 @@
     "mitigations": null,
     "nist": 5,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -12054,7 +12722,9 @@
     "mitigations": 2,
     "nist": 2,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12090,7 +12760,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12126,7 +12798,9 @@
     "mitigations": 4,
     "nist": 10,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12162,7 +12836,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12198,7 +12874,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -12234,7 +12912,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 9,
     "engage": 1,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -12270,7 +12950,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -12306,7 +12988,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12342,7 +13026,9 @@
     "mitigations": 1,
     "nist": 10,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -12378,7 +13064,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12414,7 +13102,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12450,7 +13140,9 @@
     "mitigations": 3,
     "nist": 13,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12486,7 +13178,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -12522,7 +13216,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -12558,7 +13254,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12594,7 +13292,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -12630,7 +13330,9 @@
     "mitigations": 2,
     "nist": 12,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12666,7 +13368,9 @@
     "mitigations": 1,
     "nist": 8,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -12702,7 +13406,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -12738,7 +13444,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -12774,7 +13482,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -12810,7 +13520,9 @@
     "mitigations": 6,
     "nist": 21,
     "cis": null,
+    "d3fend": 11,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 0,
     "validate_potential": 1
@@ -12846,7 +13558,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -12882,7 +13596,9 @@
     "mitigations": 4,
     "nist": 12,
     "cis": null,
+    "d3fend": 10,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -12918,7 +13634,9 @@
     "mitigations": 3,
     "nist": 13,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -12954,7 +13672,9 @@
     "mitigations": 1,
     "nist": 11,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -12990,7 +13710,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 18,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -13026,7 +13748,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": null,
+    "d3fend": 15,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -13062,7 +13786,9 @@
     "mitigations": 4,
     "nist": 8,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -13098,7 +13824,9 @@
     "mitigations": 4,
     "nist": 11,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -13134,7 +13862,9 @@
     "mitigations": 2,
     "nist": 3,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -13170,7 +13900,9 @@
     "mitigations": 10,
     "nist": 33,
     "cis": null,
+    "d3fend": 7,
     "engage": 7,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -13206,7 +13938,9 @@
     "mitigations": 4,
     "nist": 18,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -13242,7 +13976,9 @@
     "mitigations": 3,
     "nist": 18,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -13278,7 +14014,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -13314,7 +14052,9 @@
     "mitigations": 4,
     "nist": 22,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -13350,7 +14090,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -13386,7 +14128,9 @@
     "mitigations": 3,
     "nist": 13,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -13422,7 +14166,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -13458,7 +14204,9 @@
     "mitigations": 4,
     "nist": 19,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -13494,7 +14242,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -13530,7 +14280,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -13566,7 +14318,9 @@
     "mitigations": 2,
     "nist": 10,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -13602,7 +14356,9 @@
     "mitigations": 3,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -13638,7 +14394,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -13674,7 +14432,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -13710,7 +14470,9 @@
     "mitigations": 1,
     "nist": 9,
     "cis": null,
+    "d3fend": 1,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -13746,7 +14508,9 @@
     "mitigations": 3,
     "nist": 3,
     "cis": null,
+    "d3fend": null,
     "engage": 8,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -13782,7 +14546,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -13818,7 +14584,9 @@
     "mitigations": null,
     "nist": 3,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -13854,7 +14622,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -13890,7 +14660,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -13926,7 +14698,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -13962,7 +14736,9 @@
     "mitigations": 5,
     "nist": 16,
     "cis": null,
+    "d3fend": 6,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -13998,7 +14774,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14034,7 +14812,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -14070,7 +14850,9 @@
     "mitigations": 2,
     "nist": 12,
     "cis": null,
+    "d3fend": 6,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -14106,7 +14888,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -14142,7 +14926,9 @@
     "mitigations": 7,
     "nist": 24,
     "cis": null,
+    "d3fend": 9,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -14178,7 +14964,9 @@
     "mitigations": 4,
     "nist": 15,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -14214,7 +15002,9 @@
     "mitigations": 6,
     "nist": 22,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14250,7 +15040,9 @@
     "mitigations": 4,
     "nist": 19,
     "cis": null,
+    "d3fend": 14,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -14286,7 +15078,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -14322,7 +15116,9 @@
     "mitigations": 3,
     "nist": 19,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14358,7 +15154,9 @@
     "mitigations": 3,
     "nist": 19,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -14394,7 +15192,9 @@
     "mitigations": 3,
     "nist": 20,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -14430,7 +15230,9 @@
     "mitigations": 6,
     "nist": 19,
     "cis": null,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14466,7 +15268,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14502,7 +15306,9 @@
     "mitigations": 4,
     "nist": 14,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -14538,7 +15344,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": null,
+    "d3fend": 3,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -14574,7 +15382,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -14610,7 +15420,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -14646,7 +15458,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -14682,7 +15496,9 @@
     "mitigations": 1,
     "nist": 10,
     "cis": null,
+    "d3fend": null,
     "engage": 5,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14718,7 +15534,9 @@
     "mitigations": null,
     "nist": 10,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14754,7 +15572,9 @@
     "mitigations": null,
     "nist": 10,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -14790,7 +15610,9 @@
     "mitigations": 2,
     "nist": 16,
     "cis": null,
+    "d3fend": 16,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -14826,7 +15648,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 3,
     "test_volume": 3,
     "validate_potential": 3
@@ -14862,7 +15686,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 2,
     "validate_potential": 1
@@ -14898,7 +15724,9 @@
     "mitigations": 2,
     "nist": 4,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -14934,7 +15762,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -14970,7 +15800,9 @@
     "mitigations": 4,
     "nist": 13,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -15006,7 +15838,9 @@
     "mitigations": 2,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -15042,7 +15876,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -15078,7 +15914,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -15114,7 +15952,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -15150,7 +15990,9 @@
     "mitigations": 4,
     "nist": 19,
     "cis": null,
+    "d3fend": 8,
     "engage": 5,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -15186,7 +16028,9 @@
     "mitigations": 4,
     "nist": 17,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -15222,7 +16066,9 @@
     "mitigations": 7,
     "nist": 18,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -15258,7 +16104,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 10,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -15294,7 +16142,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -15330,7 +16180,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -15366,7 +16218,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -15402,7 +16256,9 @@
     "mitigations": 1,
     "nist": 6,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -15438,7 +16294,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -15474,7 +16332,9 @@
     "mitigations": 2,
     "nist": 7,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -15510,7 +16370,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -15546,7 +16408,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -15582,7 +16446,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -15618,7 +16484,9 @@
     "mitigations": 4,
     "nist": 26,
     "cis": null,
+    "d3fend": 15,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -15654,7 +16522,9 @@
     "mitigations": 3,
     "nist": 23,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -15690,7 +16560,9 @@
     "mitigations": 1,
     "nist": 12,
     "cis": null,
+    "d3fend": 8,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -15726,7 +16598,9 @@
     "mitigations": 2,
     "nist": 12,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -15762,7 +16636,9 @@
     "mitigations": 4,
     "nist": 12,
     "cis": null,
+    "d3fend": 18,
     "engage": 7,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -15798,7 +16674,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": null,
+    "d3fend": 17,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -15834,7 +16712,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 18,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -15870,7 +16750,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 5,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -15906,7 +16788,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 9,
     "engage": 9,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -15942,7 +16826,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -15978,7 +16864,9 @@
     "mitigations": 1,
     "nist": 3,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 3,
     "validate_potential": 3
@@ -16014,7 +16902,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 14,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -16050,7 +16940,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16086,7 +16978,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16122,7 +17016,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 14,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -16158,7 +17054,9 @@
     "mitigations": 3,
     "nist": 14,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -16194,7 +17092,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -16230,7 +17130,9 @@
     "mitigations": 2,
     "nist": 13,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -16266,7 +17168,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 10,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -16302,7 +17206,9 @@
     "mitigations": 2,
     "nist": 8,
     "cis": null,
+    "d3fend": 9,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -16338,7 +17244,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 9,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -16374,7 +17282,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 13,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -16410,7 +17320,9 @@
     "mitigations": 1,
     "nist": 11,
     "cis": null,
+    "d3fend": 9,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -16446,7 +17358,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": 13,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16482,7 +17396,9 @@
     "mitigations": 6,
     "nist": 19,
     "cis": null,
+    "d3fend": 11,
     "engage": 2,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16518,7 +17434,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -16554,7 +17472,9 @@
     "mitigations": 3,
     "nist": 9,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -16590,7 +17510,9 @@
     "mitigations": 1,
     "nist": 13,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -16626,7 +17548,9 @@
     "mitigations": 3,
     "nist": 12,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16662,7 +17586,9 @@
     "mitigations": 1,
     "nist": 4,
     "cis": null,
+    "d3fend": 4,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -16698,7 +17624,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16734,7 +17662,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16770,7 +17700,9 @@
     "mitigations": 3,
     "nist": 16,
     "cis": null,
+    "d3fend": 7,
     "engage": null,
+    "policy-process_volume": 3,
     "detect_volume": 2,
     "test_volume": 1,
     "validate_potential": 2
@@ -16806,7 +17738,9 @@
     "mitigations": 1,
     "nist": 12,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -16842,7 +17776,9 @@
     "mitigations": null,
     "nist": 2,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 2,
     "validate_potential": 2
@@ -16878,7 +17814,9 @@
     "mitigations": 2,
     "nist": 9,
     "cis": null,
+    "d3fend": 3,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 3,
     "validate_potential": 1
@@ -16914,7 +17852,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -16950,7 +17890,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -16986,7 +17928,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17022,7 +17966,9 @@
     "mitigations": 2,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17058,7 +18004,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17094,7 +18042,9 @@
     "mitigations": 1,
     "nist": 5,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -17130,7 +18080,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17166,7 +18118,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17202,7 +18156,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17238,7 +18194,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17274,7 +18232,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17310,7 +18270,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17346,7 +18308,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17382,7 +18346,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17418,7 +18384,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17454,7 +18422,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17490,7 +18460,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17526,7 +18498,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17562,7 +18536,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17598,7 +18574,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17634,7 +18612,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17670,7 +18650,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17706,7 +18688,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17742,7 +18726,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17778,7 +18764,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17814,7 +18802,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17850,7 +18840,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17886,7 +18878,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -17922,7 +18916,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17958,7 +18954,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -17994,7 +18992,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -18030,7 +19030,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18066,7 +19068,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18102,7 +19106,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18138,7 +19144,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18174,7 +19182,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18210,7 +19220,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -18246,7 +19258,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -18282,7 +19296,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18318,7 +19334,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18354,7 +19372,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18390,7 +19410,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18426,7 +19448,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -18462,7 +19486,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18498,7 +19524,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18534,7 +19562,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18570,7 +19600,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18606,7 +19638,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -18642,7 +19676,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18678,7 +19714,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18714,7 +19752,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18750,7 +19790,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18786,7 +19828,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18822,7 +19866,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18858,7 +19904,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 5,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18894,7 +19942,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18930,7 +19980,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -18966,7 +20018,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -19002,7 +20056,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -19038,7 +20094,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19074,7 +20132,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19110,7 +20170,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19146,7 +20208,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -19182,7 +20246,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -19218,7 +20284,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -19254,7 +20322,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 2,
     "test_volume": 0,
     "validate_potential": 1
@@ -19290,7 +20360,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19326,7 +20398,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19362,7 +20436,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19398,7 +20474,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19434,7 +20512,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19470,7 +20550,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19506,7 +20588,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19542,7 +20626,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19578,7 +20664,9 @@
     "mitigations": 1,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19614,7 +20702,9 @@
     "mitigations": 1,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19650,7 +20740,9 @@
     "mitigations": 1,
     "nist": 7,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19686,7 +20778,9 @@
     "mitigations": 1,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19722,7 +20816,9 @@
     "mitigations": 1,
     "nist": 11,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19758,7 +20854,9 @@
     "mitigations": 5,
     "nist": 18,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -19794,7 +20892,9 @@
     "mitigations": 5,
     "nist": 18,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -19830,7 +20930,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 6,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19866,7 +20968,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19902,7 +21006,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19938,7 +21044,9 @@
     "mitigations": 6,
     "nist": 26,
     "cis": null,
+    "d3fend": null,
     "engage": 4,
+    "policy-process_volume": 3,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -19974,7 +21082,9 @@
     "mitigations": 6,
     "nist": 26,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20010,7 +21120,9 @@
     "mitigations": 6,
     "nist": 26,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20046,7 +21158,9 @@
     "mitigations": 7,
     "nist": 25,
     "cis": null,
+    "d3fend": null,
     "engage": 8,
+    "policy-process_volume": 3,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -20082,7 +21196,9 @@
     "mitigations": 7,
     "nist": 25,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -20118,7 +21234,9 @@
     "mitigations": 7,
     "nist": 25,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -20154,7 +21272,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 3,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -20190,7 +21310,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20226,7 +21348,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -20262,7 +21386,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -20298,7 +21424,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20334,7 +21462,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20370,7 +21500,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20406,7 +21538,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20442,7 +21576,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20478,7 +21614,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 2,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -20514,7 +21652,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 1,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -20550,7 +21690,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 1,
+    "policy-process_volume": 1,
     "detect_volume": 1,
     "test_volume": 1,
     "validate_potential": 1
@@ -20586,7 +21728,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 1,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20622,7 +21766,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 7,
+    "policy-process_volume": 2,
     "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
@@ -20658,7 +21804,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": 5,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 1,
     "validate_potential": 1
@@ -20694,7 +21842,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20730,7 +21880,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": null,
     "engage": null,
+    "policy-process_volume": 0,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20766,7 +21918,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 1,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
@@ -20802,7 +21956,9 @@
     "mitigations": null,
     "nist": null,
     "cis": null,
+    "d3fend": 2,
     "engage": null,
+    "policy-process_volume": 1,
     "detect_volume": 0,
     "test_volume": 0,
     "validate_potential": 0
