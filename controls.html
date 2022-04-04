@@ -23,6 +23,8 @@
   	.output_red:hover { border: 2px solid #efc9d0; border-radius:5px }
   	.output_blue { padding-left:150px }
   	.output_blue:hover { border: 2px solid #ACCDE7; border-radius:5px }
+  	.output_policy { padding-left:150px }
+  	.output_policy:hover { border: 2px solid #e7e7e7; border-radius:5px }
   </style>
  </head>
 <body>
@@ -46,6 +48,13 @@
 				<p style="font-size:14px">Toggle the controls & testing capabilities used in your environment or otherwise relevant to you.</p>
 				<button type="button" id="uncheck-box" class="button" style="background:#e7e7e7">Uncheck all boxes</button>
 				<button type="button" id="check-all" class="button" style="background:#e7e7e7">Check all boxes</button>
+				<h4>Policy/Process Controls</h4>
+				<p style="font-size:16px;margin:5px 0px">Frameworks</p>
+				<label><input type="checkbox" value="" id="mitigations" style="margin-right:5px" checked>MITRE ATT&CK Mitigations</label>
+				<label><input type="checkbox" value="" id="nist" style="margin-right:5px;margin-left:10px" checked>NIST 800-53 Mappings</label>
+				<label><input type="checkbox" value="" id="cis" style="margin-right:5px;margin-left:10px" checked>CIS Controls</label>
+				<label><input type="checkbox" value="" id="d3fend" style="margin-right:5px;margin-left:10px" checked>MITRE D3FEND</label>
+				<label><input type="checkbox" value="" id="engage" style="margin-right:5px;margin-left:10px" checked>MITRE Engage</label>
 				<h4>Defensive Capabilities</h4>
 				<p style="font-size:16px;margin:5px 0px">Network & Endpoint Telemetry</p>
 				<label><input type="checkbox" value="" id="splunk" style="margin-right:5px" checked>Splunk</label>
@@ -118,27 +127,32 @@
 			</div>
 		</div>
 		<br>
-		<div class="col-md-12">
+		<div class="col-md-12" id="outputDiv">
 				<p id="cvc-output_header" style="text-align:center;padding:0px 0px 10px 0px;font-size:15px"></p>
 				<div id="sort-buttons1" style="text-align:center;visibility:hidden">
 					<span id="sort1" style="text-align:center;margin-right:15px">Sort Low-to-High by:</span>
-					<button id="totalLow" style="text-align:center;margin-right:15px"><span style="color:#7466BF">Rules & Tests Total</span></button>
+					<button id="policyLow" style="text-align:center;margin-right:15px"><span style="color:#000000">Policy/Process Total</span></button>
 					<button id="rulesLow" style="text-align:center;margin-right:15px"><span style="color:#1565c0">Rules Total</span></button>
 					<button id="testsLow" style="text-align:center;margin-right:15px"><span style="color:#bf2026ff">Tests Total</span></button>
+					<button id="totalLow" style="text-align:center;margin-right:15px"><span style="color:#7466BF">Rules & Tests Total</span></button>
 					<button id="alphaLow" style="text-align:center;margin-right:15px"><span>Identifier</span></button>
 				</div>
 				<div id="sort-buttons2" style="text-align:center;padding:15px;visibility:hidden">
 					<span id="sort2" style="text-align:center;margin-right:15px">Sort High-to-Low by:</span>
-					<button id="totalHigh" style="text-align:center;margin-right:15px"><span style="color:#7466BF">Rules & Tests Total</span></button>
+					<button id="policyHigh" style="text-align:center;margin-right:15px"><span style="color:#000000">Policy/Process Total</span></button>
 					<button id="rulesHigh" style="text-align:center;margin-right:15px"><span style="color:#1565c0">Rules Total</span></button>
 					<button id="testsHigh" style="text-align:center;margin-right:15px"><span style="color:#bf2026ff">Tests Total</span></button>
+					<button id="totalHigh" style="text-align:center;margin-right:15px"><span style="color:#7466BF">Rules & Tests Total</span></button>
 					<button id="alphaHigh" style="text-align:center;margin-right:15px"><span>Identifier</span></button>
 				</div>
-				<div style="width:50%;float:left">
+				<div style="width:33.33%;float:left" id="policyDiv">
+					<p id="cvc-output_policy"></p>
+				</div>
+				<div style="width:33.33%;float:left" id="detectionDiv">
 					<p id="cvc-output_blue"></p>
 				</div>
-				<div style="width:50%;float:right">
-					<p id="cvc-output_red" id="output_red"></p>
+				<div style="width:33.33%;float:right" id="testDiv">
+					<p id="cvc-output_red"></p>
 				</div>
 			</div>
 	 </div>
@@ -147,7 +161,7 @@
 <footer style="font-size:13px;text-align:center">
 	<p>
 		<br>
-		MITRE ATT&CK® is a registered trademark of The MITRE Corporation<br>
+		MITRE ATT&CK® is a registered trademark of The MITRE Corporation, and MITRE D3FEND is a trademark of The MITRE Corporation.<br>
 		Feedback & improvement suggestions welcome! Get in touch on <a target="_blank" href="https://twitter.com/IntelScott" >Twitter</a> or <a target="_blank" href="https://github.com/ControlCompass">Github</a> (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/issues">submit an issue</a>)<br>
 		View the raw data (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv">csv</a>, <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json">json</a>) and <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io">site source code</a><br>
 	</p>
