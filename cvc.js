@@ -88,7 +88,7 @@
 					$('#cis').html("");
 				};
 				if (suggestion.d3fend != null) {
-					$('#d3fend').html("<strong>" + suggestion.d3fend + "</strong>" + " countermeasure(s) are available from the " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#d3fend"><strong>MITRE D3FEND</strong></a>');
+					$('#d3fend').html("<strong>" + suggestion.d3fend + "</strong>" + " countermeasure(s) are available from " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#d3fend"><strong>MITRE D3FEND</strong></a>');
 				};
 				if (suggestion.d3fend == null) {
 					$('#d3fend').html("");
