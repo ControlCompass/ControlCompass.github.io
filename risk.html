@@ -19,12 +19,19 @@
   .details { height: auto; overflow: hidden; transition: max-height ease-in-out; transition-duration: var(--duration, 0.3s); }
   .summary { cursor: pointer; display: list-item; }
   	.block { display: block }
-  	.output_red { padding-left:150px }
-  	.output_red:hover { border: 2px solid #efc9d0; border-radius:5px }
-  	.output_blue { padding-left:150px }
-  	.output_blue:hover { border: 2px solid #ACCDE7; border-radius:5px }
-  	.output_policy { padding-left:150px }
+  	.output_red_twoCol { padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left:150px }
+  	.output_red_twoCol:hover { border: 2px solid #efc9d0; border-radius:5px }
+  	.output_blue_twoCol { padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left:150px }
+  	.output_blue_twoCol:hover { border: 2px solid #ACCDE7; border-radius:5px }
+  	.output_red_threeCol { padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left:60px }
+  	.output_red_threeCol:hover { border: 2px solid #efc9d0; border-radius:5px }
+  	.output_blue_threeCol { padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left:60px }
+  	.output_blue_threeCol:hover { border: 2px solid #ACCDE7; border-radius:5px }
+  	.output_policy { padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left:60px }
   	.output_policy:hover { border: 2px solid #e7e7e7; border-radius:5px }
+  .p { }
+  	.outputDetails_twoCol { padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left:150px }
+  	.outputDetails_threeCol { padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left:60px }
   </style>
  </head>
 <body>
@@ -921,17 +928,13 @@
 					<button id="totalHigh" style="text-align:center;margin-right:15px"><span style="color:#7466BF">Controls & Tests Total</span></button>
 					<button id="alphaHigh" style="text-align:center;margin-right:15px"><span>Identifier</span></button>
 				</div>
-				<div style="width:33.33%;float:left" id="policyDiv">
-					<p id="cvc-output_policy"></p>
-				</div>
-				<div style="width:33.33%;float:left" id="detectionDiv">
-					<p id="cvc-output_blue"></p>
-				</div>
-				<div style="width:33.33%;float:right" id="testDiv">
-					<p id="cvc-output_red"></p>
-				</div>
+				<div id="policyDiv">
+					<p style="width:33.33%;float:left" id="cvc-output_policy"></p>
+					<p style="width:33.33%;float:left" id="cvc-output_blue"></p>
+					<p style="width:33.33%;float:right" id="cvc-output_red"></p>
 			</div>
 	 </div>
+  </div>
   </div>
 
 <footer style="font-size:13px;text-align:center">
@@ -947,6 +950,11 @@
 </html>
 <script type="text/javascript">
 	function uncheckAll() {
+  		$("input[id='mitigations']:checked").prop("checked", false)
+  		$("input[id='nist']:checked").prop("checked", false)
+  		$("input[id='cis']:checked").prop("checked", false)
+  		$("input[id='d3fend']:checked").prop("checked", false)
+  		$("input[id='engage']:checked").prop("checked", false)
   		$("input[id='splunk']:checked").prop("checked", false)
   		$("input[id='splunk_threatHunting']:checked").prop("checked", false)
   		$("input[id='elastic']:checked").prop("checked", false)
@@ -971,6 +979,11 @@
 	}
 	$('#uncheck-box').on('click', uncheckAll)
 	function checkAll() {
+  		$("input[id='mitigations']").prop("checked", true)
+  		$("input[id='nist']").prop("checked", true)
+  		$("input[id='cis']").prop("checked", true)
+  		$("input[id='d3fend']").prop("checked", true)
+  		$("input[id='engage']").prop("checked", true)
   		$("input[id='splunk']").prop("checked", true)
   		$("input[id='splunk_threatHunting']").prop("checked", true)
   		$("input[id='elastic']").prop("checked", true)
