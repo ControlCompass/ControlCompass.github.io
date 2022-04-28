@@ -88,7 +88,7 @@
 					$('#cis').html("");
 				};
 				if (suggestion.d3fend != null) {
-					$('#d3fend').html("<strong>" + suggestion.d3fend + "</strong>" + " countermeasure(s) are available from " + '<a style="text-decoration:underline;color:#000000" target="_blank" href="https://controlcompass.github.io/resources#d3fend"><strong>MITRE D3FEND</strong></a>');
+					$('#d3fend').html('<strong><a style="text-decoration:underline;color:#000000" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/resources/' + suggestion.techID + '.md#mitre-d3fend'+ '">' + suggestion.d3fend + " countermeasure(s)</a></strong> are available from <strong>MITRE D3FEND</strong>");
 				};
 				if (suggestion.d3fend == null) {
 					$('#d3fend').html("");
@@ -116,7 +116,7 @@
 					$('#detect_text').html('<p>There are relatively many detection rules available for this attacker technique across 15 public resources included in this dataset.</p>');
 				};
 				if (suggestion.splunk != null) {
-					$('#splunk').html("<strong>" + suggestion.splunk + "</strong>" + " detection rule(s) are available from " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://controlcompass.github.io/resources#splunk"><strong>Splunk</strong></a>');
+					$('#splunk').html('<strong><a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/resources/' + suggestion.techID + '.md#splunk-security-content'+ '">' + suggestion.splunk + ' countermeasure(s)</a></strong> are available from <strong style="color:#1565c0">Splunk</strong>');
 				};
 				if (suggestion.splunk == null) {
 					$('#splunk').html("");
@@ -182,7 +182,7 @@
 					$('#gcp').html("");
 				};
 				if (suggestion.car != null) {
-					$('#car').html("<strong>" + suggestion.car + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://controlcompass.github.io/resources#car"><strong>Cyber Analytics Repository</strong></a>');
+					$('#car').html('<strong><a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/resources/' + suggestion.techID + '.md#cyber-analytics-repository'+ '">' + suggestion.car + ' countermeasure(s)</a></strong> are available from the <strong style="color:#1565c0">Cyber Analytics Repository</strong>');
 				};
 				if (suggestion.car == null) {
 					$('#car').html("");
@@ -194,8 +194,7 @@
 					$('#atc').html("");
 				};
 				if (suggestion.sigma != null) {
-					$('#sigma').html("<strong>" + suggestion.sigma + "</strong>" + " detection rule(s) are available from the " + '<a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://controlcompass.github.io/resources#sigma"><strong>Sigma rules public repository</strong></a>');
-				};
+					$('#sigma').html('<strong><a style="text-decoration:underline;color:#1565c0" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/resources/' + suggestion.techID + '.md#sigma-rules-public-repository'+ '">' + suggestion.sigma + ' countermeasure(s)</a></strong> are available from the <strong style="color:#1565c0">Sigma rules public repository</strong>');				};
 				if (suggestion.sigma == null) {
 					$('#sigma').html("");
 				};
@@ -222,13 +221,13 @@
 					$('#test_text').html('<p>There are relatively many offensive security tests available for this attacker technique across 6 public resources included in this dataset.</p>');
 				};
 				if (suggestion.art != null) {
-					$('#art').html("<strong>" + suggestion.art + "</strong>" + " test(s) are available from " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://controlcompass.github.io/resources#art"><strong>Atomic Red Team</strong></a>');
+					$('#art').html('<strong><a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/resources/' + suggestion.techID + '.md#atomic-red-team'+ '">' + suggestion.art + ' countermeasure(s)</a></strong> are available from <strong style="color:#bf2026ff">Atomic Red Team</strong>');
 				};
 				if (suggestion.art == null) {
 					$('#art').html("");
 				};
 				if (suggestion.car_red != null) {
-					$('#car_red').html("<strong>" + suggestion.car_red + "</strong>" + " test(s) are available from the " + '<a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://controlcompass.github.io/resources#car_red"><strong>Cyber Analytics Repository</strong></a>');
+					$('#car_red').html('<strong><a style="text-decoration:underline;color:#bf2026ff" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/resources/' + suggestion.techID + '.md#cyber-analytics-repository-1'+ '">' + suggestion.car_red + ' countermeasure(s)</a></strong> are available from the <strong style="color:#bf2026ff">Cyber Analytics Repository</strong>');
 				};
 				if (suggestion.car_red == null) {
 					$('#car_red').html("");
