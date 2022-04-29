@@ -1,5 +1,5 @@
 techID,techName,technique,tactics,url,lowestLevel,mitigations,nist,cis,d3fend,engage,splunk,splunk_threatHunting,elastic,eql_analytics,azure_fullStack,azure_sentinel,logpoint,proofpoint_emergingThreats,tanium_threatResponse,aws,gcp,car,atc,sigma,th_playbook,art,car_red,rta,prelude,stockpile,scythe,policy_process_volume,detect_volume,test_volume,validate_potential
-T1001,Data Obfuscation,T1001: Data Obfuscation,Command and Control,https://attack.mitre.org/techniques/T1001,n,1,7,1,9,3,,,,,,,,,2,,,,,,,,,,,,,3,0,0,1
+T1001,Data Obfuscation,T1001: Data Obfuscation,Command and Control,https://attack.mitre.org/techniques/T1001,n,1,7,1,9,3,,,,,,,,,2,,,,,,,,,,,,,3,1,0,1
 T1001.001,Junk Data,T1001.001: Junk Data,Command and Control,https://attack.mitre.org/techniques/T1001/001,y,1,7,,9,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
 T1001.002,Steganography,T1001.002: Steganography,Command and Control,https://attack.mitre.org/techniques/T1001/002,y,1,7,,9,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
 T1001.003,Protocol Impersonation,T1001.003: Protocol Impersonation,Command and Control,https://attack.mitre.org/techniques/T1001/003,y,1,7,,9,,,,,,,,,,,,,,,3,,,,,,,,3,1,0,1
