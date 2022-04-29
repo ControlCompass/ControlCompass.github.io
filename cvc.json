@@ -33,7 +33,7 @@
     "stockpile": null,
     "scythe": null,
     "policy_process_volume": 3,
-    "detect_volume": 0,
+    "detect_volume": 1,
     "test_volume": 0,
     "validate_potential": 1
   },
@@ -2352,7 +2352,7 @@
     "scythe": null,
     "policy_process_volume": 2,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -5278,7 +5278,7 @@
     "scythe": null,
     "policy_process_volume": 3,
     "detect_volume": 2,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -5734,7 +5734,7 @@
     "scythe": null,
     "policy_process_volume": 3,
     "detect_volume": 2,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -7064,7 +7064,7 @@
     "scythe": null,
     "policy_process_volume": 2,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -11852,7 +11852,7 @@
     "scythe": null,
     "policy_process_volume": 3,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -12878,7 +12878,7 @@
     "scythe": null,
     "policy_process_volume": 2,
     "detect_volume": 2,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -13524,8 +13524,8 @@
     "scythe": null,
     "policy_process_volume": 3,
     "detect_volume": 3,
-    "test_volume": 0,
-    "validate_potential": 1
+    "test_volume": 1,
+    "validate_potential": 2
   },
   {
     "techID": "T1548.001",
@@ -14664,7 +14664,7 @@
     "scythe": null,
     "policy_process_volume": 0,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -14968,7 +14968,7 @@
     "scythe": null,
     "policy_process_volume": 3,
     "detect_volume": 2,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -16336,7 +16336,7 @@
     "scythe": null,
     "policy_process_volume": 2,
     "detect_volume": 1,
-    "test_volume": 0,
+    "test_volume": 1,
     "validate_potential": 1
   },
   {
@@ -21884,8 +21884,8 @@
     "scythe": null,
     "policy_process_volume": 0,
     "detect_volume": 0,
-    "test_volume": 0,
-    "validate_potential": 0
+    "test_volume": 1,
+    "validate_potential": 1
   },
   {
     "techID": "T1619",
