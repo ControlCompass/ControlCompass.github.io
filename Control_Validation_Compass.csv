@@ -1,0 +1,579 @@
+techID,techName,technique,tactics,url,lowestLevel,mitigations,nist,cis,d3fend,engage,splunk,splunk_threatHunting,elastic,eql_analytics,azure_fullStack,azure_sentinel,logpoint,proofpoint_emergingThreats,tanium_threatResponse,aws,gcp,car,atc,sigma,th_playbook,art,car_red,rta,prelude,stockpile,scythe,policy_process_volume,detect_volume,test_volume,validate_potential
+T1001,Data Obfuscation,T1001: Data Obfuscation,Command and Control,https://attack.mitre.org/techniques/T1001,n,1,7,1,9,3,,,,,,,,,2,,,,,,,,,,,,,3,1,0,1
+T1001.001,Junk Data,T1001.001: Junk Data,Command and Control,https://attack.mitre.org/techniques/T1001/001,y,1,7,,9,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1001.002,Steganography,T1001.002: Steganography,Command and Control,https://attack.mitre.org/techniques/T1001/002,y,1,7,,9,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1001.003,Protocol Impersonation,T1001.003: Protocol Impersonation,Command and Control,https://attack.mitre.org/techniques/T1001/003,y,1,7,,9,,,,,,,,,,,,,,,3,,,,,,,,3,1,0,1
+T1003,OS Credential Dumping,T1003: OS Credential Dumping,Credential Access,https://attack.mitre.org/techniques/T1003,n,8,21,24,26,7,41,5,8,6,6,5,48,11,2,1,,,44,14,5,3,,,1,1,2,3,3,2,3
+T1003.001,LSASS Memory,T1003.001: LSASS Memory,Credential Access,https://attack.mitre.org/techniques/T1003/001,y,6,16,,12,,14,,1,,3,,7,,7,,,5,,62,,12,4,,4,3,11,3,2,3,3
+T1003.002,Security Account Manager,T1003.002: Security Account Manager,Credential Access,https://attack.mitre.org/techniques/T1003/002,y,4,15,,12,,12,,2,,,,2,,4,,,1,,27,,6,1,,1,,,3,2,2,2
+T1003.003,NTDS,T1003.003: NTDS,Credential Access,https://attack.mitre.org/techniques/T1003/003,y,4,18,,4,,7,,1,,1,,2,,2,,,2,,18,,8,1,,1,,,3,2,3,3
+T1003.004,LSA Secrets,T1003.004: LSA Secrets,Credential Access,https://attack.mitre.org/techniques/T1003/004,y,3,14,,10,,,,1,,1,,,,2,,,,,12,,1,,,,,1,3,1,1,1
+T1003.005,Cached Domain Credentials,T1003.005: Cached Domain Credentials,Credential Access,https://attack.mitre.org/techniques/T1003/005,y,5,17,,4,,,,,,,,,,2,,,,,8,,1,,,,,,3,1,1,1
+T1003.006,DCSync,T1003.006: DCSync,Credential Access,https://attack.mitre.org/techniques/T1003/006,y,3,16,,14,,,,,,1,,1,,,,,,,8,,2,,,,,,3,1,1,1
+T1003.007,Proc Filesystem,T1003.007: Proc Filesystem,Credential Access,https://attack.mitre.org/techniques/T1003/007,y,2,14,,8,,,,,,,,,,,1,,,,1,,3,,,,,,3,1,1,1
+T1003.008,/etc/passwd and /etc/shadow,T1003.008: /etc/passwd and /etc/shadow,Credential Access,https://attack.mitre.org/techniques/T1003/008,y,2,14,,7,,1,,,,1,,,,,1,,,,,,4,,,,,,3,1,1,1
+T1005,Data from Local System,T1005: Data from Local System,Collection,https://attack.mitre.org/techniques/T1005,y,,,,,8,1,,2,,2,,,,1,,,,,7,,,,,2,6,8,2,2,2,2
+T1006,Direct Volume Access,T1006: Direct Volume Access,Defense Evasion,https://attack.mitre.org/techniques/T1006,y,,,,,1,,,1,,,,,,,,,,1,1,,1,,,,,,1,1,1,1
+T1007,System Service Discovery,T1007: System Service Discovery,Discovery,https://attack.mitre.org/techniques/T1007,y,,,,,9,2,1,,,,1,3,,,,,2,1,3,1,2,1,1,1,1,11,2,2,3,3
+T1008,Fallback Channels,T1008: Fallback Channels,Command and Control,https://attack.mitre.org/techniques/T1008,y,1,8,1,9,5,,,,,1,,,,48,2,,,,2,,,,,,,,3,2,0,1
+T1010,Application Window Discovery,T1010: Application Window Discovery,Discovery,https://attack.mitre.org/techniques/T1010,y,,,,,3,,,,,,,,,,,,1,,1,,1,1,,1,1,3,1,1,2,1
+T1011,Exfiltration Over Other Network Medium,T1011: Exfiltration Over Other Network Medium,Exfiltration,https://attack.mitre.org/techniques/T1011,n,1,4,2,8,9,,,,,,,,,,,,,1,,,,,,,,,3,1,0,1
+T1011.001,Exfiltration Over Bluetooth,T1011.001: Exfiltration Over Bluetooth,Exfiltration,https://attack.mitre.org/techniques/T1011/001,y,2,8,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1012,Query Registry,T1012: Query Registry,Discovery,https://attack.mitre.org/techniques/T1012,y,,,,,5,1,2,,,1,2,8,,,,,3,5,11,2,1,2,,1,1,35,1,3,3,3
+T1014,Rootkit,T1014: Rootkit,Defense Evasion,https://attack.mitre.org/techniques/T1014,y,,,,7,3,,,,,,,,,,,,,,,,2,,,,,,2,0,1,1
+T1016,System Network Configuration Discovery,T1016: System Network Configuration Discovery,Discovery,https://attack.mitre.org/techniques/T1016,n,,,,,8,3,1,2,2,1,1,2,,3,,,2,,8,,8,1,1,2,7,39,2,3,3,3
+T1016.001,Internet Connection Discovery,T1016.001: Internet Connection Discovery,Discovery,https://attack.mitre.org/techniques/T1016/001,y,,,,,,1,,,,,,,,,,,,,,,,,,,,,0,1,0,1
+T1018,Remote System Discovery,T1018: Remote System Discovery,Discovery,https://attack.mitre.org/techniques/T1018,y,,,,,7,15,2,4,2,2,2,4,,3,2,1,1,1,14,,19,1,1,3,8,8,2,3,3,3
+T1020,Automated Exfiltration,T1020: Automated Exfiltration,Exfiltration,https://attack.mitre.org/techniques/T1020,n,,,,8,10,5,,1,,,,6,,,3,,,2,5,,1,,,,,3,2,2,1,2
+T1020.001,Traffic Duplication,T1020.001: Traffic Duplication,Exfiltration,https://attack.mitre.org/techniques/T1020/001,y,1,12,,,,,,,,,,,,,2,,,,,,,,,,,,2,1,0,1
+T1021,Remote Services,T1021: Remote Services,Lateral Movement,https://attack.mitre.org/techniques/T1021,n,3,12,15,9,5,19,,16,1,7,,23,,8,3,,1,2,2,4,,1,1,,,,3,3,2,3
+T1021.001,Remote Desktop Protocol,T1021.001: Remote Desktop Protocol,Lateral Movement,https://attack.mitre.org/techniques/T1021/001,y,8,24,,9,,2,,2,,4,,7,,6,2,,3,,11,,4,,,,,1,3,2,2,2
+T1021.002,SMB/Windows Admin Shares,T1021.002: SMB/Windows Admin Shares,Lateral Movement,https://attack.mitre.org/techniques/T1021/002,y,4,16,,9,,6,,6,,4,,1,,,2,,4,,30,,4,1,,,3,1,3,2,2,2
+T1021.003,Distributed Component Object Model,T1021.003: Distributed Component Object Model,Lateral Movement,https://attack.mitre.org/techniques/T1021/003,y,4,19,,9,,5,,3,,3,,1,,,1,,,,8,,1,,,,,,3,2,1,2
+T1021.004,SSH,T1021.004: SSH,Lateral Movement,https://attack.mitre.org/techniques/T1021/004,y,3,15,,9,,,,,,6,,,,,3,,,,,,,,,,1,,3,2,1,2
+T1021.005,VNC,T1021.005: VNC,Lateral Movement,https://attack.mitre.org/techniques/T1021/005,y,4,23,,9,,,,,,2,,,,,2,,,,1,,,,,,,,3,1,0,1
+T1021.006,Windows Remote Management,T1021.006: Windows Remote Management,Lateral Movement,https://attack.mitre.org/techniques/T1021/006,y,3,16,,9,,6,,,,2,,,,,2,,3,,9,,3,,,,2,,3,2,2,2
+T1025,Data from Removable Media,T1025: Data from Removable Media,Collection,https://attack.mitre.org/techniques/T1025,y,,,,1,5,,,,,,,,,,,,,,,,,,,1,,,2,0,1,1
+T1026,Multiband Communication,T1026: Multiband Communication,Command and Control,https://attack.mitre.org/techniques/T1026,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1027,Obfuscated Files or Information,T1027: Obfuscated Files or Information,Defense Evasion,https://attack.mitre.org/techniques/T1027,n,1,4,4,7,4,6,1,2,,5,1,7,,9,,,,5,74,,8,,,,,,3,3,3,3
+T1027.001,Binary Padding,T1027.001: Binary Padding,Defense Evasion,https://attack.mitre.org/techniques/T1027/001,y,,,,7,,,,,,,,,,,,,,,3,,1,,,,,,2,1,1,1
+T1027.002,Software Packing,T1027.002: Software Packing,Defense Evasion,https://attack.mitre.org/techniques/T1027/002,y,,4,,7,,,,,,1,,1,,,,,,,1,,4,,,,,,2,1,1,1
+T1027.003,Steganography,T1027.003: Steganography,Defense Evasion,https://attack.mitre.org/techniques/T1027/003,y,,,,,,,,,,,,,,,,,,,5,,,,,,,,0,1,0,1
+T1027.004,Compile After Delivery,T1027.004: Compile After Delivery,Defense Evasion,https://attack.mitre.org/techniques/T1027/004,y,,,,7,,1,,2,,1,,2,,7,,,,,5,,5,,,,,,2,1,1,1
+T1027.005,Indicator Removal from Tools,T1027.005: Indicator Removal from Tools,Defense Evasion,https://attack.mitre.org/techniques/T1027/005,y,,,,,,2,,,,1,,2,,,,,,,2,,,,,,,,0,1,0,1
+T1027.006,HTML Smuggling,T1027.006: HTML Smuggling,Defense Evasion,https://attack.mitre.org/techniques/T1027/006,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1029,Scheduled Transfer,T1029: Scheduled Transfer,Exfiltration,https://attack.mitre.org/techniques/T1029,y,1,7,1,8,9,,,,,,,,,,1,,1,,,,,1,,,1,,3,1,1,1
+T1030,Data Transfer Size Limits,T1030: Data Transfer Size Limits,Exfiltration,https://attack.mitre.org/techniques/T1030,y,1,7,1,8,8,,,,,,,1,,,,,,,2,,1,,,,1,,3,1,2,1
+T1033,System Owner/User Discovery,T1033: System Owner/User Discovery,Discovery,https://attack.mitre.org/techniques/T1033,y,,,,,7,8,2,3,2,,1,4,,4,,,2,3,18,,5,1,,1,4,26,2,3,3,3
+T1034,Path Interception,T1034: Path Interception,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1034,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1036,Masquerading,T1036: Masquerading,Defense Evasion,https://attack.mitre.org/techniques/T1036,n,3,12,10,11,1,14,5,8,1,3,2,26,,28,,,1,23,23,,2,1,2,,,,3,3,2,3
+T1036.001,Invalid Code Signature,T1036.001: Invalid Code Signature,Defense Evasion,https://attack.mitre.org/techniques/T1036/001,y,1,5,,7,,,,,,1,,,,5,,,,,,,,,,,,,2,1,0,1
+T1036.002,Right-to-Left Override,T1036.002: Right-to-Left Override,Defense Evasion,https://attack.mitre.org/techniques/T1036/002,y,,,,,,,,,,,,,,1,,,,,,,,,,,,,0,1,0,1
+T1036.003,Rename System Utilities,T1036.003: Rename System Utilities,Defense Evasion,https://attack.mitre.org/techniques/T1036/003,y,1,8,,8,,10,,2,,,,,,,,,1,,13,,9,,,,,1,3,1,3,1
+T1036.004,Masquerade Task or Service,T1036.004: Masquerade Task or Service,Defense Evasion,https://attack.mitre.org/techniques/T1036/004,y,,,,1,,,,1,,1,,1,,,,,,,2,,2,,,,,1,1,1,1,1
+T1036.005,Match Legitimate Name or Location,T1036.005: Match Legitimate Name or Location,Defense Evasion,https://attack.mitre.org/techniques/T1036/005,y,3,12,,5,,1,,1,,3,,2,,21,,,1,,8,,2,,,,,,3,2,1,2
+T1036.006,Space after Filename,T1036.006: Space after Filename,Defense Evasion,https://attack.mitre.org/techniques/T1036/006,y,,,,3,,,,,,1,,,,,,,,,1,,2,,,,,,1,1,1,1
+T1036.007,Double File Extension,T1036.007: Double File Extension,Defense Evasion,https://attack.mitre.org/techniques/T1036/007,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1037,Boot or Logon Initialization Scripts,T1037: Boot or Logon Initialization Scripts,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1037,n,1,9,4,9,1,2,1,2,2,1,1,1,,8,1,,,1,,,,,,1,,,3,3,1,2
+T1037.001,Logon Script (Windows),T1037.001: Logon Script (Windows),"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1037/001,y,,2,,7,,1,,,,1,,,,,,,2,,2,,2,,,,,,2,2,1,2
+T1037.002,Logon Script (Mac),T1037.002: Logon Script (Mac),"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1037/002,y,1,7,,7,,,,,,,,,,,,,,,,,2,,,,,,3,0,1,1
+T1037.003,Network Logon Script,T1037.003: Network Logon Script,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1037/003,y,1,7,,8,,,,,,1,,,,8,,,,,,,,,,,,,3,1,0,1
+T1037.004,RC Scripts,T1037.004: RC Scripts,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1037/004,y,1,7,,8,,1,,,,,,,,,1,,,,,,6,,,,,,3,1,1,1
+T1037.005,Startup Items,T1037.005: Startup Items,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1037/005,y,1,7,,2,,,,,,,,,,,,,,,1,,2,,,,,,2,1,1,1
+T1039,Data from Network Shared Drive,T1039: Data from Network Shared Drive,Collection,https://attack.mitre.org/techniques/T1039,y,,,,1,7,3,,,,,,1,,,,,1,,2,,2,,,,,,2,1,1,1
+T1040,Network Sniffing,T1040: Network Sniffing,"Credential Access, Discovery",https://attack.mitre.org/techniques/T1040,y,2,11,11,1,12,,3,1,,8,1,3,,5,5,,1,2,8,,8,,,1,1,,3,3,3,3
+T1041,Exfiltration Over C2 Channel,T1041: Exfiltration Over C2 Channel,Exfiltration,https://attack.mitre.org/techniques/T1041,y,1,5,1,12,9,,,,,2,,8,,22,3,,,2,3,,1,,,3,1,19,3,2,3,3
+T1043,Commonly Used Port,T1043: Commonly Used Port,Command and Control,https://attack.mitre.org/techniques/T1043,y,,,,,,,1,,,,,,,,,,,2,,,,,,,,,0,1,0,1
+T1046,Network Service Scanning,T1046: Network Service Scanning,Discovery,https://attack.mitre.org/techniques/T1046,y,3,11,13,,11,2,,,1,5,,28,2,,6,1,2,1,10,,4,1,,,3,6,3,3,2,3
+T1047,Windows Management Instrumentation,T1047: Windows Management Instrumentation,Execution,https://attack.mitre.org/techniques/T1047,y,2,8,17,,8,11,5,5,2,3,5,9,1,9,,,3,1,36,3,10,,2,,2,11,3,3,3,3
+T1048,Exfiltration Over Alternative Protocol,T1048: Exfiltration Over Alternative Protocol,Exfiltration,https://attack.mitre.org/techniques/T1048,n,3,12,8,13,9,7,,2,,8,,5,,2,4,,,4,7,,3,,,,,,3,2,1,2
+T1048.001,Exfiltration Over Symmetric Encrypted Non-C2 Protocol,T1048.001: Exfiltration Over Symmetric Encrypted Non-C2 Protocol,Exfiltration,https://attack.mitre.org/techniques/T1048/001,y,3,12,,9,,,,,,4,,,,,3,,,,1,,,,,,,,3,2,0,1
+T1048.002,Exfiltration Over Asymmetric Encrypted Non-C2 Protocol,T1048.002: Exfiltration Over Asymmetric Encrypted Non-C2 Protocol,Exfiltration,https://attack.mitre.org/techniques/T1048/002,y,3,12,,13,,,,,,3,,,,,3,,,,,,2,,,,,,3,1,1,1
+T1048.003,Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol,T1048.003: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol,Exfiltration,https://attack.mitre.org/techniques/T1048/003,y,3,12,,9,,7,,,,6,,1,,1,4,,,,14,,5,,,,1,1,3,2,2,2
+T1049,System Network Connections Discovery,T1049: System Network Connections Discovery,Discovery,https://attack.mitre.org/techniques/T1049,y,,,,,8,5,1,1,2,1,1,2,,,,,1,1,8,,4,1,1,4,1,10,2,3,3,3
+T1051,Shared Webroot,T1051: Shared Webroot,Lateral Movement,https://attack.mitre.org/techniques/T1051,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1052,Exfiltration Over Physical Medium,T1052: Exfiltration Over Physical Medium,Exfiltration,https://attack.mitre.org/techniques/T1052,n,2,10,8,1,11,,,,,,,2,,,,,,,,,,,,,,,3,0,0,0
+T1052.001,Exfiltration over USB,T1052.001: Exfiltration over USB,Exfiltration,https://attack.mitre.org/techniques/T1052/001,y,2,10,,1,,,,,,,,2,,,,,,,,,,,,,,,2,0,0,0
+T1053,Scheduled Task/Job,T1053: Scheduled Task/Job,"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053,n,4,15,38,7,3,26,2,1,3,4,2,10,,3,2,,,1,12,,,,2,,,16,3,3,3,3
+T1053.001,At (Linux),T1053.001: At (Linux),"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053/001,y,2,9,,4,,2,,,,1,,,,,1,,,,1,,3,,,,,,2,1,1,1
+T1053.002,At (Windows),T1053.002: At (Windows),"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053/002,y,4,14,,4,,1,,,,1,,,,1,,,2,,7,,3,1,,,,,3,2,2,2
+T1053.003,Cron,T1053.003: Cron,"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053/003,y,2,9,,4,,5,,2,,3,,,,,1,,,,4,,9,,,,,,2,2,3,3
+T1053.004,Launchd,T1053.004: Launchd,"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053/004,y,2,9,,7,,,,,,,,,,,,,,,,,3,,,,,,3,0,1,1
+T1053.005,Scheduled Task,T1053.005: Scheduled Task,"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053/005,y,4,14,,4,,13,,8,,3,,11,,,,,6,,28,,21,3,,,,32,3,2,3,3
+T1053.006,Systemd Timers,T1053.006: Systemd Timers,"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053/006,y,3,9,,,,3,,,,2,,,,,1,,,,,,9,,,,,,2,1,3,1
+T1053.007,Container Orchestration Job,T1053.007: Container Orchestration Job,"Execution, Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1053/007,y,,,,,,,,,,,,,,,1,,,,,,6,,,,,,0,1,1,1
+T1055,Process Injection,T1055: Process Injection,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055,n,2,12,7,15,1,25,3,9,2,3,1,25,,34,,,,13,18,1,4,,,,1,,3,3,2,3
+T1055.001,Dynamic-link Library Injection,T1055.001: Dynamic-link Library Injection,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/001,y,,6,,5,,3,,2,,2,,,,1,,,2,,8,,2,,,,1,,2,2,2,2
+T1055.002,Portable Executable Injection,T1055.002: Portable Executable Injection,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/002,y,,6,,3,,,,2,,2,,,,,,,,,1,,,,,,3,,2,1,2,1
+T1055.003,Thread Execution Hijacking,T1055.003: Thread Execution Hijacking,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/003,y,,6,,9,,,,,,2,,,,,,,,,1,,,,,,,,2,1,0,1
+T1055.004,Asynchronous Procedure Call,T1055.004: Asynchronous Procedure Call,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/004,y,,6,,3,,,,,,2,,,,,,,,,,,2,,,,,,2,1,1,1
+T1055.005,Thread Local Storage,T1055.005: Thread Local Storage,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/005,y,,6,,2,,,,,,2,,,,,,,,,,,,,,,,,2,1,0,1
+T1055.008,Ptrace System Calls,T1055.008: Ptrace System Calls,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/008,y,1,12,,2,,,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1055.009,Proc Memory,T1055.009: Proc Memory,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/009,y,1,9,,4,,,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1055.011,Extra Window Memory Injection,T1055.011: Extra Window Memory Injection,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/011,y,,6,,,,,,,,2,,,,,,,,,,,,,,,,,1,1,0,1
+T1055.012,Process Hollowing,T1055.012: Process Hollowing,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/012,y,,6,,4,,,,2,,2,,3,,1,,,1,,2,,4,,,,,3,2,2,2,2
+T1055.013,Process DoppelgÃ¤nging,T1055.013: Process DoppelgÃ¤nging,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/013,y,,6,,3,,,,,,2,,,,,,,,,,,,,,,,,2,1,0,1
+T1055.014,VDSO Hijacking,T1055.014: VDSO Hijacking,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1055/014,y,,6,,5,,,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1056,Input Capture,T1056: Input Capture,"Collection, Credential Access",https://attack.mitre.org/techniques/T1056,n,,,,8,4,,,,,2,,5,,1,,,,,,,,,,,,9,2,1,3,1
+T1056.001,Keylogging,T1056.001: Keylogging,"Collection, Credential Access",https://attack.mitre.org/techniques/T1056/001,y,1,,,2,,,,1,,2,,,,,,,,,1,,12,,,1,,3,1,1,3,1
+T1056.002,GUI Input Capture,T1056.002: GUI Input Capture,"Collection, Credential Access",https://attack.mitre.org/techniques/T1056/002,y,1,4,,,,,,1,,,,1,,,,,,,3,,4,,,,,,2,1,1,1
+T1056.003,Web Portal Capture,T1056.003: Web Portal Capture,"Collection, Credential Access",https://attack.mitre.org/techniques/T1056/003,y,1,7,,2,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1056.004,Credential API Hooking,T1056.004: Credential API Hooking,"Collection, Credential Access",https://attack.mitre.org/techniques/T1056/004,y,,,,4,,,,,,1,,1,,,,,,,1,,2,,,,,,1,1,1,1
+T1057,Process Discovery,T1057: Process Discovery,Discovery,https://attack.mitre.org/techniques/T1057,y,,,,,6,2,1,1,2,2,1,,,,,,2,,6,,5,1,1,3,9,19,2,2,3,3
+T1059,Command and Scripting Interpreter,T1059: Command and Scripting Interpreter,Execution,https://attack.mitre.org/techniques/T1059,n,6,21,3,7,5,37,1,17,,5,1,55,,273,1,1,1,12,30,3,,,,,,30,3,3,3,3
+T1059.001,PowerShell,T1059.001: PowerShell,Execution,https://attack.mitre.org/techniques/T1059/001,y,5,16,,7,,21,,13,,4,,31,,46,1,,3,,165,,21,,,2,8,29,3,3,3,3
+T1059.002,AppleScript,T1059.002: AppleScript,Execution,https://attack.mitre.org/techniques/T1059/002,y,3,11,,7,,,,1,,,,,,,,,,,1,,1,,,,1,,3,1,2,1
+T1059.003,Windows Command Shell,T1059.003: Windows Command Shell,Execution,https://attack.mitre.org/techniques/T1059/003,y,3,4,,7,,8,,,,2,,5,,152,,,2,,16,,4,1,,,,32,3,2,3,3
+T1059.004,Unix Shell,T1059.004: Unix Shell,Execution,https://attack.mitre.org/techniques/T1059/004,y,1,4,,7,,1,,,,3,,,,68,1,,,,8,,4,,,,1,1,2,2,2,2
+T1059.005,Visual Basic,T1059.005: Visual Basic,Execution,https://attack.mitre.org/techniques/T1059/005,y,4,11,,7,,4,,,,1,,3,,8,,,1,,19,,3,1,,,,,3,2,1,2
+T1059.006,Python,T1059.006: Python,Execution,https://attack.mitre.org/techniques/T1059/006,y,4,10,,7,,,,1,,1,,,,8,,,,,2,,3,,,,,,3,1,1,1
+T1059.007,JavaScript,T1059.007: JavaScript,Execution,https://attack.mitre.org/techniques/T1059/007,y,3,10,,7,,4,,2,,1,,1,,1,1,,,,13,,,,,,,,3,2,0,1
+T1059.008,Network Device CLI,T1059.008: Network Device CLI,Execution,https://attack.mitre.org/techniques/T1059/008,y,3,11,,7,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1061,Graphical User Interface,T1061: Graphical User Interface,Execution,https://attack.mitre.org/techniques/T1061,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1062,Hypervisor,T1062: Hypervisor,Persistence,https://attack.mitre.org/techniques/T1062,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1064,Scripting,T1064: Scripting,"Defense Evasion, Execution",https://attack.mitre.org/techniques/T1064,y,,,,,,,,,,,,,,,,,,1,,,,,3,,,,0,1,2,1
+T1068,Exploitation for Privilege Escalation,T1068: Exploitation for Privilege Escalation,Privilege Escalation,https://attack.mitre.org/techniques/T1068,y,4,25,6,6,8,10,,1,,13,,12,,3,3,,1,3,20,,,,,,,2,3,3,1,2
+T1069,Permission Groups Discovery,T1069: Permission Groups Discovery,Discovery,https://attack.mitre.org/techniques/T1069,n,,,,,5,25,2,1,1,3,2,2,,7,,,,1,1,,,,1,1,,7,1,3,2,3
+T1069.001,Local Groups,T1069.001: Local Groups,Discovery,https://attack.mitre.org/techniques/T1069/001,y,,,,,,11,,2,,1,,1,,5,,,,,13,,6,,,2,1,4,0,2,2,2
+T1069.002,Domain Groups,T1069.002: Domain Groups,Discovery,https://attack.mitre.org/techniques/T1069/002,y,,,,,,18,,2,,2,,1,,7,,,3,,8,,13,1,,,1,6,0,2,3,3
+T1069.003,Cloud Groups,T1069.003: Cloud Groups,Discovery,https://attack.mitre.org/techniques/T1069/003,y,,,,,,1,,,,1,,,,,,,,,,,,,,,,,0,1,0,1
+T1070,Indicator Removal on Host,T1070: Indicator Removal on Host,Defense Evasion,https://attack.mitre.org/techniques/T1070,n,3,21,12,5,4,17,1,3,3,4,1,15,,6,1,,,8,9,,1,,1,,,1,3,3,2,3
+T1070.001,Clear Windows Event Logs,T1070.001: Clear Windows Event Logs,Defense Evasion,https://attack.mitre.org/techniques/T1070/001,y,3,21,,,,6,,3,,2,,,,,,,2,,7,,3,1,,,1,8,2,2,2,2
+T1070.002,Clear Linux or Mac System Logs,T1070.002: Clear Linux or Mac System Logs,Defense Evasion,https://attack.mitre.org/techniques/T1070/002,y,3,21,,4,,,,,,1,,,,,1,,,,2,,3,,,,,,3,1,1,1
+T1070.003,Clear Command History,T1070.003: Clear Command History,Defense Evasion,https://attack.mitre.org/techniques/T1070/003,y,2,10,,,,,,2,,1,,1,,,1,,1,,6,,11,,,,1,,2,2,3,3
+T1070.004,File Deletion,T1070.004: File Deletion,Defense Evasion,https://attack.mitre.org/techniques/T1070/004,y,,,,3,,5,,4,,1,,3,,2,1,,,,11,,10,,,,2,,1,2,2,2
+T1070.005,Network Share Connection Removal,T1070.005: Network Share Connection Removal,Defense Evasion,https://attack.mitre.org/techniques/T1070/005,y,,,,1,,1,,,,,,1,,,1,,1,,3,,5,,,,,,1,2,1,2
+T1070.006,Timestomp,T1070.006: Timestomp,Defense Evasion,https://attack.mitre.org/techniques/T1070/006,y,,,,,,,,1,,1,,1,,,1,,,,4,,8,,,,,,0,1,3,1
+T1071,Application Layer Protocol,T1071: Application Layer Protocol,Command and Control,https://attack.mitre.org/techniques/T1071,n,1,15,1,19,2,,1,4,1,9,,14,,3,4,2,,,6,,,,,,,6,3,3,1,2
+T1071.001,Web Protocols,T1071.001: Web Protocols,Command and Control,https://attack.mitre.org/techniques/T1071/001,y,1,15,,13,,1,,3,,3,,1,,2,3,,,,26,,3,,,,1,7,3,2,2,2
+T1071.002,File Transfer Protocols,T1071.002: File Transfer Protocols,Command and Control,https://attack.mitre.org/techniques/T1071/002,y,1,15,,14,,,,,,2,,,,,2,,,,,,,,,,,,3,1,0,1
+T1071.003,Mail Protocols,T1071.003: Mail Protocols,Command and Control,https://attack.mitre.org/techniques/T1071/003,y,1,15,,13,,,,,,3,,1,,,2,,,,,,,,,,,,3,1,0,1
+T1071.004,DNS,T1071.004: DNS,Command and Control,https://attack.mitre.org/techniques/T1071/004,y,2,18,,18,,2,,1,,7,,5,,1,2,1,,,17,,4,,,,,,3,2,1,2
+T1072,Software Deployment Tools,T1072: Software Deployment Tools,"Execution, Lateral Movement",https://attack.mitre.org/techniques/T1072,y,9,24,42,5,9,,,,,3,,,,,1,,,,2,,2,,,2,,,3,2,1,2
+T1074,Data Staged,T1074: Data Staged,Collection,https://attack.mitre.org/techniques/T1074,n,,,,1,2,,1,1,2,3,1,2,,,,,,,2,,,,,2,,4,1,2,1,2
+T1074.001,Local Data Staging,T1074.001: Local Data Staging,Collection,https://attack.mitre.org/techniques/T1074/001,y,,,,,,,,,,3,,,,,,,,,4,,3,,,,2,17,0,1,3,1
+T1074.002,Remote Data Staging,T1074.002: Remote Data Staging,Collection,https://attack.mitre.org/techniques/T1074/002,y,,,,1,,,,,,1,,,,,,,,,,,,,,,,,1,1,0,1
+T1078,Valid Accounts,T1078: Valid Accounts,"Defense Evasion, Persistence, Privilege Escalation, Initial Access",https://attack.mitre.org/techniques/T1078,n,3,24,46,12,11,36,,38,,16,,24,,,8,,,6,19,,,,,1,,15,3,3,3,3
+T1078.001,Default Accounts,T1078.001: Default Accounts,"Defense Evasion, Persistence, Privilege Escalation, Initial Access",https://attack.mitre.org/techniques/T1078/001,y,1,14,,10,,,,,,5,,2,,,1,,,,1,,8,,,,,,3,2,3,3
+T1078.002,Domain Accounts,T1078.002: Domain Accounts,"Defense Evasion, Persistence, Privilege Escalation, Initial Access",https://attack.mitre.org/techniques/T1078/002,y,2,12,,11,,5,,,,4,,1,,,1,,,,1,,,,,,,1,3,2,1,2
+T1078.003,Local Accounts,T1078.003: Local Accounts,"Defense Evasion, Persistence, Privilege Escalation, Initial Access",https://attack.mitre.org/techniques/T1078/003,y,2,19,,11,,1,,3,,3,,1,,,,,5,,1,,8,,,,,6,3,2,1,2
+T1078.004,Cloud Accounts,T1078.004: Cloud Accounts,"Defense Evasion, Persistence, Privilege Escalation, Initial Access",https://attack.mitre.org/techniques/T1078/004,y,4,22,,10,,17,,1,,14,,,,,8,5,,,3,,4,,,,,,3,2,1,1
+T1080,Taint Shared Content,T1080: Taint Shared Content,Lateral Movement,https://attack.mitre.org/techniques/T1080,y,3,10,8,1,7,,,,,3,,,,,,,,,,,,,,,,,3,1,0,1
+T1082,System Information Discovery,T1082: System Information Discovery,Discovery,https://attack.mitre.org/techniques/T1082,y,,,,,6,1,1,4,3,2,1,4,,,,,2,1,12,,12,1,1,22,4,45,2,3,3,3
+T1083,File and Directory Discovery,T1083: File and Directory Discovery,Discovery,https://attack.mitre.org/techniques/T1083,y,,,,,11,1,,1,,2,,5,,2,,,,1,9,,5,,,,4,33,2,2,3,3
+T1087,Account Discovery,T1087: Account Discovery,Discovery,https://attack.mitre.org/techniques/T1087,n,1,3,2,,7,28,1,3,2,6,1,8,,7,1,,,8,9,,,,1,,,9,2,3,3,3
+T1087.001,Local Account,T1087.001: Local Account,Discovery,https://attack.mitre.org/techniques/T1087/001,y,1,3,,6,,11,,,,3,,3,,5,,,,,9,,10,,,1,2,1,2,2,2,2
+T1087.002,Domain Account,T1087.002: Domain Account,Discovery,https://attack.mitre.org/techniques/T1087/002,y,1,3,,6,,17,,1,,3,,3,,7,,,2,,13,,12,1,,1,2,10,2,2,3,3
+T1087.003,Email Account,T1087.003: Email Account,Discovery,https://attack.mitre.org/techniques/T1087/003,y,,,,,,,,,,1,,,,5,,,,,,,,,,,,,0,1,0,1
+T1087.004,Cloud Account,T1087.004: Cloud Account,Discovery,https://attack.mitre.org/techniques/T1087/004,y,2,6,,5,,,,,,2,,,,,1,,,,,,,,,,,,2,1,0,1
+T1090,Proxy,T1090: Proxy,Command and Control,https://attack.mitre.org/techniques/T1090,n,3,12,1,10,2,,,,,4,,44,,2,4,,,3,3,,,,,,,,3,2,0,1
+T1090.001,Internal Proxy,T1090.001: Internal Proxy,Command and Control,https://attack.mitre.org/techniques/T1090/001,y,1,8,,9,,,,,,2,,,,1,2,,,,1,,3,,,,,,3,2,1,2
+T1090.002,External Proxy,T1090.002: External Proxy,Command and Control,https://attack.mitre.org/techniques/T1090/002,y,1,8,,9,,,,,,2,,,,,4,,,,1,,,,,,,,3,2,0,1
+T1090.003,Multi-hop Proxy,T1090.003: Multi-hop Proxy,Command and Control,https://attack.mitre.org/techniques/T1090/003,y,1,8,,9,,,,,,3,,,,1,4,,,,2,,4,,,,,,3,2,1,1
+T1090.004,Domain Fronting,T1090.004: Domain Fronting,Command and Control,https://attack.mitre.org/techniques/T1090/004,y,1,1,,9,,,,,,,,3,,,,,,,,,,,,,,,2,0,0,0
+T1091,Replication Through Removable Media,T1091: Replication Through Removable Media,"Lateral Movement, Initial Access",https://attack.mitre.org/techniques/T1091,y,2,10,11,1,8,,,,,,,1,,,,,,,1,,2,,,,,,3,1,1,1
+T1092,Communication Through Removable Media,T1092: Communication Through Removable Media,Command and Control,https://attack.mitre.org/techniques/T1092,y,2,8,10,1,8,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1095,Non-Application Layer Protocol,T1095: Non-Application Layer Protocol,Command and Control,https://attack.mitre.org/techniques/T1095,y,3,11,8,9,2,,,,,2,,,,,3,,,,4,,3,,,1,,,3,2,1,2
+T1098,Account Manipulation,T1098: Account Manipulation,Persistence,https://attack.mitre.org/techniques/T1098,n,4,12,18,20,5,17,,24,,9,,16,,1,4,,1,3,16,,8,1,,,,1,3,3,1,2
+T1098.001,Additional Cloud Credentials,T1098.001: Additional Cloud Credentials,Persistence,https://attack.mitre.org/techniques/T1098/001,y,3,15,,19,,,,,,5,,,,,4,,,,,,3,,,,,,3,2,1,2
+T1098.002,Exchange Email Delegate Permissions,T1098.002: Exchange Email Delegate Permissions,Persistence,https://attack.mitre.org/techniques/T1098/002,y,2,11,,6,,,,2,,1,,,,,,,,,,,,,,,,,3,1,0,1
+T1098.003,Add Office 365 Global Administrator Role,T1098.003: Add Office 365 Global Administrator Role,Persistence,https://attack.mitre.org/techniques/T1098/003,y,2,11,,6,,,,,,3,,,,,,,,,1,,,,,,,,3,1,0,1
+T1098.004,SSH Authorized Keys,T1098.004: SSH Authorized Keys,Persistence,https://attack.mitre.org/techniques/T1098/004,y,2,9,,5,,2,,1,,3,,,,,1,,,,,,1,,,,,,2,1,1,1
+T1102,Web Service,T1102: Web Service,Command and Control,https://attack.mitre.org/techniques/T1102,n,2,8,6,9,6,,,1,,1,,,,,,,,,,,,,,,,,3,1,0,1
+T1102.001,Dead Drop Resolver,T1102.001: Dead Drop Resolver,Command and Control,https://attack.mitre.org/techniques/T1102/001,y,2,8,,9,,,,,,,,,,,,,,,2,,,,,,,,3,1,0,1
+T1102.002,Bidirectional Communication,T1102.002: Bidirectional Communication,Command and Control,https://attack.mitre.org/techniques/T1102/002,y,2,8,,9,,,,,,1,,,,,,,,,2,,,,,,,,3,1,0,1
+T1102.003,One-Way Communication,T1102.003: One-Way Communication,Command and Control,https://attack.mitre.org/techniques/T1102/003,y,2,8,,9,,,,,,,,,,,,,,,2,,,,,,,,3,1,0,1
+T1104,Multi-Stage Channels,T1104: Multi-Stage Channels,Command and Control,https://attack.mitre.org/techniques/T1104,y,1,8,1,9,3,,,,,,,,,,1,,,,1,,,,,,,,3,1,0,1
+T1105,Ingress Tool Transfer,T1105: Ingress Tool Transfer,Command and Control,https://attack.mitre.org/techniques/T1105,y,1,8,1,9,3,14,,9,,5,,6,1,32,,,4,6,32,,20,4,3,,2,37,3,3,3,3
+T1106,Native API,T1106: Native API,Execution,https://attack.mitre.org/techniques/T1106,y,1,1,3,2,2,2,,2,,1,,,,,,1,,,9,,1,,,,,,2,1,1,1
+T1108,Redundant Access,T1108: Redundant Access,"Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1108,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1110,Brute Force,T1110: Brute Force,Credential Access,https://attack.mitre.org/techniques/T1110,n,4,14,13,17,5,10,,8,,17,,12,,,7,1,,,7,,,,,,,,3,2,0,1
+T1110.001,Password Guessing,T1110.001: Password Guessing,Credential Access,https://attack.mitre.org/techniques/T1110/001,y,3,14,,3,,,,,,16,,1,,,7,,,,3,,5,,,,,,3,2,1,2
+T1110.002,Password Cracking,T1110.002: Password Cracking,Credential Access,https://attack.mitre.org/techniques/T1110/002,y,2,14,,4,,,,,,5,,1,,,3,,,,1,,1,,,,,,2,2,1,2
+T1110.003,Password Spraying,T1110.003: Password Spraying,Credential Access,https://attack.mitre.org/techniques/T1110/003,y,3,14,,13,,8,,,,16,,,,,7,,,,8,,4,,,,,,3,2,1,2
+T1110.004,Credential Stuffing,T1110.004: Credential Stuffing,Credential Access,https://attack.mitre.org/techniques/T1110/004,y,4,14,,13,,,,,,15,,1,,,7,,,,,,2,,,,,,3,2,1,2
+T1111,Two-Factor Authentication Interception,T1111: Two-Factor Authentication Interception,Credential Access,https://attack.mitre.org/techniques/T1111,y,1,7,9,,3,,,1,,,,,,,,,,,,,,,,,,,3,1,0,1
+T1112,Modify Registry,T1112: Modify Registry,Defense Evasion,https://attack.mitre.org/techniques/T1112,y,,2,2,,3,9,1,2,1,2,1,9,,45,,,8,6,51,3,34,5,,,,9,2,3,3,3
+T1113,Screen Capture,T1113: Screen Capture,Collection,https://attack.mitre.org/techniques/T1113,y,,,,,6,4,,1,,3,,3,,,,,,,6,,6,,,1,1,13,2,1,3,1
+T1114,Email Collection,T1114: Email Collection,Collection,https://attack.mitre.org/techniques/T1114,n,3,14,30,10,7,5,,,1,1,,9,,,,,,1,2,,,,,1,,,3,2,1,2
+T1114.001,Local Email Collection,T1114.001: Local Email Collection,Collection,https://attack.mitre.org/techniques/T1114/001,y,1,8,,8,,1,,,,1,,,,,,,,,1,,1,,,,,,3,1,1,1
+T1114.002,Remote Email Collection,T1114.002: Remote Email Collection,Collection,https://attack.mitre.org/techniques/T1114/002,y,2,13,,1,,1,,1,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1114.003,Email Forwarding Rule,T1114.003: Email Forwarding Rule,Collection,https://attack.mitre.org/techniques/T1114/003,y,2,9,,1,,2,,1,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1115,Clipboard Data,T1115: Clipboard Data,Collection,https://attack.mitre.org/techniques/T1115,y,,,,,4,,1,,1,1,1,1,,,,,,,4,,4,,,1,1,4,1,2,2,2
+T1119,Automated Collection,T1119: Automated Collection,Collection,https://attack.mitre.org/techniques/T1119,y,2,17,8,3,7,,,,,2,,2,,,1,,,,5,,4,,,,1,,3,1,2,1
+T1120,Peripheral Device Discovery,T1120: Peripheral Device Discovery,Discovery,https://attack.mitre.org/techniques/T1120,y,,,,,6,,,1,,,,,,,,,,,2,,1,,,1,2,,2,1,2,1
+T1123,Audio Capture,T1123: Audio Capture,Collection,https://attack.mitre.org/techniques/T1123,y,,,,2,7,1,1,1,2,1,1,1,,2,,,,2,6,1,2,,,,,,2,3,1,2
+T1124,System Time Discovery,T1124: System Time Discovery,Discovery,https://attack.mitre.org/techniques/T1124,y,,,,,4,,1,,1,,1,2,,,,,,1,2,,3,,2,1,1,3,1,2,3,3
+T1125,Video Capture,T1125: Video Capture,Collection,https://attack.mitre.org/techniques/T1125,y,,,,2,8,,,,,1,,,,,,,,,1,,1,,,,,,2,1,1,1
+T1127,Trusted Developer Utilities Proxy Execution,T1127: Trusted Developer Utilities Proxy Execution,Defense Evasion,https://attack.mitre.org/techniques/T1127,n,2,8,11,4,,7,2,2,,1,1,4,,8,,,,3,7,,,,3,,,,3,2,2,2
+T1127.001,MSBuild,T1127.001: MSBuild,Defense Evasion,https://attack.mitre.org/techniques/T1127/001,y,1,5,,4,,4,,5,,1,,1,,2,,,1,,2,,2,,,,,,2,2,1,2
+T1129,Shared Modules,T1129: Shared Modules,Execution,https://attack.mitre.org/techniques/T1129,y,1,5,3,,1,,,1,,,,2,,11,,,,,,,,,,,,,2,1,0,1
+T1132,Data Encoding,T1132: Data Encoding,Command and Control,https://attack.mitre.org/techniques/T1132,n,1,7,1,9,6,,,,,,,,,1,,,,,,,,,,,,1,3,1,1,1
+T1132.001,Standard Encoding,T1132.001: Standard Encoding,Command and Control,https://attack.mitre.org/techniques/T1132/001,y,1,7,,9,,,,,,,,,,,,,,,1,,2,,,,,,3,1,1,1
+T1132.002,Non-Standard Encoding,T1132.002: Non-Standard Encoding,Command and Control,https://attack.mitre.org/techniques/T1132/002,y,1,7,,9,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1133,External Remote Services,T1133: External Remote Services,"Persistence, Initial Access",https://attack.mitre.org/techniques/T1133,y,4,18,29,13,8,,,4,,1,,4,,,4,1,,,4,,2,,,,,,3,2,1,2
+T1134,Access Token Manipulation,T1134: Access Token Manipulation,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1134,n,2,7,17,8,3,6,,2,,3,,3,,1,,,,4,,,,,,,,1,3,2,1,2
+T1134.001,Token Impersonation/Theft,T1134.001: Token Impersonation/Theft,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1134/001,y,2,7,,5,,1,,,,,,,,,,,,,4,,4,,,,,,2,1,1,1
+T1134.002,Create Process with Token,T1134.002: Create Process with Token,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1134/002,y,2,7,,5,,,,,,1,,,,,,,,,5,,2,,,,,,2,1,1,1
+T1134.003,Make and Impersonate Token,T1134.003: Make and Impersonate Token,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1134/003,y,2,7,,5,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1134.004,Parent PID Spoofing,T1134.004: Parent PID Spoofing,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1134/004,y,,,,3,,1,,,,,,,,,,,,,,,10,,,,,,1,1,1,1
+T1134.005,SID-History Injection,T1134.005: SID-History Injection,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1134/005,y,1,12,,,,,,,,2,,1,,1,,,,,1,,,,,,,,2,1,0,1
+T1135,Network Share Discovery,T1135: Network Share Discovery,Discovery,https://attack.mitre.org/techniques/T1135,y,1,3,,,10,3,2,2,2,1,2,2,,,,,,2,7,,7,,1,2,2,5,2,2,3,3
+T1136,Create Account,T1136: Create Account,Persistence,https://attack.mitre.org/techniques/T1136,n,4,15,18,7,4,11,1,2,1,6,1,8,,3,1,,,4,1,,,,1,,,3,3,3,2,3
+T1136.001,Local Account,T1136.001: Local Account,Persistence,https://attack.mitre.org/techniques/T1136/001,y,2,11,,,,4,,3,,4,,1,,3,,,1,,11,,6,1,,1,,2,2,2,2,2
+T1136.002,Domain Account,T1136.002: Domain Account,Persistence,https://attack.mitre.org/techniques/T1136/002,y,4,15,,,,,,,,1,,,,,,,,,2,,3,,,1,,,2,1,1,1
+T1136.003,Cloud Account,T1136.003: Cloud Account,Persistence,https://attack.mitre.org/techniques/T1136/003,y,3,15,,,,6,,2,,3,,,,,1,1,,,2,,1,,,,,,2,2,1,2
+T1137,Office Application Startup,T1137: Office Application Startup,Persistence,https://attack.mitre.org/techniques/T1137,n,4,9,13,8,4,,,2,2,2,,,,4,,,,,5,,1,,1,,,,3,2,2,2
+T1137.001,Office Template Macros,T1137.001: Office Template Macros,Persistence,https://attack.mitre.org/techniques/T1137/001,y,1,6,,7,,,,,,,,,,1,,,,,,,,,,,,,2,1,0,1
+T1137.002,Office Test,T1137.002: Office Test,Persistence,https://attack.mitre.org/techniques/T1137/002,y,2,6,,,,,,,,1,,,,1,,,,,1,,1,,,,,,2,1,1,1
+T1137.003,Outlook Forms,T1137.003: Outlook Forms,Persistence,https://attack.mitre.org/techniques/T1137/003,y,1,2,,5,,,,,,,,,,,,,,,1,,,,,,,,2,1,0,1
+T1137.004,Outlook Home Page,T1137.004: Outlook Home Page,Persistence,https://attack.mitre.org/techniques/T1137/004,y,1,2,,,,,,,,,,,,,,,,,,,1,,,,,,1,0,1,1
+T1137.005,Outlook Rules,T1137.005: Outlook Rules,Persistence,https://attack.mitre.org/techniques/T1137/005,y,1,2,,,,,,,,1,,,,,,,,,,,,,,,,,1,1,0,1
+T1137.006,Add-ins,T1137.006: Add-ins,Persistence,https://attack.mitre.org/techniques/T1137/006,y,,,,1,,,,,,1,,,,1,,,,,3,,1,,,,,,1,1,1,1
+T1140,Deobfuscate/Decode Files or Information,T1140: Deobfuscate/Decode Files or Information,Defense Evasion,https://attack.mitre.org/techniques/T1140,y,,,,10,1,3,1,4,1,3,1,9,,3,,,1,6,10,,6,1,2,,,3,2,3,2,3
+T1149,LC_MAIN Hijacking,T1149: LC_MAIN Hijacking,Defense Evasion,https://attack.mitre.org/techniques/T1149,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1153,Source,T1153: Source,Execution,https://attack.mitre.org/techniques/T1153,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1175,Component Object Model and Distributed COM,T1175: Component Object Model and Distributed COM,"Lateral Movement, Execution",https://attack.mitre.org/techniques/T1175,y,,,,,,,,,,,,,3,,,,,3,,,,,,,,,0,1,0,1
+T1176,Browser Extensions,T1176: Browser Extensions,Persistence,https://attack.mitre.org/techniques/T1176,y,4,15,37,1,5,,,,1,,,,,,,,,,,,4,,,,,,3,1,1,1
+T1185,Browser Session Hijacking,T1185: Browser Session Hijacking,Collection,https://attack.mitre.org/techniques/T1185,y,2,11,19,8,4,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1187,Forced Authentication,T1187: Forced Authentication,Credential Access,https://attack.mitre.org/techniques/T1187,y,2,10,4,6,4,1,1,,,1,1,5,,,1,,1,,3,,1,,,,,,3,2,1,2
+T1189,Drive-by Compromise,T1189: Drive-by Compromise,Initial Access,https://attack.mitre.org/techniques/T1189,y,6,18,11,13,3,1,,1,,5,,1,,,3,,,,2,,,,,,,,3,2,0,1
+T1190,Exploit Public-Facing Application,T1190: Exploit Public-Facing Application,Initial Access,https://attack.mitre.org/techniques/T1190,y,6,29,21,12,3,10,,13,,14,,13,,,7,2,,2,60,,,,,,,,3,2,0,1
+T1195,Supply Chain Compromise,T1195: Supply Chain Compromise,Initial Access,https://attack.mitre.org/techniques/T1195,n,2,8,7,1,2,2,,,,2,,,,,,,,,1,,,,,,,,3,1,0,1
+T1195.001,Compromise Software Dependencies and Development Tools,T1195.001: Compromise Software Dependencies and Development Tools,Initial Access,https://attack.mitre.org/techniques/T1195/001,y,2,8,,1,,2,,,,2,,,,,,,,,1,,,,,,,,2,1,0,1
+T1195.002,Compromise Software Supply Chain,T1195.002: Compromise Software Supply Chain,Initial Access,https://attack.mitre.org/techniques/T1195/002,y,2,8,,1,,,,4,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1195.003,Compromise Hardware Supply Chain,T1195.003: Compromise Hardware Supply Chain,Initial Access,https://attack.mitre.org/techniques/T1195/003,y,1,11,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1197,BITS Jobs,T1197: BITS Jobs,"Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1197,y,3,14,15,11,3,6,2,1,2,,2,4,,1,,,2,2,8,,8,2,,,,1,3,3,3,3
+T1199,Trusted Relationship,T1199: Trusted Relationship,Initial Access,https://attack.mitre.org/techniques/T1199,y,2,8,5,9,4,3,,,,2,,,,,1,,,,1,,,,,,,,3,2,0,1
+T1200,Hardware Additions,T1200: Hardware Additions,Initial Access,https://attack.mitre.org/techniques/T1200,y,2,5,15,,3,,,,,,,2,,,,,,1,2,,,,,,,,3,1,0,1
+T1201,Password Policy Discovery,T1201: Password Policy Discovery,Discovery,https://attack.mitre.org/techniques/T1201,y,1,5,1,,3,8,1,,1,1,1,1,,,,,,,4,,9,,,1,2,2,2,2,3,3
+T1202,Indirect Command Execution,T1202: Indirect Command Execution,Defense Evasion,https://attack.mitre.org/techniques/T1202,y,,,,,2,,1,,1,1,1,6,,14,,,,5,19,,3,,,,,1,1,3,1,2
+T1203,Exploitation for Client Execution,T1203: Exploitation for Client Execution,Execution,https://attack.mitre.org/techniques/T1203,y,2,14,3,6,4,,,1,,5,,4,,,4,,,2,21,,,,,,,,3,2,0,1
+T1204,User Execution,T1204: User Execution,Execution,https://attack.mitre.org/techniques/T1204,n,4,13,18,18,6,14,,2,1,4,,5,,31,1,,,,7,,,,,,,1,3,2,1,2
+T1204.001,Malicious Link,T1204.001: Malicious Link,Execution,https://attack.mitre.org/techniques/T1204/001,y,3,11,,11,,,,,,1,,,,3,,,,,1,,,,,,,,3,1,0,1
+T1204.002,Malicious File,T1204.002: Malicious File,Execution,https://attack.mitre.org/techniques/T1204/002,y,2,12,,7,,4,,4,,3,,2,,28,,,1,,27,,9,1,,,,2,3,2,3,3
+T1204.003,Malicious Image,T1204.003: Malicious Image,Execution,https://attack.mitre.org/techniques/T1204/003,y,,,,,,7,,,,,,,,,1,,,,,,,,,,,,0,1,0,1
+T1205,Traffic Signaling,T1205: Traffic Signaling,"Defense Evasion, Persistence, Command and Control",https://attack.mitre.org/techniques/T1205,n,1,9,3,8,3,,,,,2,,2,,,2,,,,,,,,,,,,3,1,0,1
+T1205.001,Port Knocking,T1205.001: Port Knocking,"Defense Evasion, Persistence, Command and Control",https://attack.mitre.org/techniques/T1205/001,y,1,8,,8,,,,,,2,,2,,,2,,,,,,,,,,,,3,1,0,1
+T1207,Rogue Domain Controller,T1207: Rogue Domain Controller,Defense Evasion,https://attack.mitre.org/techniques/T1207,y,,,,10,3,2,,,,1,,,,1,,,,,1,,1,,,,,,2,1,1,1
+T1210,Exploitation of Remote Services,T1210: Exploitation of Remote Services,Lateral Movement,https://attack.mitre.org/techniques/T1210,y,8,32,29,15,4,,,1,,8,,6,,,5,,,3,8,,,,,,,,3,2,0,1
+T1211,Exploitation for Defense Evasion,T1211: Exploitation for Defense Evasion,Defense Evasion,https://attack.mitre.org/techniques/T1211,y,4,23,5,6,4,,,1,,5,,23,,,3,,,2,3,,,,,,,,3,2,0,1
+T1212,Exploitation for Credential Access,T1212: Exploitation for Credential Access,Credential Access,https://attack.mitre.org/techniques/T1212,y,4,24,6,8,5,2,,,,5,,5,,2,4,,,3,6,,,,,,,,3,2,0,1
+T1213,Data from Information Repositories,T1213: Data from Information Repositories,Collection,https://attack.mitre.org/techniques/T1213,n,3,24,38,1,6,,,,,5,,,,,,,,,,,,,,,,,3,1,0,1
+T1213.001,Confluence,T1213.001: Confluence,Collection,https://attack.mitre.org/techniques/T1213/001,y,3,24,,1,,,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1213.002,Sharepoint,T1213.002: Sharepoint,Collection,https://attack.mitre.org/techniques/T1213/002,y,3,24,,1,,,,,,3,,,,,,,,,,,,,,,,,2,1,0,1
+T1213.003,Code Repositories,T1213.003: Code Repositories,Collection,https://attack.mitre.org/techniques/T1213/003,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1216,Signed Script Proxy Execution,T1216: Signed Script Proxy Execution,Defense Evasion,https://attack.mitre.org/techniques/T1216,n,1,6,3,,3,,1,,1,,1,1,,1,,,,,12,,2,,,,,,2,2,1,2
+T1216.001,PubPrn,T1216.001: PubPrn,Defense Evasion,https://attack.mitre.org/techniques/T1216/001,y,1,6,,,,,,,,,,,,,,,,,,,1,,,,,,2,0,1,1
+T1217,Browser Bookmark Discovery,T1217: Browser Bookmark Discovery,Discovery,https://attack.mitre.org/techniques/T1217,y,,,,,6,,1,,,1,1,1,,,,,,,3,,8,,,,1,,2,2,3,3
+T1218,Signed Binary Proxy Execution,T1218: Signed Binary Proxy Execution,Defense Evasion,https://attack.mitre.org/techniques/T1218,n,4,15,10,18,3,59,2,4,,1,2,43,,63,,,,9,64,1,10,,,1,,,3,3,3,3
+T1218.001,Compiled HTML File,T1218.001: Compiled HTML File,Defense Evasion,https://attack.mitre.org/techniques/T1218/001,y,2,7,,4,,4,,2,,,,1,,1,,,1,,3,,7,,,,,,2,2,3,3
+T1218.002,Control Panel,T1218.002: Control Panel,Defense Evasion,https://attack.mitre.org/techniques/T1218/002,y,2,9,,3,,1,,1,,,,3,,7,,,,,1,,1,,,,,,2,1,1,1
+T1218.003,CMSTP,T1218.003: CMSTP,Defense Evasion,https://attack.mitre.org/techniques/T1218/003,y,2,8,,11,,3,,,,,,4,,1,,,1,,5,,2,,,,,,3,1,1,1
+T1218.004,InstallUtil,T1218.004: InstallUtil,Defense Evasion,https://attack.mitre.org/techniques/T1218/004,y,2,8,,,,7,,1,,,,2,,3,,,,,1,,8,,,,,,2,1,3,1
+T1218.005,Mshta,T1218.005: Mshta,Defense Evasion,https://attack.mitre.org/techniques/T1218/005,y,2,8,,,,12,,3,,1,,10,,6,,,,,8,,10,,,,,1,2,1,1,1
+T1218.007,Msiexec,T1218.007: Msiexec,Defense Evasion,https://attack.mitre.org/techniques/T1218/007,y,1,9,,,,1,,,,,,1,,1,,,,,5,,11,,,,,,2,1,1,1
+T1218.008,Odbcconf,T1218.008: Odbcconf,Defense Evasion,https://attack.mitre.org/techniques/T1218/008,y,2,8,,,,,,,,,,1,,,,,,,1,,1,,,,,,2,1,1,1
+T1218.009,Regsvcs/Regasm,T1218.009: Regsvcs/Regasm,Defense Evasion,https://attack.mitre.org/techniques/T1218/009,y,2,8,,,,6,,,,,,1,,3,,,,,1,,2,,,,,,2,1,1,1
+T1218.010,Regsvr32,T1218.010: Regsvr32,Defense Evasion,https://attack.mitre.org/techniques/T1218/010,y,1,4,,,,5,,2,,,,2,,3,,,2,,16,,5,2,,,,,2,2,1,2
+T1218.011,Rundll32,T1218.011: Rundll32,Defense Evasion,https://attack.mitre.org/techniques/T1218/011,y,1,4,,6,,16,,3,,1,,9,,19,,,1,,27,,11,1,,,,7,2,2,3,3
+T1218.012,Verclsid,T1218.012: Verclsid,Defense Evasion,https://attack.mitre.org/techniques/T1218/012,y,3,13,,,,1,,,,,,1,,,,,,,,,,,,,,,2,1,0,1
+T1218.013,Mavinject,T1218.013: Mavinject,Defense Evasion,https://attack.mitre.org/techniques/T1218/013,y,,,,4,,,,,,,,,,,,,,,1,,,,,,,,1,0,0,0
+T1218.014,MMC,T1218.014: MMC,Defense Evasion,https://attack.mitre.org/techniques/T1218/014,y,,,,1,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1219,Remote Access Software,T1219: Remote Access Software,Command and Control,https://attack.mitre.org/techniques/T1219,y,3,13,7,9,7,,,3,,3,,2,,,2,,,2,19,,7,,,,,24,3,2,3,3
+T1220,XSL Script Processing,T1220: XSL Script Processing,Defense Evasion,https://attack.mitre.org/techniques/T1220,y,1,6,3,10,4,2,,3,,,,1,,1,,,,1,3,,4,,,,,,3,1,1,1
+T1221,Template Injection,T1221: Template Injection,Defense Evasion,https://attack.mitre.org/techniques/T1221,y,3,14,22,,4,,,,1,,,,,1,,,,,,,1,,,,,,3,1,1,1
+T1222,File and Directory Permissions Modification,T1222: File and Directory Permissions Modification,Defense Evasion,https://attack.mitre.org/techniques/T1222,n,2,11,,,3,11,,3,1,3,,3,,,1,,,2,,1,,,,,,,2,2,0,1
+T1222.001,Windows File and Directory Permissions Modification,T1222.001: Windows File and Directory Permissions Modification,Defense Evasion,https://attack.mitre.org/techniques/T1222/001,y,2,11,,,,2,,,,2,,2,,,,,,,4,,5,,,,,,2,2,1,2
+T1222.002,Linux and Mac File and Directory Permissions Modification,T1222.002: Linux and Mac File and Directory Permissions Modification,Defense Evasion,https://attack.mitre.org/techniques/T1222/002,y,2,11,,,,1,,,,2,,,,,1,,1,,2,,9,1,,,,,2,2,3,3
+T1480,Execution Guardrails,T1480: Execution Guardrails,Defense Evasion,https://attack.mitre.org/techniques/T1480,n,1,,,,3,,,,,,,,,,,,,,,,,,,1,,2,2,0,1,1
+T1480.001,Environmental Keying,T1480.001: Environmental Keying,Defense Evasion,https://attack.mitre.org/techniques/T1480/001,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1482,Domain Trust Discovery,T1482: Domain Trust Discovery,Discovery,https://attack.mitre.org/techniques/T1482,y,2,9,23,,2,12,,1,2,4,,1,,2,1,,,1,10,,7,,,,1,10,3,2,3,3
+T1484,Domain Policy Modification,T1484: Domain Policy Modification,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1484,n,3,13,29,,,4,,,,2,,3,,,,,,,,,,,,,,,3,1,0,1
+T1484.001,Group Policy Modification,T1484.001: Group Policy Modification,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1484/001,y,,,,,,,,,,2,,2,,,,1,,,,,,,,,,,0,1,0,1
+T1484.002,Domain Trust Modification,T1484.002: Domain Trust Modification,"Defense Evasion, Privilege Escalation",https://attack.mitre.org/techniques/T1484/002,y,,,,,,,,1,,2,,,,,,4,,,,,2,,,,,,0,2,1,2
+T1485,Data Destruction,T1485: Data Destruction,Impact,https://attack.mitre.org/techniques/T1485,y,1,10,5,,6,9,,7,,6,,8,,5,6,,,,10,,3,,,2,,10,3,2,3,3
+T1486,Data Encrypted for Impact,T1486: Data Encrypted for Impact,Impact,https://attack.mitre.org/techniques/T1486,y,1,11,5,,3,7,,1,,4,,14,,,4,,,,8,,5,,,,,22,3,2,3,3
+T1489,Service Stop,T1489: Service Stop,Impact,https://attack.mitre.org/techniques/T1489,y,3,13,20,,2,7,,2,2,1,,3,,,2,,,1,4,,3,,,2,1,12,3,2,3,3
+T1490,Inhibit System Recovery,T1490: Inhibit System Recovery,Impact,https://attack.mitre.org/techniques/T1490,y,2,12,7,,2,11,,6,3,1,,1,,9,2,,2,2,15,,9,2,,3,,9,3,3,3,3
+T1491,Defacement,T1491: Defacement,Impact,https://attack.mitre.org/techniques/T1491,n,1,10,5,1,2,1,,,,1,,,,,3,,,,,,,,,1,2,,3,1,2,1
+T1491.001,Internal Defacement,T1491.001: Internal Defacement,Impact,https://attack.mitre.org/techniques/T1491/001,y,,10,,,,,,,,1,,,,,3,,,,1,,1,,,,,8,2,1,2,1
+T1491.002,External Defacement,T1491.002: External Defacement,Impact,https://attack.mitre.org/techniques/T1491/002,y,,10,,1,,,,,,1,,,,,3,,,,,,,,,,,,2,1,0,1
+T1495,Firmware Corruption,T1495: Firmware Corruption,Impact,https://attack.mitre.org/techniques/T1495,y,3,16,11,,1,,,,,,,,,,,,,,1,,,,,,,,3,1,0,1
+T1496,Resource Hijacking,T1496: Resource Hijacking,Impact,https://attack.mitre.org/techniques/T1496,y,,,,,3,,,1,,3,,,,,4,2,,,4,,1,,,,2,,1,2,2,2
+T1497,Virtualization/Sandbox Evasion,T1497: Virtualization/Sandbox Evasion,"Defense Evasion, Discovery",https://attack.mitre.org/techniques/T1497,n,,,,3,3,1,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1497.001,System Checks,T1497.001: System Checks,"Defense Evasion, Discovery",https://attack.mitre.org/techniques/T1497/001,y,,,,,,,,,,,,,,,,,,,1,,8,,,,3,,0,1,3,1
+T1497.002,User Activity Based Checks,T1497.002: User Activity Based Checks,"Defense Evasion, Discovery",https://attack.mitre.org/techniques/T1497/002,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1497.003,Time Based Evasion,T1497.003: Time Based Evasion,"Defense Evasion, Discovery",https://attack.mitre.org/techniques/T1497/003,y,,,,3,,1,,,,,,,,,,,,,,,,,,,1,1,1,0,2,1
+T1498,Network Denial of Service,T1498: Network Denial of Service,Impact,https://attack.mitre.org/techniques/T1498,n,1,8,3,9,2,,,1,,3,,20,,,5,,,,,,,,,,,,3,2,0,1
+T1498.001,Direct Network Flood,T1498.001: Direct Network Flood,Impact,https://attack.mitre.org/techniques/T1498/001,y,1,8,,9,,,,,,2,,,,,4,,,,,,,,,,,,3,1,0,1
+T1498.002,Reflection Amplification,T1498.002: Reflection Amplification,Impact,https://attack.mitre.org/techniques/T1498/002,y,1,8,,9,,,,,,2,,,,,4,,,,,,,,,,,,3,1,0,1
+T1499,Endpoint Denial of Service,T1499: Endpoint Denial of Service,Impact,https://attack.mitre.org/techniques/T1499,n,1,9,3,,2,,,1,,6,,11,,,4,,,,1,,,,,,2,,2,2,2,2
+T1499.001,OS Exhaustion Flood,T1499.001: OS Exhaustion Flood,Impact,https://attack.mitre.org/techniques/T1499/001,y,1,9,,,,,,,,5,,,,,4,,,,1,,,,,,,,2,2,0,1
+T1499.002,Service Exhaustion Flood,T1499.002: Service Exhaustion Flood,Impact,https://attack.mitre.org/techniques/T1499/002,y,1,9,,9,,,,,,4,,,,,4,,,,,,,,,,,,3,2,0,1
+T1499.003,Application Exhaustion Flood,T1499.003: Application Exhaustion Flood,Impact,https://attack.mitre.org/techniques/T1499/003,y,1,9,,,,,,,,4,,,,,4,,,,,,,,,,,,2,2,0,1
+T1499.004,Application or System Exploitation,T1499.004: Application or System Exploitation,Impact,https://attack.mitre.org/techniques/T1499/004,y,1,9,,,,,,,,2,,,,,1,,,,3,,,,,,,,2,1,0,1
+T1505,Server Software Component,T1505: Server Software Component,Persistence,https://attack.mitre.org/techniques/T1505,n,3,21,29,18,2,2,,,,5,,4,,1,,,,,1,,,,,,,,3,2,0,1
+T1505.001,SQL Stored Procedures,T1505.001: SQL Stored Procedures,Persistence,https://attack.mitre.org/techniques/T1505/001,y,3,21,,4,,,,,,2,,,,,,,,,,,,,,,,,3,1,0,1
+T1505.002,Transport Agent,T1505.002: Transport Agent,Persistence,https://attack.mitre.org/techniques/T1505/002,y,3,21,,3,,,,,,,,,,,,,,,3,,1,,,,,,3,1,1,1
+T1505.003,Web Shell,T1505.003: Web Shell,Persistence,https://attack.mitre.org/techniques/T1505/003,y,,,,14,,2,,2,,3,,4,,1,,,1,,23,,1,,,,,,2,2,1,2
+T1505.004,IIS Components,T1505.004: IIS Components,Persistence,https://attack.mitre.org/techniques/T1505/004,y,,,,1,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1518,Software Discovery,T1518: Software Discovery,Discovery,https://attack.mitre.org/techniques/T1518,n,,,,,4,1,,1,,1,,18,,2,,,,,2,,3,,,,4,4,1,1,2,1
+T1518.001,Security Software Discovery,T1518.001: Security Software Discovery,Discovery,https://attack.mitre.org/techniques/T1518/001,y,,,,,,,,2,,1,,17,,2,,,1,,4,,6,1,,7,3,3,0,2,3,3
+T1525,Implant Internal Image,T1525: Implant Internal Image,Persistence,https://attack.mitre.org/techniques/T1525,y,3,16,29,3,2,1,,,,6,,,,,1,,,,,,,,,,,,3,2,0,1
+T1526,Cloud Service Discovery,T1526: Cloud Service Discovery,Discovery,https://attack.mitre.org/techniques/T1526,y,,,,,4,4,,1,,3,,,,,1,,,,,,,,,,,,1,2,0,1
+T1528,Steal Application Access Token,T1528: Steal Application Access Token,Credential Access,https://attack.mitre.org/techniques/T1528,y,4,19,43,5,4,,,3,,5,,,,,2,,,,1,,,,,,,2,3,2,1,2
+T1529,System Shutdown/Reboot,T1529: System Shutdown/Reboot,Impact,https://attack.mitre.org/techniques/T1529,y,,,,,3,,,,,,,1,,2,2,,,,5,,9,,,1,,,1,1,3,1
+T1530,Data from Cloud Storage Object,T1530: Data from Cloud Storage Object,Collection,https://attack.mitre.org/techniques/T1530,y,6,33,47,,9,2,,5,,6,,,,,8,9,,,,,,,,,,,3,2,0,1
+T1531,Account Access Removal,T1531: Account Access Removal,Impact,https://attack.mitre.org/techniques/T1531,y,,,,5,6,4,,7,,3,,1,,,2,,,,3,,3,,,1,,1,2,2,2,2
+T1534,Internal Spearphishing,T1534: Internal Spearphishing,Lateral Movement,https://attack.mitre.org/techniques/T1534,y,,,,8,,,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1535,Unused/Unsupported Cloud Regions,T1535: Unused/Unsupported Cloud Regions,Defense Evasion,https://attack.mitre.org/techniques/T1535,y,2,1,2,,2,8,,,,3,,,,,,,,,,,,,,,,,2,1,0,1
+T1537,Transfer Data to Cloud Account,T1537: Transfer Data to Cloud Account,Exfiltration,https://attack.mitre.org/techniques/T1537,y,3,20,14,,9,2,,6,,2,,,,,1,,,,4,,,,,,1,,3,2,1,2
+T1538,Cloud Service Dashboard,T1538: Cloud Service Dashboard,Discovery,https://attack.mitre.org/techniques/T1538,y,1,6,10,,5,,,,,3,,,,,2,,,,,,,,,,,,3,1,0,1
+T1539,Steal Web Session Cookie,T1539: Steal Web Session Cookie,Credential Access,https://attack.mitre.org/techniques/T1539,y,4,10,16,4,4,,,2,,,,,,,,,,,1,,1,,,,,,3,1,1,1
+T1542,Pre-OS Boot,T1542: Pre-OS Boot,"Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1542,n,3,19,,6,1,,,,,3,,1,,,2,,,,,,,,,,,,3,1,0,1
+T1542.001,System Firmware,T1542.001: System Firmware,"Persistence, Defense Evasion",https://attack.mitre.org/techniques/T1542/001,y,3,18,,5,,,,,,1,,,,,,,,,,,,,,,,,3,1,0,1
+T1542.002,Component Firmware,T1542.002: Component Firmware,"Persistence, Defense Evasion",https://attack.mitre.org/techniques/T1542/002,y,,,,4,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1542.003,Bootkit,T1542.003: Bootkit,"Persistence, Defense Evasion",https://attack.mitre.org/techniques/T1542/003,y,2,18,,1,,,,,,1,,1,,,,,,,1,,,,,,,,2,1,0,1
+T1542.004,ROMMONkit,T1542.004: ROMMONkit,"Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1542/004,y,3,20,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1542.005,TFTP Boot,T1542.005: TFTP Boot,"Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1542/005,y,6,24,,,,,,,,2,,,,,2,,,,,,,,,,,,2,1,0,1
+T1543,Create or Modify System Process,T1543: Create or Modify System Process,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1543,n,4,21,,4,4,16,,6,,6,,5,,,1,,,,1,,,,,,,,3,2,0,1
+T1543.001,Launch Agent,T1543.001: Launch Agent,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1543/001,y,1,7,,3,,,,3,,,,,,,,,,,,,2,,,,,,2,1,1,1
+T1543.002,Systemd Service,T1543.002: Systemd Service,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1543/002,y,4,16,,4,,,,,,2,,,,,1,,,,2,,4,,,,,,3,1,1,1
+T1543.003,Windows Service,T1543.003: Windows Service,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1543/003,y,2,15,,,,11,,6,,5,,2,,,,,6,,25,,8,1,,,1,2,2,2,2,2
+T1543.004,Launch Daemon,T1543.004: Launch Daemon,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1543/004,y,1,7,,3,,,,,,,,,,,,,,,,,2,,,,,,2,0,1,1
+T1546,Event Triggered Execution,T1546: Event Triggered Execution,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546,n,,4,,27,2,12,,3,,4,,22,,3,,,,,7,2,,,,1,,1,2,2,1,2
+T1546.001,Change Default File Association,T1546.001: Change Default File Association,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/001,y,,,,,,2,,,,1,,2,,,,,,,2,,2,,,,,,0,1,1,1
+T1546.002,Screensaver,T1546.002: Screensaver,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/002,y,2,9,,7,,1,,,,2,,1,,,,,1,,4,,2,,,,,,3,2,1,2
+T1546.003,Windows Management Instrumentation Event Subscription,T1546.003: Windows Management Instrumentation Event Subscription,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/003,y,2,7,,10,,2,,1,,,,3,,,,,,,12,,2,,,,,2,3,1,1,1
+T1546.004,Unix Shell Configuration Modification,T1546.004: Unix Shell Configuration Modification,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/004,y,1,8,,4,,2,,1,,2,,,,,,,,,1,,4,,,,,,2,1,1,1
+T1546.005,Trap,T1546.005: Trap,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/005,y,,,,7,,,,,,,,,,,,,,,,,2,,,,,,2,0,1,1
+T1546.006,LC_LOAD_DYLIB Addition,T1546.006: LC_LOAD_DYLIB Addition,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/006,y,3,14,,7,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1546.007,Netsh Helper DLL,T1546.007: Netsh Helper DLL,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/007,y,,,,6,,,,,,1,,3,,1,,,,,1,,2,,,,,,2,1,1,1
+T1546.008,Accessibility Features,T1546.008: Accessibility Features,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/008,y,3,6,,17,,1,,2,,3,,4,,16,,,2,,4,,4,1,,1,,,3,2,2,2
+T1546.009,AppCert DLLs,T1546.009: AppCert DLLs,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/009,y,1,3,,6,,,,1,,1,,1,,,,,,,1,,,,,,,,2,1,0,1
+T1546.010,AppInit DLLs,T1546.010: AppInit DLLs,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/010,y,,5,,6,,,,1,,1,,,,,,,2,,1,,2,,,,,,2,2,1,2
+T1546.011,Application Shimming,T1546.011: Application Shimming,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/011,y,2,2,,1,,3,,3,,1,,2,,3,,,,,2,,6,,,,,,2,1,1,1
+T1546.012,Image File Execution Options Injection,T1546.012: Image File Execution Options Injection,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/012,y,,,,,,1,,1,,1,,2,,1,,,,,2,,4,,,,,,0,1,1,1
+T1546.013,PowerShell Profile,T1546.013: PowerShell Profile,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/013,y,4,10,,7,,,,,,1,,1,,,,,,,3,,2,,,,,,3,1,1,1
+T1546.014,Emond,T1546.014: Emond,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/014,y,1,6,,3,,,,2,,,,,,1,,,,,1,,2,,,,,,2,1,1,1
+T1546.015,Component Object Model Hijacking,T1546.015: Component Object Model Hijacking,"Privilege Escalation, Persistence",https://attack.mitre.org/techniques/T1546/015,y,,,,7,,1,,1,,1,,2,,7,,,1,,5,,4,,,,,,2,2,1,1
+T1547,Boot or Logon Autostart Execution,T1547: Boot or Logon Autostart Execution,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547,n,,,,9,1,17,,2,,5,,13,,1,,,,,4,,2,,,,,3,2,2,1,2
+T1547.001,Registry Run Keys / Startup Folder,T1547.001: Registry Run Keys / Startup Folder,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/001,y,,,,8,,2,,1,,4,,8,,,,,3,,28,,18,2,,,,19,2,2,3,3
+T1547.002,Authentication Package,T1547.002: Authentication Package,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/002,y,1,5,,,,,,3,,1,,1,,,,,,,,,2,,,,,,2,1,1,1
+T1547.003,Time Providers,T1547.003: Time Providers,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/003,y,1,10,,,,1,,1,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1547.004,Winlogon Helper DLL,T1547.004: Winlogon Helper DLL,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/004,y,2,11,,,,,,,,1,,1,,,,,2,,3,,6,1,,,,,2,1,1,1
+T1547.005,Security Support Provider,T1547.005: Security Support Provider,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/005,y,1,5,,,,,,1,,3,,1,,1,,,,,1,,2,,,,,,2,1,1,1
+T1547.006,Kernel Modules and Extensions,T1547.006: Kernel Modules and Extensions,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/006,y,3,13,,3,,3,,2,,2,,,,,,,,,2,,2,,,,,,3,1,1,1
+T1547.007,Re-opened Applications,T1547.007: Re-opened Applications,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/007,y,2,11,,3,,,,,,,,,,,,,,,,,4,,,,,,2,0,1,1
+T1547.008,LSASS Driver,T1547.008: LSASS Driver,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/008,y,2,7,,4,,,,,,1,,1,,,,,,,1,,,,,,,,2,1,0,1
+T1547.009,Shortcut Modification,T1547.009: Shortcut Modification,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/009,y,1,8,,7,,,,,,2,,,,,,,,,4,,4,,,,,,3,1,1,1
+T1547.010,Port Monitors,T1547.010: Port Monitors,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/010,y,,,,,,1,,2,,1,,,,,,,,,3,,2,,,,,,0,2,1,2
+T1547.011,Plist Modification,T1547.011: Plist Modification,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/011,y,2,12,,3,,,,2,,,,,,,,,,,,,2,,,,,,2,1,1,1
+T1547.012,Print Processors,T1547.012: Print Processors,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/012,y,1,8,,,,6,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1547.013,XDG Autostart Entries,T1547.013: XDG Autostart Entries,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/013,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1547.014,Active Setup,T1547.014: Active Setup,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/014,y,,,,,,1,,,,,,,,,,,,,,,,,,,,,0,1,0,1
+T1547.015,Login Items,T1547.015: Login Items,"Persistence, Privilege Escalation",https://attack.mitre.org/techniques/T1547/015,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1548,Abuse Elevation Control Mechanism,T1548: Abuse Elevation Control Mechanism,"Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1548,n,6,21,,11,2,28,,7,,4,,14,,17,1,,1,,13,,,1,,,,,3,3,1,2
+T1548.001,Setuid and Setgid,T1548.001: Setuid and Setgid,"Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1548/001,y,1,3,,,,3,,1,,1,,,,11,,,,,1,,10,,,,,,1,1,1,1
+T1548.002,Bypass User Account Control,T1548.002: Bypass User Account Control,"Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1548/002,y,4,12,,10,,12,,11,,3,,4,,4,,,3,,45,,34,,,,5,1,3,2,3,3
+T1548.003,Sudo and Sudo Caching,T1548.003: Sudo and Sudo Caching,"Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1548/003,y,3,13,,4,,7,,2,,1,,,,,1,,,,2,,6,,,1,,,3,1,2,1
+T1548.004,Elevated Execution with Prompt,T1548.004: Elevated Execution with Prompt,"Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1548/004,y,1,11,,2,,,,,,,,,,1,,,,,,,,,,,,,2,1,0,1
+T1550,Use Alternate Authentication Material,T1550: Use Alternate Authentication Material,"Defense Evasion, Lateral Movement",https://attack.mitre.org/techniques/T1550,n,2,7,,18,2,7,,,,3,,4,,4,1,,,,3,,,,,,,,3,2,0,1
+T1550.001,Application Access Token,T1550.001: Application Access Token,"Defense Evasion, Lateral Movement",https://attack.mitre.org/techniques/T1550/001,y,3,16,,15,,,,5,,1,,,,,1,,,,3,,,,,,,,3,2,0,1
+T1550.002,Pass the Hash,T1550.002: Pass the Hash,"Defense Evasion, Lateral Movement",https://attack.mitre.org/techniques/T1550/002,y,4,8,,5,,4,,,,3,,4,,3,,,1,,5,,4,1,,,,,3,2,1,2
+T1550.003,Pass the Ticket,T1550.003: Pass the Ticket,"Defense Evasion, Lateral Movement",https://attack.mitre.org/techniques/T1550/003,y,4,11,,5,,3,,1,,2,,,,3,,,,,2,,4,,,,,,3,1,1,1
+T1550.004,Web Session Cookie,T1550.004: Web Session Cookie,"Defense Evasion, Lateral Movement",https://attack.mitre.org/techniques/T1550/004,y,2,3,,14,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1552,Unsecured Credentials,T1552: Unsecured Credentials,Credential Access,https://attack.mitre.org/techniques/T1552,n,10,33,,7,7,3,,,,6,,6,,3,7,,,,5,,,,,1,,,3,2,1,2
+T1552.001,Credentials In Files,T1552.001: Credentials In Files,Credential Access,https://attack.mitre.org/techniques/T1552/001,y,4,18,,7,,,,2,,2,,4,,1,6,,,,12,,5,,,1,,,3,2,2,2
+T1552.002,Credentials in Registry,T1552.002: Credentials in Registry,Credential Access,https://attack.mitre.org/techniques/T1552/002,y,3,18,,4,,2,,,,1,,1,,1,1,,1,,3,,2,,,,2,1,3,2,2,2
+T1552.003,Bash History,T1552.003: Bash History,Credential Access,https://attack.mitre.org/techniques/T1552/003,y,1,4,,7,,,,,,,,,,,,,,,3,,1,,,1,1,,2,1,2,1
+T1552.004,Private Keys,T1552.004: Private Keys,Credential Access,https://attack.mitre.org/techniques/T1552/004,y,4,22,,4,,,,1,,2,,,,2,4,,,,5,,7,,,,1,,3,2,3,3
+T1552.005,Cloud Instance Metadata API,T1552.005: Cloud Instance Metadata API,Credential Access,https://attack.mitre.org/techniques/T1552/005,y,2,13,,4,,,,,,,,,,,2,,,,,,,,,,,,2,1,0,1
+T1552.006,Group Policy Preferences,T1552.006: Group Policy Preferences,Credential Access,https://attack.mitre.org/techniques/T1552/006,y,3,13,,4,,,,,,1,,1,,,,,,,2,,2,,,,,,3,1,1,1
+T1552.007,Container API,T1552.007: Container API,Credential Access,https://attack.mitre.org/techniques/T1552/007,y,,,,,,,,,,,,,,,1,,,,2,,2,,,,,,0,1,1,1
+T1553,Subvert Trust Controls,T1553: Subvert Trust Controls,Defense Evasion,https://attack.mitre.org/techniques/T1553,n,4,19,,,3,1,,1,,3,,2,,2,1,,,,1,,,,,,,,3,2,0,1
+T1553.001,Gatekeeper Bypass,T1553.001: Gatekeeper Bypass,Defense Evasion,https://attack.mitre.org/techniques/T1553/001,y,1,6,,,,,,,,,,,,2,,,,,1,,1,,,,,,2,1,1,1
+T1553.002,Code Signing,T1553.002: Code Signing,Defense Evasion,https://attack.mitre.org/techniques/T1553/002,y,,,,,,,,1,,2,,1,,,1,,,,1,,,,,,,1,0,2,1,2
+T1553.003,SIP and Trust Provider Hijacking,T1553.003: SIP and Trust Provider Hijacking,Defense Evasion,https://attack.mitre.org/techniques/T1553/003,y,2,10,,,,,,1,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1553.004,Install Root Certificate,T1553.004: Install Root Certificate,Defense Evasion,https://attack.mitre.org/techniques/T1553/004,y,3,6,,,,1,,2,,2,,1,,,1,,1,,4,,6,1,,,,,2,2,2,2
+T1553.005,Mark-of-the-Web Bypass,T1553.005: Mark-of-the-Web Bypass,Defense Evasion,https://attack.mitre.org/techniques/T1553/005,y,,,,,,,,,,,,,,,,,,,3,,3,,,,,,0,0,1,1
+T1553.006,Code Signing Policy Modification,T1553.006: Code Signing Policy Modification,Defense Evasion,https://attack.mitre.org/techniques/T1553/006,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1554,Compromise Client Software Binary,T1554: Compromise Client Software Binary,Persistence,https://attack.mitre.org/techniques/T1554,y,1,9,,1,4,4,,2,,3,,,,,,,,,3,,,,,,,,3,1,0,1
+T1555,Credentials from Password Stores,T1555: Credentials from Password Stores,Credential Access,https://attack.mitre.org/techniques/T1555,n,3,3,,,8,6,,1,,7,,2,,3,1,,,,4,,5,,,,,1,2,2,2,2
+T1555.001,Keychain,T1555.001: Keychain,Credential Access,https://attack.mitre.org/techniques/T1555/001,y,1,3,,,,,,4,,,,,,1,,,,,1,,1,,,1,,,1,1,1,1
+T1555.002,Securityd Memory,T1555.002: Securityd Memory,Credential Access,https://attack.mitre.org/techniques/T1555/002,y,,3,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1555.003,Credentials from Web Browsers,T1555.003: Credentials from Web Browsers,Credential Access,https://attack.mitre.org/techniques/T1555/003,y,1,,,,,3,,2,,2,,2,,,,,,,2,,8,,,,,,1,1,1,1
+T1555.004,Windows Credential Manager,T1555.004: Windows Credential Manager,Credential Access,https://attack.mitre.org/techniques/T1555/004,y,,,,,,,,1,,,,,,,,,,,2,,1,,,,,,0,1,1,1
+T1555.005,Password Managers,T1555.005: Password Managers,Credential Access,https://attack.mitre.org/techniques/T1555/005,y,,,,,,,,,,,,,,,,,,,1,,,,,,,,0,0,0,0
+T1556,Modify Authentication Process,T1556: Modify Authentication Process,"Credential Access, Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1556,n,5,16,,6,2,3,,4,,4,,,,1,,,,,1,,,,,1,,,3,2,1,2
+T1556.001,Domain Controller Authentication,T1556.001: Domain Controller Authentication,"Credential Access, Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1556/001,y,3,14,,2,,,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1556.002,Password Filter DLL,T1556.002: Password Filter DLL,"Credential Access, Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1556/002,y,1,3,,5,,,,,,1,,,,,,,,,2,,3,,,,,,2,1,1,1
+T1556.003,Pluggable Authentication Modules,T1556.003: Pluggable Authentication Modules,"Credential Access, Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1556/003,y,2,12,,6,,,,,,2,,,,,,,,,,,6,,,,,,3,1,1,1
+T1556.004,Network Device Authentication,T1556.004: Network Device Authentication,"Credential Access, Defense Evasion, Persistence",https://attack.mitre.org/techniques/T1556/004,y,2,13,,2,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1557,Adversary-in-the-Middle,T1557: Adversary-in-the-Middle,"Credential Access, Collection",https://attack.mitre.org/techniques/T1557,n,7,24,,9,4,,,,,5,,,,2,4,,,,,,,,,,,,3,2,0,1
+T1557.001,LLMNR/NBT-NS Poisoning and SMB Relay,T1557.001: LLMNR/NBT-NS Poisoning and SMB Relay,"Credential Access, Collection",https://attack.mitre.org/techniques/T1557/001,y,4,15,,9,,,,,,4,,,,1,1,,,,6,,2,,,,,,3,2,1,1
+T1557.002,ARP Cache Poisoning,T1557.002: ARP Cache Poisoning,"Credential Access, Collection",https://attack.mitre.org/techniques/T1557/002,y,6,22,,,,,,,,2,,,,,1,,,,,,,,,,,,2,1,0,1
+T1558,Steal or Forge Kerberos Tickets,T1558: Steal or Forge Kerberos Tickets,Credential Access,https://attack.mitre.org/techniques/T1558,n,4,19,,14,4,9,,1,,5,,6,,2,,,,,3,,,,,,,,3,2,0,1
+T1558.001,Golden Ticket,T1558.001: Golden Ticket,Credential Access,https://attack.mitre.org/techniques/T1558/001,y,2,9,,5,,1,,,,4,,,,,,,,,,,2,,,,,,2,1,1,1
+T1558.002,Silver Ticket,T1558.002: Silver Ticket,Credential Access,https://attack.mitre.org/techniques/T1558/002,y,3,19,,5,,1,,,,1,,,,,,,,,,,,,,,,,3,1,0,1
+T1558.003,Kerberoasting,T1558.003: Kerberoasting,Credential Access,https://attack.mitre.org/techniques/T1558/003,y,3,19,,14,,5,,2,,4,,6,,2,,,,,9,,5,,,1,,1,3,2,2,2
+T1558.004,AS-REP Roasting,T1558.004: AS-REP Roasting,Credential Access,https://attack.mitre.org/techniques/T1558/004,y,3,20,,,,5,,,,2,,,,,,,,,,,2,,,,,,2,1,1,1
+T1559,Inter-Process Communication,T1559: Inter-Process Communication,Execution,https://attack.mitre.org/techniques/T1559,n,6,19,,,2,,,,,1,,2,,2,,,,,1,,,,,,,,3,1,0,1
+T1559.001,Component Object Model,T1559.001: Component Object Model,Execution,https://attack.mitre.org/techniques/T1559/001,y,2,13,,,,1,,2,,1,,2,,,,,,,4,,,,,,,,2,1,0,1
+T1559.002,Dynamic Data Exchange,T1559.002: Dynamic Data Exchange,Execution,https://attack.mitre.org/techniques/T1559/002,y,4,14,,,,,,,,1,,,,2,,,1,,1,,3,,,,,,2,1,1,1
+T1560,Archive Collected Data,T1560: Archive Collected Data,Collection,https://attack.mitre.org/techniques/T1560,n,1,5,,3,3,6,,,,1,,3,,,,,,,2,,1,,,,,3,3,1,1,1
+T1560.001,Archive via Utility,T1560.001: Archive via Utility,Collection,https://attack.mitre.org/techniques/T1560/001,y,1,5,,3,,6,,2,,,,1,,,,,1,,10,,8,1,,1,3,2,2,1,3,1
+T1560.002,Archive via Library,T1560.002: Archive via Library,Collection,https://attack.mitre.org/techniques/T1560/002,y,1,,,3,,,,,,,,,,,,,,,,,4,,,,,5,2,0,1,1
+T1560.003,Archive via Custom Method,T1560.003: Archive via Custom Method,Collection,https://attack.mitre.org/techniques/T1560/003,y,,,,3,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1561,Disk Wipe,T1561: Disk Wipe,Impact,https://attack.mitre.org/techniques/T1561,n,1,10,,,5,2,,,,1,,,,,2,,,,,,,,,,,,2,1,0,1
+T1561.001,Disk Content Wipe,T1561.001: Disk Content Wipe,Impact,https://attack.mitre.org/techniques/T1561/001,y,,10,,,,,,,,1,,,,,2,,,,1,,,,,,,,2,1,0,1
+T1561.002,Disk Structure Wipe,T1561.002: Disk Structure Wipe,Impact,https://attack.mitre.org/techniques/T1561/002,y,,10,,,,2,,,,1,,,,,2,,,,1,,,,,,,,2,1,0,1
+T1562,Impair Defenses,T1562: Impair Defenses,Defense Evasion,https://attack.mitre.org/techniques/T1562,n,2,16,,16,4,47,,14,,5,,15,,19,5,,,,7,,,,,1,,2,3,2,1,2
+T1562.001,Disable or Modify Tools,T1562.001: Disable or Modify Tools,Defense Evasion,https://attack.mitre.org/techniques/T1562/001,y,2,13,,7,,39,,36,,4,,10,,16,4,,2,,51,,28,1,,4,3,4,3,3,3,3
+T1562.002,Disable Windows Event Logging,T1562.002: Disable Windows Event Logging,Defense Evasion,https://attack.mitre.org/techniques/T1562/002,y,2,13,,1,,,,1,,1,,,,2,,,1,,6,,6,1,,7,,1,2,1,2,1
+T1562.003,Impair Command History Logging,T1562.003: Impair Command History Logging,Defense Evasion,https://attack.mitre.org/techniques/T1562/003,y,2,4,,8,,,,,,,,,,,1,,,,,,2,,,,,,2,1,1,1
+T1562.004,Disable or Modify System Firewall,T1562.004: Disable or Modify System Firewall,Defense Evasion,https://attack.mitre.org/techniques/T1562/004,y,2,13,,,,3,,4,,3,,1,,1,1,,,,10,,15,,,1,,4,2,2,3,3
+T1562.006,Indicator Blocking,T1562.006: Indicator Blocking,Defense Evasion,https://attack.mitre.org/techniques/T1562/006,y,4,13,,,,1,,2,,3,,5,,5,2,,2,,3,,2,1,,,,,2,2,1,2
+T1562.007,Disable or Modify Cloud Firewall,T1562.007: Disable or Modify Cloud Firewall,Defense Evasion,https://attack.mitre.org/techniques/T1562/007,y,2,6,,,,6,,3,,1,,,,,2,2,,,,,,,,,,,2,2,0,1
+T1562.008,Disable Cloud Logs,T1562.008: Disable Cloud Logs,Defense Evasion,https://attack.mitre.org/techniques/T1562/008,y,1,6,,,,,,,,1,,,,,4,1,,,,,3,,,,,,2,1,1,1
+T1562.009,Safe Mode Boot,T1562.009: Safe Mode Boot,Defense Evasion,https://attack.mitre.org/techniques/T1562/009,y,,,,1,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1562.010,Downgrade Attack,T1562.010: Downgrade Attack,Defense Evasion,https://attack.mitre.org/techniques/T1562/010,y,,,,,,,,,,,,,,,,,,,1,,,,,,,,0,0,0,0
+T1563,Remote Service Session Hijacking,T1563: Remote Service Session Hijacking,Lateral Movement,https://attack.mitre.org/techniques/T1563,n,4,19,,8,5,1,,,,2,,2,,1,,,,,,,,,,,,,3,1,0,1
+T1563.001,SSH Hijacking,T1563.001: SSH Hijacking,Lateral Movement,https://attack.mitre.org/techniques/T1563/001,y,4,17,,8,,,,,,1,,,,,,,,,,,,,,,,,3,1,0,1
+T1563.002,RDP Hijacking,T1563.002: RDP Hijacking,Lateral Movement,https://attack.mitre.org/techniques/T1563/002,y,7,18,,8,,,,,,2,,2,,1,,,,,2,,1,,,,,,3,1,1,1
+T1564,Hide Artifacts,T1564: Hide Artifacts,Defense Evasion,https://attack.mitre.org/techniques/T1564,n,,,,10,3,1,,,,3,,6,,,,,,,5,,3,,,1,,,2,1,1,1
+T1564.001,Hidden Files and Directories,T1564.001: Hidden Files and Directories,Defense Evasion,https://attack.mitre.org/techniques/T1564/001,y,,,,,,2,,4,,2,,3,,,,,,,6,,8,,,,,1,0,2,3,3
+T1564.002,Hidden Users,T1564.002: Hidden Users,Defense Evasion,https://attack.mitre.org/techniques/T1564/002,y,1,3,,4,,,,,,,,,,,,,,,1,,2,,,,,,2,1,1,1
+T1564.003,Hidden Window,T1564.003: Hidden Window,Defense Evasion,https://attack.mitre.org/techniques/T1564/003,y,1,3,,3,,,,,,1,,1,,,,,,,2,,1,,,,,,2,1,1,1
+T1564.004,NTFS File Attributes,T1564.004: NTFS File Attributes,Defense Evasion,https://attack.mitre.org/techniques/T1564/004,y,1,6,,,,,,2,,,,2,,,,,2,,9,,4,,,,,,2,1,1,1
+T1564.005,Hidden File System,T1564.005: Hidden File System,Defense Evasion,https://attack.mitre.org/techniques/T1564/005,y,,,,1,,,,,,1,,,,,,,,,,,,,,,,,1,1,0,1
+T1564.006,Run Virtual Instance,T1564.006: Run Virtual Instance,Defense Evasion,https://attack.mitre.org/techniques/T1564/006,y,2,7,,5,,,,,,2,,,,,,,,,2,,3,,,,,,2,1,1,1
+T1564.007,VBA Stomping,T1564.007: VBA Stomping,Defense Evasion,https://attack.mitre.org/techniques/T1564/007,y,1,4,,5,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1564.008,Email Hiding Rules,T1564.008: Email Hiding Rules,Defense Evasion,https://attack.mitre.org/techniques/T1564/008,y,,,,1,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1564.009,Resource Forking,T1564.009: Resource Forking,Defense Evasion,https://attack.mitre.org/techniques/T1564/009,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1565,Data Manipulation,T1565: Data Manipulation,Impact,https://attack.mitre.org/techniques/T1565,n,4,26,,15,3,,,,,4,,,,,4,,,,2,,,,,,,,3,2,0,1
+T1565.001,Stored Data Manipulation,T1565.001: Stored Data Manipulation,Impact,https://attack.mitre.org/techniques/T1565/001,y,3,23,,3,,,,3,,2,,,,,3,1,,,3,,,,,,1,,3,2,1,2
+T1565.002,Transmitted Data Manipulation,T1565.002: Transmitted Data Manipulation,Impact,https://attack.mitre.org/techniques/T1565/002,y,1,12,,8,,,,,,2,,,,,2,,,,1,,,,,,,,3,2,0,1
+T1565.003,Runtime Data Manipulation,T1565.003: Runtime Data Manipulation,Impact,https://attack.mitre.org/techniques/T1565/003,y,2,12,,7,,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1566,Phishing,T1566: Phishing,Initial Access,https://attack.mitre.org/techniques/T1566,n,4,12,,18,7,23,,3,,3,,12,,2,1,,,,4,,,,,,,,3,2,0,1
+T1566.001,Spearphishing Attachment,T1566.001: Spearphishing Attachment,Initial Access,https://attack.mitre.org/techniques/T1566/001,y,3,12,,17,,21,,1,,1,,11,,2,1,,,,11,,2,,,,,,3,2,1,2
+T1566.002,Spearphishing Link,T1566.002: Spearphishing Link,Initial Access,https://attack.mitre.org/techniques/T1566/002,y,2,11,,18,,1,,7,,2,,,,,1,,,,,,,,,,,,3,2,0,1
+T1566.003,Spearphishing via Service,T1566.003: Spearphishing via Service,Initial Access,https://attack.mitre.org/techniques/T1566/003,y,2,8,,5,,1,,,,,,,,,1,,,,,,,,,,,,2,1,0,1
+T1567,Exfiltration Over Web Service,T1567: Exfiltration Over Web Service,Exfiltration,https://attack.mitre.org/techniques/T1567,n,1,3,,9,9,1,,,,2,,1,,,2,,,,4,,1,,,,,,3,2,1,2
+T1567.001,Exfiltration to Code Repository,T1567.001: Exfiltration to Code Repository,Exfiltration,https://attack.mitre.org/techniques/T1567/001,y,1,3,,9,,,,1,,2,,,,,1,,,,2,,,,,,3,,2,2,2,2
+T1567.002,Exfiltration to Cloud Storage,T1567.002: Exfiltration to Cloud Storage,Exfiltration,https://attack.mitre.org/techniques/T1567/002,y,1,3,,9,,1,,1,,2,,1,,,2,,,,4,,,,,,2,9,2,2,3,3
+T1568,Dynamic Resolution,T1568: Dynamic Resolution,Command and Control,https://attack.mitre.org/techniques/T1568,n,2,8,,14,2,,,,,3,,4,,,1,,,,1,,,,,,,1,3,1,1,1
+T1568.001,Fast Flux DNS,T1568.001: Fast Flux DNS,Command and Control,https://attack.mitre.org/techniques/T1568/001,y,,,,14,,,,,,2,,,,,,,,,,,,,,,,,2,1,0,1
+T1568.002,Domain Generation Algorithms,T1568.002: Domain Generation Algorithms,Command and Control,https://attack.mitre.org/techniques/T1568/002,y,2,8,,14,,,,3,,3,,4,,,1,,,,,,,,,,,,3,1,0,1
+T1568.003,DNS Calculation,T1568.003: DNS Calculation,Command and Control,https://attack.mitre.org/techniques/T1568/003,y,,,,14,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1569,System Services,T1569: System Services,Execution,https://attack.mitre.org/techniques/T1569,n,3,14,,,3,6,,,,2,,8,,,,,,,4,2,,,,,,2,3,2,1,2
+T1569.001,Launchctl,T1569.001: Launchctl,Execution,https://attack.mitre.org/techniques/T1569/001,y,1,7,,,,,,,,,,,,,,,,,,,1,,,,,1,2,1,1,1
+T1569.002,Service Execution,T1569.002: Service Execution,Execution,https://attack.mitre.org/techniques/T1569/002,y,2,13,,,,4,,3,,2,,8,,,,,4,,32,,3,2,,,1,1,2,2,2,2
+T1570,Lateral Tool Transfer,T1570: Lateral Tool Transfer,Lateral Movement,https://attack.mitre.org/techniques/T1570,y,2,11,,10,2,,,1,,1,,,,,1,,3,,2,,,,,,2,,3,2,2,2
+T1571,Non-Standard Port,T1571: Non-Standard Port,Command and Control,https://attack.mitre.org/techniques/T1571,y,2,8,,9,2,,,,,3,,5,,,3,,,,3,,2,,,,,,3,2,1,2
+T1572,Protocol Tunneling,T1572: Protocol Tunneling,Command and Control,https://attack.mitre.org/techniques/T1572,y,2,11,,9,2,,,3,,1,,,,4,1,,,,5,,3,,,,,,3,2,1,2
+T1573,Encrypted Channel,T1573: Encrypted Channel,Command and Control,https://attack.mitre.org/techniques/T1573,n,2,11,,13,3,,,1,,1,,,,2,,,,,4,,1,,,,,,3,1,1,1
+T1573.001,Symmetric Cryptography,T1573.001: Symmetric Cryptography,Command and Control,https://attack.mitre.org/techniques/T1573/001,y,1,11,,9,,,,,,,,,,,,,,,,,,,,1,,,3,0,1,1
+T1573.002,Asymmetric Cryptography,T1573.002: Asymmetric Cryptography,Command and Control,https://attack.mitre.org/techniques/T1573/002,y,2,11,,13,,,,,,1,,,,,,,,,,,,,,,,,3,1,0,1
+T1574,Hijack Execution Flow,T1574: Hijack Execution Flow,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574,n,6,19,,11,2,7,,,,3,,13,,9,,,,,6,,,,,,,,3,1,0,1
+T1574.001,DLL Search Order Hijacking,T1574.001: DLL Search Order Hijacking,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/001,y,2,9,,3,,,,1,,2,,1,,1,,,1,,6,,3,1,,,,,2,1,1,1
+T1574.002,DLL Side-Loading,T1574.002: DLL Side-Loading,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/002,y,3,9,,3,,2,,2,,,,11,,1,,,,,18,,3,,,,,,3,1,1,1
+T1574.004,Dylib Hijacking,T1574.004: Dylib Hijacking,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/004,y,1,13,,3,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1574.005,Executable Installer File Permissions Weakness,T1574.005: Executable Installer File Permissions Weakness,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/005,y,3,12,,2,,,,,,,,,,1,,,,,,,,,,,,,2,1,0,1
+T1574.006,Dynamic Linker Hijacking,T1574.006: Dynamic Linker Hijacking,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/006,y,1,4,,4,,1,,1,,1,,,,1,,,,,2,,6,,,,,,2,1,1,1
+T1574.007,Path Interception by PATH Environment Variable,T1574.007: Path Interception by PATH Environment Variable,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/007,y,3,16,,7,,,,2,,2,,,,,,,,,,,,,,,,,3,1,0,1
+T1574.008,Path Interception by Search Order Hijacking,T1574.008: Path Interception by Search Order Hijacking,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/008,y,3,16,,7,,,,,,2,,,,,,,,,1,,,,,,,,3,1,0,1
+T1574.009,Path Interception by Unquoted Path,T1574.009: Path Interception by Unquoted Path,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/009,y,3,16,,7,,1,,,,2,,,,,,,1,,,,3,,,,,,3,2,1,2
+T1574.010,Services File Permissions Weakness,T1574.010: Services File Permissions Weakness,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/010,y,1,12,,2,,,,1,,,,1,,2,,,1,,,,,,,,1,,2,1,1,1
+T1574.011,Services Registry Permissions Weakness,T1574.011: Services Registry Permissions Weakness,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/011,y,,2,,1,,2,,,,,,1,,2,,,4,,6,,6,2,,,,,1,2,2,2
+T1574.012,COR_PROFILER,T1574.012: COR_PROFILER,"Persistence, Privilege Escalation, Defense Evasion",https://attack.mitre.org/techniques/T1574/012,y,2,9,,3,,,,,,,,,,,,,,,2,,9,,,,,,2,1,3,1
+T1578,Modify Cloud Compute Infrastructure,T1578: Modify Cloud Compute Infrastructure,Defense Evasion,https://attack.mitre.org/techniques/T1578,n,2,11,,,4,,,,,3,,,,,,4,,,1,,,,,,,,2,2,0,1
+T1578.001,Create Snapshot,T1578.001: Create Snapshot,Defense Evasion,https://attack.mitre.org/techniques/T1578/001,y,2,11,,,,,,,,2,,,,,,,,,,,,,,,,,2,1,0,1
+T1578.002,Create Cloud Instance,T1578.002: Create Cloud Instance,Defense Evasion,https://attack.mitre.org/techniques/T1578/002,y,2,11,,,,,,,,2,,,,,,,,,,,,,,,,,2,1,0,1
+T1578.003,Delete Cloud Instance,T1578.003: Delete Cloud Instance,Defense Evasion,https://attack.mitre.org/techniques/T1578/003,y,2,11,,,,,,,,2,,,,,,,,,1,,,,,,,,2,1,0,1
+T1578.004,Revert Cloud Instance,T1578.004: Revert Cloud Instance,Defense Evasion,https://attack.mitre.org/techniques/T1578/004,y,,,,,,,,,,2,,,,,,,,,,,,,,,,,0,1,0,1
+T1580,Cloud Infrastructure Discovery,T1580: Cloud Infrastructure Discovery,Discovery,https://attack.mitre.org/techniques/T1580,y,1,5,,,6,2,,,,5,,,,,3,,,,,,,,,,,,2,2,0,1
+T1583,Acquire Infrastructure,T1583: Acquire Infrastructure,Resource Development,https://attack.mitre.org/techniques/T1583,n,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1583.001,Domains,T1583.001: Domains,Resource Development,https://attack.mitre.org/techniques/T1583/001,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1583.002,DNS Server,T1583.002: DNS Server,Resource Development,https://attack.mitre.org/techniques/T1583/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1583.003,Virtual Private Server,T1583.003: Virtual Private Server,Resource Development,https://attack.mitre.org/techniques/T1583/003,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1583.004,Server,T1583.004: Server,Resource Development,https://attack.mitre.org/techniques/T1583/004,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1583.005,Botnet,T1583.005: Botnet,Resource Development,https://attack.mitre.org/techniques/T1583/005,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1583.006,Web Services,T1583.006: Web Services,Resource Development,https://attack.mitre.org/techniques/T1583/006,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1584,Compromise Infrastructure,T1584: Compromise Infrastructure,Resource Development,https://attack.mitre.org/techniques/T1584,n,1,,,,,,,,,2,,,,,,,,,2,,,,,,,,1,1,0,1
+T1584.001,Domains,T1584.001: Domains,Resource Development,https://attack.mitre.org/techniques/T1584/001,y,1,,,,,,,,,2,,,,,,,,,,,,,,,,,1,1,0,1
+T1584.002,DNS Server,T1584.002: DNS Server,Resource Development,https://attack.mitre.org/techniques/T1584/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1584.003,Virtual Private Server,T1584.003: Virtual Private Server,Resource Development,https://attack.mitre.org/techniques/T1584/003,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1584.004,Server,T1584.004: Server,Resource Development,https://attack.mitre.org/techniques/T1584/004,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1584.005,Botnet,T1584.005: Botnet,Resource Development,https://attack.mitre.org/techniques/T1584/005,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1584.006,Web Services,T1584.006: Web Services,Resource Development,https://attack.mitre.org/techniques/T1584/006,y,1,,,,,,,,,,,,,,,,,,1,,,,,,,,1,1,0,1
+T1585,Establish Accounts,T1585: Establish Accounts,Resource Development,https://attack.mitre.org/techniques/T1585,n,1,,,,,1,,,,,,,,,,,,,,,,,,,,,1,1,0,1
+T1585.001,Social Media Accounts,T1585.001: Social Media Accounts,Resource Development,https://attack.mitre.org/techniques/T1585/001,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1585.002,Email Accounts,T1585.002: Email Accounts,Resource Development,https://attack.mitre.org/techniques/T1585/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1586,Compromise Accounts,T1586: Compromise Accounts,Resource Development,https://attack.mitre.org/techniques/T1586,n,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1586.001,Social Media Accounts,T1586.001: Social Media Accounts,Resource Development,https://attack.mitre.org/techniques/T1586/001,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1586.002,Email Accounts,T1586.002: Email Accounts,Resource Development,https://attack.mitre.org/techniques/T1586/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1587,Develop Capabilities,T1587: Develop Capabilities,Resource Development,https://attack.mitre.org/techniques/T1587,n,1,,,,,,,,,,,1,,,,,,,5,,,,,,,,1,1,0,1
+T1587.001,Malware,T1587.001: Malware,Resource Development,https://attack.mitre.org/techniques/T1587/001,y,1,,,,,,,,,,,1,,,,,,,8,,,,,,,,1,1,0,1
+T1587.002,Code Signing Certificates,T1587.002: Code Signing Certificates,Resource Development,https://attack.mitre.org/techniques/T1587/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1587.003,Digital Certificates,T1587.003: Digital Certificates,Resource Development,https://attack.mitre.org/techniques/T1587/003,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1587.004,Exploits,T1587.004: Exploits,Resource Development,https://attack.mitre.org/techniques/T1587/004,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1588,Obtain Capabilities,T1588: Obtain Capabilities,Resource Development,https://attack.mitre.org/techniques/T1588,n,1,,,,,,,,,1,,,,,2,,,,2,,,,,,,,1,1,0,1
+T1588.001,Malware,T1588.001: Malware,Resource Development,https://attack.mitre.org/techniques/T1588/001,y,1,,,,,,,,,,,,,,,,,,1,,,,,,,,1,1,0,1
+T1588.002,Tool,T1588.002: Tool,Resource Development,https://attack.mitre.org/techniques/T1588/002,y,1,,,,,2,,,,,,,,,,,,,4,,,,,,,,1,1,0,1
+T1588.003,Code Signing Certificates,T1588.003: Code Signing Certificates,Resource Development,https://attack.mitre.org/techniques/T1588/003,y,1,,,,,,,,,1,,,,,2,,,,,,,,,,,,1,1,0,1
+T1588.004,Digital Certificates,T1588.004: Digital Certificates,Resource Development,https://attack.mitre.org/techniques/T1588/004,y,1,,,,,,,,,1,,,,,2,,,,,,,,,,,,1,1,0,1
+T1588.005,Exploits,T1588.005: Exploits,Resource Development,https://attack.mitre.org/techniques/T1588/005,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1588.006,Vulnerabilities,T1588.006: Vulnerabilities,Resource Development,https://attack.mitre.org/techniques/T1588/006,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1589,Gather Victim Identity Information,T1589: Gather Victim Identity Information,Reconnaissance,https://attack.mitre.org/techniques/T1589,n,1,,,,3,1,,,,,,1,,,1,,,,1,,,,,,,,2,1,0,1
+T1589.001,Credentials,T1589.001: Credentials,Reconnaissance,https://attack.mitre.org/techniques/T1589/001,y,1,,,,,1,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1589.002,Email Addresses,T1589.002: Email Addresses,Reconnaissance,https://attack.mitre.org/techniques/T1589/002,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1589.003,Employee Names,T1589.003: Employee Names,Reconnaissance,https://attack.mitre.org/techniques/T1589/003,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1590,Gather Victim Network Information,T1590: Gather Victim Network Information,Reconnaissance,https://attack.mitre.org/techniques/T1590,n,1,,,,3,4,,,,3,,,,,3,,,,1,,,,,,,,2,2,0,1
+T1590.001,Domain Properties,T1590.001: Domain Properties,Reconnaissance,https://attack.mitre.org/techniques/T1590/001,y,1,,,,,1,,,,,,,,,3,,,,,,,,,,,,1,1,0,1
+T1590.002,DNS,T1590.002: DNS,Reconnaissance,https://attack.mitre.org/techniques/T1590/002,y,1,,,,,,,,,2,,,,,1,,,,,,,,,,,,1,1,0,1
+T1590.003,Network Trust Dependencies,T1590.003: Network Trust Dependencies,Reconnaissance,https://attack.mitre.org/techniques/T1590/003,y,1,,,,,1,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1590.004,Network Topology,T1590.004: Network Topology,Reconnaissance,https://attack.mitre.org/techniques/T1590/004,y,1,,,,,,,,,2,,,,,3,,,,,,,,,,,,1,1,0,1
+T1590.005,IP Addresses,T1590.005: IP Addresses,Reconnaissance,https://attack.mitre.org/techniques/T1590/005,y,1,,,,,1,,,,2,,,,,3,,,,,,,,,,,,1,2,0,1
+T1590.006,Network Security Appliances,T1590.006: Network Security Appliances,Reconnaissance,https://attack.mitre.org/techniques/T1590/006,y,1,,,,,,,,,2,,,,,3,,,,,,,,,,,,1,1,0,1
+T1591,Gather Victim Org Information,T1591: Gather Victim Org Information,Reconnaissance,https://attack.mitre.org/techniques/T1591,n,1,,,,3,1,,,,,,,,,1,,,,,,,,,,,,2,1,0,1
+T1591.001,Determine Physical Locations,T1591.001: Determine Physical Locations,Reconnaissance,https://attack.mitre.org/techniques/T1591/001,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1591.002,Business Relationships,T1591.002: Business Relationships,Reconnaissance,https://attack.mitre.org/techniques/T1591/002,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1591.003,Identify Business Tempo,T1591.003: Identify Business Tempo,Reconnaissance,https://attack.mitre.org/techniques/T1591/003,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1591.004,Identify Roles,T1591.004: Identify Roles,Reconnaissance,https://attack.mitre.org/techniques/T1591/004,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1592,Gather Victim Host Information,T1592: Gather Victim Host Information,Reconnaissance,https://attack.mitre.org/techniques/T1592,n,1,,,,5,8,,,,,,1,,1,1,,,,1,,,,,,,,2,1,0,1
+T1592.001,Hardware,T1592.001: Hardware,Reconnaissance,https://attack.mitre.org/techniques/T1592/001,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1592.002,Software,T1592.002: Software,Reconnaissance,https://attack.mitre.org/techniques/T1592/002,y,1,,,,,2,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1592.003,Firmware,T1592.003: Firmware,Reconnaissance,https://attack.mitre.org/techniques/T1592/003,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1592.004,Client Configurations,T1592.004: Client Configurations,Reconnaissance,https://attack.mitre.org/techniques/T1592/004,y,1,,,,,,,,,,,,,,1,,,,,,,,,,,,1,1,0,1
+T1593,Search Open Websites/Domains,T1593: Search Open Websites/Domains,Reconnaissance,https://attack.mitre.org/techniques/T1593,n,1,,,,4,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1593.001,Social Media,T1593.001: Social Media,Reconnaissance,https://attack.mitre.org/techniques/T1593/001,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1593.002,Search Engines,T1593.002: Search Engines,Reconnaissance,https://attack.mitre.org/techniques/T1593/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1594,Search Victim-Owned Websites,T1594: Search Victim-Owned Websites,Reconnaissance,https://attack.mitre.org/techniques/T1594,y,1,,,,4,,,,,1,,,,,,,,,,,,,,,,,2,1,0,1
+T1595,Active Scanning,T1595: Active Scanning,Reconnaissance,https://attack.mitre.org/techniques/T1595,n,1,,,,6,3,,,,4,,,,,5,,,,,,,,,,,,2,2,0,1
+T1595.001,Scanning IP Blocks,T1595.001: Scanning IP Blocks,Reconnaissance,https://attack.mitre.org/techniques/T1595/001,y,1,,,,,,,,,1,,,,,5,,,,,,,,,,,,1,1,0,1
+T1595.002,Vulnerability Scanning,T1595.002: Vulnerability Scanning,Reconnaissance,https://attack.mitre.org/techniques/T1595/002,y,1,,,,,1,,,,4,,,,,5,,,,,,,,,,,,1,2,0,1
+T1596,Search Open Technical Databases,T1596: Search Open Technical Databases,Reconnaissance,https://attack.mitre.org/techniques/T1596,n,1,,,,2,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1596.001,DNS/Passive DNS,T1596.001: DNS/Passive DNS,Reconnaissance,https://attack.mitre.org/techniques/T1596/001,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1596.002,WHOIS,T1596.002: WHOIS,Reconnaissance,https://attack.mitre.org/techniques/T1596/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1596.003,Digital Certificates,T1596.003: Digital Certificates,Reconnaissance,https://attack.mitre.org/techniques/T1596/003,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1596.004,CDNs,T1596.004: CDNs,Reconnaissance,https://attack.mitre.org/techniques/T1596/004,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1596.005,Scan Databases,T1596.005: Scan Databases,Reconnaissance,https://attack.mitre.org/techniques/T1596/005,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1597,Search Closed Sources,T1597: Search Closed Sources,Reconnaissance,https://attack.mitre.org/techniques/T1597,n,1,,,,2,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1597.001,Threat Intel Vendors,T1597.001: Threat Intel Vendors,Reconnaissance,https://attack.mitre.org/techniques/T1597/001,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1597.002,Purchase Technical Data,T1597.002: Purchase Technical Data,Reconnaissance,https://attack.mitre.org/techniques/T1597/002,y,1,,,,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1598,Phishing for Information,T1598: Phishing for Information,Reconnaissance,https://attack.mitre.org/techniques/T1598,n,1,11,,,3,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1598.001,Spearphishing Service,T1598.001: Spearphishing Service,Reconnaissance,https://attack.mitre.org/techniques/T1598/001,y,1,7,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1598.002,Spearphishing Attachment,T1598.002: Spearphishing Attachment,Reconnaissance,https://attack.mitre.org/techniques/T1598/002,y,1,11,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1598.003,Spearphishing Link,T1598.003: Spearphishing Link,Reconnaissance,https://attack.mitre.org/techniques/T1598/003,y,1,11,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1599,Network Boundary Bridging,T1599: Network Boundary Bridging,Defense Evasion,https://attack.mitre.org/techniques/T1599,n,5,18,,,3,,,,,,,,,,1,,,,,,,,,,,,3,1,0,1
+T1599.001,Network Address Translation Traversal,T1599.001: Network Address Translation Traversal,Defense Evasion,https://attack.mitre.org/techniques/T1599/001,y,5,18,,,,,,,,,,,,,1,,,,1,,,,,,,,2,1,0,1
+T1600,Weaken Encryption,T1600: Weaken Encryption,Defense Evasion,https://attack.mitre.org/techniques/T1600,n,,,,,6,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1600.001,Reduce Key Space,T1600.001: Reduce Key Space,Defense Evasion,https://attack.mitre.org/techniques/T1600/001,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1600.002,Disable Crypto Hardware,T1600.002: Disable Crypto Hardware,Defense Evasion,https://attack.mitre.org/techniques/T1600/002,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1601,Modify System Image,T1601: Modify System Image,Defense Evasion,https://attack.mitre.org/techniques/T1601,n,6,26,,,4,,,,,,,,,,,,,,,,,,,,,,3,0,0,0
+T1601.001,Patch System Image,T1601.001: Patch System Image,Defense Evasion,https://attack.mitre.org/techniques/T1601/001,y,6,26,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1601.002,Downgrade System Image,T1601.002: Downgrade System Image,Defense Evasion,https://attack.mitre.org/techniques/T1601/002,y,6,26,,,,,,,,,,,,,,,,,,,,,,,,,2,0,0,0
+T1602,Data from Configuration Repository,T1602: Data from Configuration Repository,Collection,https://attack.mitre.org/techniques/T1602,n,7,25,,,8,,,,,2,,,,,1,,,,,,,,,,,,3,1,0,1
+T1602.001,SNMP (MIB Dump),T1602.001: SNMP (MIB Dump),Collection,https://attack.mitre.org/techniques/T1602/001,y,7,25,,,,,,,,2,,,,,1,,,,,,,,,,,,2,1,0,1
+T1602.002,Network Device Configuration Dump,T1602.002: Network Device Configuration Dump,Collection,https://attack.mitre.org/techniques/T1602/002,y,7,25,,,,,,,,2,,,,,1,,,,,,,,,,,,2,1,0,1
+T1606,Forge Web Credentials,T1606: Forge Web Credentials,Credential Access,https://attack.mitre.org/techniques/T1606,n,,,,,3,,,,,2,,,,,,,,,,,,,,,,,1,1,0,1
+T1606.001,Web Cookies,T1606.001: Web Cookies,Credential Access,https://attack.mitre.org/techniques/T1606/001,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1606.002,SAML Tokens,T1606.002: SAML Tokens,Credential Access,https://attack.mitre.org/techniques/T1606/002,y,,,,,,,,,,2,,,,,,,1,,,,1,1,,,,,0,1,1,1
+T1608,Stage Capabilities,T1608: Stage Capabilities,Resource Development,https://attack.mitre.org/techniques/T1608,n,,,,,,,,,,,,,,,,,,,1,,,,,,,,0,1,0,1
+T1608.001,Upload Malware,T1608.001: Upload Malware,Resource Development,https://attack.mitre.org/techniques/T1608/001,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1608.002,Upload Tool,T1608.002: Upload Tool,Resource Development,https://attack.mitre.org/techniques/T1608/002,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1608.003,Install Digital Certificate,T1608.003: Install Digital Certificate,Resource Development,https://attack.mitre.org/techniques/T1608/003,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1608.004,Drive-by Target,T1608.004: Drive-by Target,Resource Development,https://attack.mitre.org/techniques/T1608/004,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1608.005,Link Target,T1608.005: Link Target,Resource Development,https://attack.mitre.org/techniques/T1608/005,y,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0
+T1609,Container Administration Command,T1609: Container Administration Command,Execution,https://attack.mitre.org/techniques/T1609,y,,,,,2,,,,,,,,,,1,,,,,,1,,,,,,1,1,1,1
+T1610,Deploy Container,T1610: Deploy Container,"Defense Evasion, Execution",https://attack.mitre.org/techniques/T1610,y,,,,,1,,,,,,,,,,2,,,,,,,,,,,,1,1,1,1
+T1611,Escape to Host,T1611: Escape to Host,Privilege Escalation,https://attack.mitre.org/techniques/T1611,y,,,,,1,,,,,,,,,,1,,,,,,1,,,,,,1,1,1,1
+T1612,Build Image on Host,T1612: Build Image on Host,Defense Evasion,https://attack.mitre.org/techniques/T1612,y,,,,,1,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1613,Container and Resource Discovery,T1613: Container and Resource Discovery,Discovery,https://attack.mitre.org/techniques/T1613,y,,,,,7,,,,,,,,,,1,,,,,,,,,,,,2,1,0,1
+T1614,System Location Discovery,T1614: System Location Discovery,Discovery,https://attack.mitre.org/techniques/T1614,n,,,,,5,,,,,,,,,,,,,,,,,,,2,,,1,0,1,1
+T1614.001,System Language Discovery,T1614.001: System Language Discovery,Discovery,https://attack.mitre.org/techniques/T1614/001,y,,,,,,,,,,,,,,,,,,,1,,,,,,,,0,0,0,0
+T1615,Group Policy Discovery,T1615: Group Policy Discovery,Discovery,https://attack.mitre.org/techniques/T1615,y,,,,,,,,,,,,,,,,,,,,,1,,,,,,0,0,1,1
+T1619,Cloud Storage Object Discovery,T1619: Cloud Storage Object Discovery,Discovery,https://attack.mitre.org/techniques/T1619,y,,,,1,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
+T1620,Reflective Code Loading,T1620: Reflective Code Loading,Defense Evasion,https://attack.mitre.org/techniques/T1620,y,,,,2,,,,,,,,,,,,,,,,,,,,,,,1,0,0,0
