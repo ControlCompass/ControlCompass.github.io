@@ -646,43 +646,47 @@ function skipCTI() {
 		textarea.rows = "10"
 		div_JSONinput.appendChild(textarea)
 
-		JSONinput.textContent = req.responseText;
+		const JSONinput_final = document.getElementById("JSONinput")
+		JSONinput_final.textContent = req.responseText;
 	};
 };
 $('#Skip').on('click', skipCTI)
 </script>
 <script type="text/javascript">
-	const div_JSONinput = document.getElementById("div_JSONinput")
-	const JSONinput = document.getElementById("JSONinput")
-	const JSONinput_header_get = document.getElementById("JSONinput_header")
-
-	if (JSONinput) {
-		JSONinput.remove()
-	}
-	if (JSONinput_header_get) {
-		JSONinput_header_get.remove()
-	}
-
-	const JSONinput_header = document.createElement("h4")
-	JSONinput_header.id = "JSONinput_header"
-	JSONinput_header.innerHTML = "ATT&CK Navigator Layer (TTPs)"
-	JSONinput_header.style.textAlign = "center"
-	div_JSONinput.appendChild(JSONinput_header)
-
-	const textarea = document.createElement("textarea")
-	textarea.className = "form-control"
-	textarea.id = "JSONinput"
-	textarea.rows = "10"
-	div_JSONinput.appendChild(textarea)
-
 	document.getElementById('fileUpload')
 	  .addEventListener('change', getFile)
 
 	function getFile(event) {
 		const input = event.target
 	  if ('files' in input && input.files.length > 0) {
+
+		  const div_JSONinput = document.getElementById("div_JSONinput")
+		  const JSONinput = document.getElementById("JSONinput")
+		  const JSONinput_header_get = document.getElementById("JSONinput_header")
+
+		  if (JSONinput) {
+		  	JSONinput.remove()
+		  }
+		  if (JSONinput_header_get) {
+		  	JSONinput_header_get.remove()
+		  }
+
+		  const JSONinput_header = document.createElement("h4")
+		  JSONinput_header.id = "JSONinput_header"
+		  JSONinput_header.innerHTML = "ATT&CK Navigator Layer (TTPs)"
+		  JSONinput_header.style.textAlign = "center"
+		  div_JSONinput.appendChild(JSONinput_header)
+
+		  const textarea = document.createElement("textarea")
+		  textarea.className = "form-control"
+		  textarea.id = "JSONinput"
+		  textarea.rows = "10"
+		  div_JSONinput.appendChild(textarea)
+
+		  const JSONinput_final = document.getElementById("JSONinput")
+
 		  placeFileContent(
-		  document.getElementById('JSONinput'),
+		  JSONinput_final,
 		  input.files[0])
 	  }
 	}
@@ -735,7 +739,8 @@ function lookupURL() {
 		textarea.rows = "10"
 		div_JSONinput.appendChild(textarea)
 
-		JSONinput.textContent = req.responseText;
+		const JSONinput_final = document.getElementById("JSONinput")
+		JSONinput_final.textContent = req.responseText;
 	};
 };
 $('#urlLookupSubmit').on('click', lookupURL)
