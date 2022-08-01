@@ -443,7 +443,7 @@ viewBox="0 0 16 16"
 						<br>
 						<br>
 						<input type="radio" id="Skip" name="Skip" value="Skip">
-						<label for="Skip">Skip this step (See all the data)</label><br>
+						<label for="Skip">Skip this step (See all the threat data)</label><br>
 				</details>
 				<div id="threat_intelligence_out" style="margin-top:1rem;visibility:hidden">
 					<div style="text-align:center">
@@ -648,6 +648,8 @@ function skipCTI() {
 
 		const JSONinput_final = document.getElementById("JSONinput")
 		JSONinput_final.textContent = req.responseText;
+
+		window.location.href = 'https://controlcompass.github.io/threat-model#controls'
 	};
 };
 $('#Skip').on('click', skipCTI)
@@ -688,6 +690,8 @@ $('#Skip').on('click', skipCTI)
 		  placeFileContent(
 		  JSONinput_final,
 		  input.files[0])
+
+		  window.location.href = 'https://controlcompass.github.io/threat-model#controls'
 	  }
 	}
 
@@ -741,6 +745,8 @@ function lookupURL() {
 
 		const JSONinput_final = document.getElementById("JSONinput")
 		JSONinput_final.textContent = req.responseText;
+
+		window.location.href = 'https://controlcompass.github.io/threat-model#controls'
 	};
 };
 $('#urlLookupSubmit').on('click', lookupURL)
