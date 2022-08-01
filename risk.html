@@ -423,12 +423,27 @@ viewBox="0 0 16 16"
 						<p><i>Coming soon!</i></p>
 							<div class="row"></div>
 				</details>
-				<details class="details model_red" style="text-align:center;padding:0.4rem 0px 0.4rem 0px">
+				<details class="details model_red" style="text-align:center;margin-bottom:1rem;padding:0.4rem 0px 0.4rem 0px">
 					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
 						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Current Intelligence (Coming Soon!)
 					</summary>
 						<p><i>Coming soon!</i></p>
 							<div class="row"></div>
+				</details>
+				<details class="details model_red" style="text-align:center;padding:0.4rem 0px 0.4rem 0px">
+					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
+						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Input Your Own Data
+					</summary>
+						<br>
+						<label for="fileUpload">Upload a json file (ATT&CK Navigator layer)</label>
+						<input class="file_input" type="file" id="fileUpload" name="fileUpload" accept=".json, .txt">
+						<br>
+						<input type="text" name="in" id="urlLookup" size="50" placeholder='Input URL to a Navigator json "layer file"'/>
+						<button type="button" id="urlLookupSubmit">Lookup URL</button>
+						<br>
+						<br>
+						<input type="radio" id="Skip" name="Skip" value="Skip">
+						<label for="Skip">Skip this step (See all the data)</label><br>
 				</details>
 				<div id="threat_intelligence_out" style="margin-top:1rem;visibility:hidden">
 					<div style="text-align:center">
@@ -601,6 +616,130 @@ viewBox="0 0 16 16"
 <script defer type="text/javascript" src="load_heatmap_risk1.js"></script>
 <script defer type="text/javascript" src="load_heatmap_risk2.js"></script>
 <script defer type="text/javascript" src="selectionReview_risk.js"></script>
+<script type="text/javascript">
+function skipCTI() {
+
+	const req = new XMLHttpRequest();
+    req.open("GET",'https://gist.githubusercontent.com/ControlCompass/da98f63af81c831d15cb794ab8646038/raw/5cd4465769dd5a2b316261f60d2bae26c6cc7bec/All_v11_Techniques.json',true);
+    req.send();
+    req.onload = function(){
+		const div_JSONinput = document.getElementById("div_JSONinput")
+		const JSONinput = document.getElementById("JSONinput")
+		const JSONinput_header_get = document.getElementById("JSONinput_header")
+
+		if (JSONinput) {
+			JSONinput.remove()
+		}
+		if (JSONinput_header_get) {
+			JSONinput_header_get.remove()
+		}
+
+		const JSONinput_header = document.createElement("h4")
+		JSONinput_header.id = "JSONinput_header"
+		JSONinput_header.innerHTML = "ATT&CK Navigator Layer (TTPs)"
+		JSONinput_header.style.textAlign = "center"
+		div_JSONinput.appendChild(JSONinput_header)
+
+		const textarea = document.createElement("textarea")
+		textarea.className = "form-control"
+		textarea.id = "JSONinput"
+		textarea.rows = "10"
+		div_JSONinput.appendChild(textarea)
+
+		JSONinput.textContent = req.responseText;
+	};
+};
+$('#Skip').on('click', skipCTI)
+</script>
+<script type="text/javascript">
+	const div_JSONinput = document.getElementById("div_JSONinput")
+	const JSONinput = document.getElementById("JSONinput")
+	const JSONinput_header_get = document.getElementById("JSONinput_header")
+
+	if (JSONinput) {
+		JSONinput.remove()
+	}
+	if (JSONinput_header_get) {
+		JSONinput_header_get.remove()
+	}
+
+	const JSONinput_header = document.createElement("h4")
+	JSONinput_header.id = "JSONinput_header"
+	JSONinput_header.innerHTML = "ATT&CK Navigator Layer (TTPs)"
+	JSONinput_header.style.textAlign = "center"
+	div_JSONinput.appendChild(JSONinput_header)
+
+	const textarea = document.createElement("textarea")
+	textarea.className = "form-control"
+	textarea.id = "JSONinput"
+	textarea.rows = "10"
+	div_JSONinput.appendChild(textarea)
+
+	document.getElementById('fileUpload')
+	  .addEventListener('change', getFile)
+
+	function getFile(event) {
+		const input = event.target
+	  if ('files' in input && input.files.length > 0) {
+		  placeFileContent(
+		  document.getElementById('JSONinput'),
+		  input.files[0])
+	  }
+	}
+
+	function placeFileContent(target, file) {
+		readFileContent(file).then(content => {
+		target.textContent = content
+	  }).catch(error => console.log(error))
+	}
+
+	function readFileContent(file) {
+		const reader = new FileReader()
+	  return new Promise((resolve, reject) => {
+		reader.onload = event => resolve(event.target.result)
+		reader.onerror = error => reject(error)
+		reader.readAsText(file)
+	  })
+	}
+</script>
+<script type="text/javascript">
+function lookupURL() {
+
+	const urlLookup = document.getElementById('urlLookup').value
+
+	const req = new XMLHttpRequest();
+    req.open("GET",urlLookup,true);
+    req.send();
+    req.onload = function(){
+
+		const div_JSONinput = document.getElementById("div_JSONinput")
+		const JSONinput = document.getElementById("JSONinput")
+		const JSONinput_header_get = document.getElementById("JSONinput_header")
+
+		if (JSONinput) {
+			JSONinput.remove()
+		}
+		if (JSONinput_header_get) {
+			JSONinput_header_get.remove()
+		}
+
+		const JSONinput_header = document.createElement("h4")
+		JSONinput_header.id = "JSONinput_header"
+		JSONinput_header.innerHTML = "ATT&CK Navigator Layer (TTPs)"
+		JSONinput_header.style.textAlign = "center"
+		div_JSONinput.appendChild(JSONinput_header)
+
+		const textarea = document.createElement("textarea")
+		textarea.className = "form-control"
+		textarea.id = "JSONinput"
+		textarea.rows = "10"
+		div_JSONinput.appendChild(textarea)
+
+		JSONinput.textContent = req.responseText;
+	};
+};
+$('#urlLookupSubmit').on('click', lookupURL)
+</script>
 <script type="text/javascript">
 	function uncheckAll() {
   		$("input[id='mitigations']:checked").prop("checked", false)
