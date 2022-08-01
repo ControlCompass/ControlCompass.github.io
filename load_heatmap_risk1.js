@@ -88,7 +88,7 @@ function loadHeatmap_risk1() {
 
         }
 
-        window.location.href = 'https://controlcompass.github.io/threat-model#threat_intelligence_out'
+        window.location.href = 'https://controlcompass.github.io/risk#threat_intelligence_out'
 
     }
 
