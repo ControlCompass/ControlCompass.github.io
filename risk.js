@@ -61,7 +61,9 @@ $(document).ready(function(){
             return self.indexOf(value) === index;
         };
 
-		let jsonData = $('#JSONinput').val();
+		// let jsonData = $('#JSONinput').val();
+        jsonData = document.getElementById("JSONinput")
+        jsonData = jsonData.value
 
         if (jsonData) {
 		    inParse = JSON.parse(jsonData);
