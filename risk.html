@@ -418,19 +418,13 @@ viewBox="0 0 16 16"
 				</details>
 				<details class="details model_red" style="text-align:center;margin-bottom:1rem;padding:0.4rem 0px 0.4rem 0px">
 					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
-						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Look-Up Adversaries by Name or Alias (Coming Soon!)
+						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Current Intelligence
 					</summary>
-						<p><i>Coming soon!</i></p>
-							<div class="row"></div>
+						<p style="font-size:15px;margin-top:0.5rem">View the <b><a href="https://github.com/tropChaud/Cyber-Adversary-Heatmaps" target="_blank">full library of recent adversary TTP intelligence heatmaps</a></b> and source content.</p>
+						<p style="font-size:15px;margin-bottom:1rem"><i>Consider using this <a href="https://github.com/tropChaud/webpage2attack" target="_blank">handy script</a> to easily generate TTP heatmap files from open-source intel reports!</i></p>
+						<input style="margin-bottom:1rem" type="text" name="in" id="current_intelligence" size="75" placeholder="Lookup threats from recent intelligence reporting"/>
 				</details>
 				<details class="details model_red" style="text-align:center;margin-bottom:1rem;padding:0.4rem 0px 0.4rem 0px">
-					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
-						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Current Intelligence (Coming Soon!)
-					</summary>
-						<p><i>Coming soon!</i></p>
-							<div class="row"></div>
-				</details>
-				<details class="details model_red" style="text-align:center;padding:0.4rem 0px 0.4rem 0px">
 					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
 						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Input Your Own Data
 					</summary>
@@ -444,6 +438,13 @@ viewBox="0 0 16 16"
 						<br>
 						<input type="radio" id="Skip" name="Skip" value="Skip">
 						<label for="Skip">Skip this step (See all the threat data)</label><br>
+				</details>
+				<details class="details model_red" style="text-align:center;padding:0.4rem 0px 0.4rem 0px">
+					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
+						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Look-Up Adversaries by Name or Alias (Coming Soon!)
+					</summary>
+						<p><i>Coming soon!</i></p>
+							<div class="row"></div>
 				</details>
 				<div id="threat_intelligence_out" style="margin-top:1rem;visibility:hidden">
 					<div style="text-align:center">
@@ -616,6 +617,7 @@ viewBox="0 0 16 16"
 <script defer type="text/javascript" src="load_heatmap_risk1.js"></script>
 <script defer type="text/javascript" src="load_heatmap_risk2.js"></script>
 <script defer type="text/javascript" src="selectionReview_risk.js"></script>
+<script defer type="text/javascript" src="load_heatmap_risk_currentIntel.js"></script>
 <script type="text/javascript">
 function skipCTI() {
 
