@@ -814,6 +814,8 @@ $(document).ready(function(){
         $('#cvc-output_red').html(results_red);
         $('#cvc-output_policy').html(results_policyFinal);
 
+        window.location.href = 'https://controlcompass.github.io/risk#cvc-output_header'
+
     });
 
 	$('#policyLow').click(function(){
