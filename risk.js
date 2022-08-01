@@ -61,11 +61,10 @@ $(document).ready(function(){
             return self.indexOf(value) === index;
         };
 
-		// let jsonData = $('#JSONinput').val();
-        jsonData = document.getElementById("JSONinput")
+		let jsonData = $('#JSONinput').val();
 
         if (jsonData) {
-		    inParse = JSON.parse(jsonData.textContent);
+		    inParse = JSON.parse(jsonData);
         } else {
             const req2 = new XMLHttpRequest();
             req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
