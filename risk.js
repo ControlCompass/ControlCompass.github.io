@@ -380,9 +380,9 @@ $(document).ready(function(){
             techObj.test_total = art + car_red + rta + prelude + stockpile + scythe
             techObj.test_volume = arrayCvc[i].test_volume
 
-            techObj.controlTest_total = mitigations + nist + cis + d3fend + engage + splunk + splunk_threatHunting + elastic + eql_analytics + azure_fullStack + azure_sentinel + logpoint + proofpoint_emergingThreats + tanium_threatResponse + aws + gcp + car + atc + sigma + th_playbook + art + car_red + rta + prelude + stockpile + scythe
+            techObj.controlTest_total = mitigations + nist + cis + d3fend + engage + splunk + splunk_threatHunting + elastic + eql_analytics + azure_fullStack + sentinel_defender + azure_sentinel + logpoint + proofpoint_emergingThreats + tanium_threatResponse + aws + gcp + car + atc + sigma + th_playbook + art + car_red + rta + prelude + stockpile + scythe
 
-            techObj.ruleTest_total = splunk + splunk_threatHunting + elastic + eql_analytics + azure_fullStack + azure_sentinel + logpoint + proofpoint_emergingThreats + tanium_threatResponse + aws + gcp + car + atc + sigma + th_playbook + art + car_red + rta + prelude + stockpile + scythe
+            techObj.ruleTest_total = splunk + splunk_threatHunting + elastic + eql_analytics + azure_fullStack + sentinel_defender + azure_sentinel + logpoint + proofpoint_emergingThreats + tanium_threatResponse + aws + gcp + car + atc + sigma + th_playbook + art + car_red + rta + prelude + stockpile + scythe
 
             allTech.push(
                 techObj
