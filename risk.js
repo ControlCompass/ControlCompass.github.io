@@ -344,6 +344,7 @@ $(document).ready(function(){
             techObj.elasticDetails = elasticDetails
             techObj.eql_analyticsDetails = eql_analyticsDetails
             techObj.azure_fullStackDetails = azure_fullStackDetails
+            techObj.sentinel_defenderDetails = sentinel_defenderDetails
             techObj.azure_sentinelDetails = azure_sentinelDetails
             techObj.logpointDetails = logpointDetails
             techObj.proofpoint_emergingThreatsDetails = proofpoint_emergingThreatsDetails
@@ -1728,6 +1729,14 @@ $(document).ready(function(){
                 azure_fullStackDetails = "";
             };
 
+            if ($('#sentinel_defender').is(":checked")) {
+                sentinel_defender = arrayCvc[i].sentinel_defender;
+                sentinel_defenderDetails = '<a target="_blank" style="color:#1565c0" href="https://controlcompass.github.io/resources#sentinel_defender">Microsoft Sentinel & Defender (Unified)</a>: ' + arrayCvc[i].sentinel_defender + '<br>';
+            } else {
+                sentinel_defender = 0;
+                sentinel_defenderDetails = "";
+            };
+
             if ($('#azure_sentinel').is(":checked")) {
                 azure_sentinel = arrayCvc[i].azure_sentinel;
                 azure_sentinelDetails = '<a target="_blank" style="color:#1565c0" href="https://controlcompass.github.io/resources#azure_sentinel">Sentinel detection mappings</a>: ' + arrayCvc[i].azure_sentinel + '<br>';
@@ -1879,6 +1888,7 @@ $(document).ready(function(){
             techObj.elastic = arrayCvc[i].elastic
             techObj.eql_analytics = arrayCvc[i].eql_analytics
             techObj.azure_fullStack = arrayCvc[i].azure_fullStack
+            techObj.sentinel_defender = arrayCvc[i].sentinel_defender
             techObj.azure_sentinel = arrayCvc[i].azure_sentinel
             techObj.logpoint = arrayCvc[i].logpoint
             techObj.proofpoint_emergingThreats = arrayCvc[i].proofpoint_emergingThreats
@@ -1922,7 +1932,7 @@ $(document).ready(function(){
 
             techObj.validate_potential = arrayCvc[i].validate_potential
 
-            techObj.rule_total = splunk + splunk_threatHunting + elastic + eql_analytics + azure_fullStack + azure_sentinel + logpoint + proofpoint_emergingThreats + tanium_threatResponse + aws + gcp + car + atc + sigma + th_playbook
+            techObj.rule_total = splunk + splunk_threatHunting + elastic + eql_analytics + azure_fullStack + sentinel_defender + azure_sentinel + logpoint + proofpoint_emergingThreats + tanium_threatResponse + aws + gcp + car + atc + sigma + th_playbook
             techObj.detect_volume = arrayCvc[i].detect_volume
 
             techObj.test_total = art + car_red + rta + prelude + stockpile + scythe
@@ -1938,7 +1948,7 @@ $(document).ready(function(){
 
         };
 
-        allTech.sort((a, b) => b.policy_total - a.policy_total);
+        allTech.sort((a, b) => b.controlTest_total - a.controlTest_total);
 
         tactics = []
 
@@ -2052,6 +2062,7 @@ $(document).ready(function(){
                                           allTech[item].splunk_threatHuntingDetails +
                                           allTech[item].elasticDetails +
                                           allTech[item].eql_analyticsDetails +
+                                          allTech[item].sentinel_defenderDetails +
                                           allTech[item].azure_sentinelDetails +
                                           allTech[item].logpointDetails +
                                           allTech[item].proofpoint_emergingThreatsDetails +
@@ -2107,6 +2118,7 @@ $(document).ready(function(){
                                           allTech[item].splunk_threatHuntingDetails +
                                           allTech[item].elasticDetails +
                                           allTech[item].eql_analyticsDetails +
+                                          allTech[item].sentinel_defenderDetails +
                                           allTech[item].azure_sentinelDetails +
                                           allTech[item].logpointDetails +
                                           allTech[item].proofpoint_emergingThreatsDetails +
@@ -2191,6 +2203,7 @@ $(document).ready(function(){
                                       allTech[item].splunk_threatHuntingDetails +
                                       allTech[item].elasticDetails +
                                       allTech[item].eql_analyticsDetails +
+                                      allTech[item].sentinel_defenderDetails +
                                       allTech[item].azure_sentinelDetails +
                                       allTech[item].logpointDetails +
                                       allTech[item].proofpoint_emergingThreatsDetails +
@@ -2246,6 +2259,7 @@ $(document).ready(function(){
                                       allTech[item].splunk_threatHuntingDetails +
                                       allTech[item].elasticDetails +
                                       allTech[item].eql_analyticsDetails +
+                                      allTech[item].sentinel_defenderDetails +
                                       allTech[item].azure_sentinelDetails +
                                       allTech[item].logpointDetails +
                                       allTech[item].proofpoint_emergingThreatsDetails +
@@ -2372,6 +2386,8 @@ $(document).ready(function(){
         $('#cvc-output_blue').html(results_blue);
         $('#cvc-output_red').html(results_red);
         $('#cvc-output_policy').html(results_policyFinal);
+
+        window.location.href = 'https://controlcompass.github.io/risk#cvc-output_header'
 
     });
 
