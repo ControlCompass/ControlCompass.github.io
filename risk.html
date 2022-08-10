@@ -489,6 +489,7 @@ viewBox="0 0 16 16"
 										<label><input type="checkbox" value="" id="splunk_threatHunting" style="margin-right:5px;margin-left:10px" checked>Threat Hunting Splunk App</label>
 										<label><input type="checkbox" value="" id="elastic" style="margin-right:5px;margin-left:10px" checked>Elastic Stack</label>
 										<label><input type="checkbox" value="" id="eql_analytics" style="margin-right:5px;margin-left:10px" checked>EQL Analytics Library</label>
+										<label><input type="checkbox" value="" id="sentinel_defender" style="margin-right:5px;margin-left:10px" checked>Microsoft Sentinel & Defender (Unified)</label>
 										<label><input type="checkbox" value="" id="azure_sentinel" style="margin-right:5px;margin-left:10px" checked>Sentinel detection mappings</label>
 										<label><input type="checkbox" value="" id="logpoint" style="margin-right:5px;margin-left:10px" checked>LogPoint</label>
 								</details>
@@ -764,6 +765,7 @@ $('#urlLookupSubmit').on('click', lookupURL)
   		$("input[id='splunk_threatHunting']:checked").prop("checked", false)
   		$("input[id='elastic']:checked").prop("checked", false)
   		$("input[id='eql_analytics']:checked").prop("checked", false)
+  		$("input[id='sentinel_defender']:checked").prop("checked", false)
   		$("input[id='azure_sentinel']:checked").prop("checked", false)
   		$("input[id='logpoint']:checked").prop("checked", false)
   		$("input[id='car']:checked").prop("checked", false)
@@ -793,6 +795,7 @@ $('#urlLookupSubmit').on('click', lookupURL)
   		$("input[id='splunk_threatHunting']").prop("checked", true)
   		$("input[id='elastic']").prop("checked", true)
   		$("input[id='eql_analytics']").prop("checked", true)
+  		$("input[id='sentinel_defender']").prop("checked", true)
   		$("input[id='azure_sentinel']").prop("checked", true)
   		$("input[id='logpoint']").prop("checked", true)
   		$("input[id='car']").prop("checked", true)
