@@ -63,7 +63,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -805,6 +814,8 @@ $(document).ready(function(){
         $('#cvc-output_red').html(results_red);
         $('#cvc-output_policy').html(results_policyFinal);
 
+        window.location.href = 'https://controlcompass.github.io/risk#cvc-output_header'
+
     });
 
 	$('#policyLow').click(function(){
@@ -818,7 +829,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -1573,7 +1593,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -2328,7 +2357,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -3083,7 +3121,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -3838,7 +3885,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -4593,7 +4649,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -5348,7 +5413,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -6103,7 +6177,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -6858,7 +6941,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID
@@ -7613,7 +7705,16 @@ $(document).ready(function(){
 
 		let jsonData = $('#JSONinput').val();
 
-		inParse = JSON.parse(jsonData);
+        if (jsonData) {
+		    inParse = JSON.parse(jsonData);
+        } else {
+            const req2 = new XMLHttpRequest();
+            req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Cyber-Adversary-Heatmaps/main/Stealer%20Malware/Lokibot.json',true);
+            req2.send();
+            req2.onload = function(){
+                inParse = JSON.parse(req2.responseText)
+            }
+        }
 
         for (item in inParse.techniques) {
         	arrayReturn.push(inParse.techniques[item].techniqueID

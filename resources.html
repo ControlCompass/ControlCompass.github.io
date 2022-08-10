@@ -22,213 +22,261 @@
   </style>
 </head>
 <body>
-  <div class="container" style="padding:10px 10px">
-	  <p class="aligncenter">
-		  <a href="https://controlcompass.github.io/"><img src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc-banner.png" alt="Control Validation Compass"width="654px" height="90px"></a>
+
+  <div class="col" style="height:110px;width:90%;float:left">
+	  <p style="text-align:right;padding:10px 18% 0px 0px">
+		<a href="https://controlcompass.github.io/"><img src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc-banner.png" alt="Control Validation Compass" style="width:67%;max-width:654px"></a>
 	  </p>
-	<h4 style="padding:15px;text-align:center">Pointing cybersecurity teams to <b>9,000+</b> publicly-accessible technical and policy controls and <b>2,100+</b> offensive security tests, aligned with over <b>500</b> common attacker techniques</h4>
-	 <div class="row">
-		 <div class="col-md-12 text-center">
-			<a href="https://controlcompass.github.io/" class="btn choice"><strong>Lookup by Technique</strong></a>
-			 <a href="https://controlcompass.github.io/controls" class="btn choice"><strong>Lookup by Controls</strong></a>
-			 <a href="https://controlcompass.github.io/risk" class="btn choice"><strong>Threat Alignment</strong></a>
-			 <a href="https://controlcompass.github.io/resources" class="btn emphasis"><strong>Resources</strong></a>
-		 </div>
-	 </div>
-		<div class="row">
-		<div class="col-md-12 text-center">
-			  <br>
-				<span style="color:#7466BF"><i>Big updates have landed for the Resources section! Select resources now point directly to the latest detection rules, tests, or control mappings, and more updates are coming soon. Jump directly into the new content by browsing the <b><a style="text-decoration:underline" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/tree/main/resources">new Resources folder</a></b>.</i></span>
-			</div>
-			<div style="padding:0px 0px 3px 0px">
-				<p style="font-size:13px"><i>This page was last updated in April 2022</i></p>
-			</div>
-			<div style="padding:0px 0px 1px 0px">
-				<h4><a style="color:black">What is Control Validation Compass?</a></h4>
-				<p>Control Validation Compass ("CVC") is an open source tool and <a href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv" target="_blank">dataset</a> designed to speed the process of a) identifying security control gaps and b) closing those gaps by pointing teams to relevant detections. CVC promotes a control validation or "purple team" approach and mindset by also pointing teams to relevant offensive security tests, so they can immediately validate the effectiveness of new (or existing) controls.</p>
-				<h4><a style="color:black">Anticipated Uses</a></h4>
-				<p><b>Intelligence Teams:</b> CVC was built with intelligence teams in mind. These teams identify threats to the organizations they support, but often have less immediate visibility into their internal controls landscape (or may have little/no visibility into detection capabilities if using a managed service). CVC puts more resources and potential context directly into these teams' hands.</p>
-				<p><b>Defenders / Blue Teams:</b> The <a href="https://controlcompass.github.io/risk" target="_blank">Threat Alignment</a> page provides a quick & easy way for any team to instantly identify potential gaps in control coverage that should be filled with new detections and then tested. If new detections must be created, each page of CVC points teams to many resources with potentially relevant logic.</p>
-				<p><b>Offensive Security / Red Teams:</b> Red teams can use CVC to identify where control coverage may be lighter, and build simulation/emulation exercises around this knowledge. CVC's author used the tool to identify many cases where detection logic exists around a given technique, yet no offensive tests exist yet (publicly) - this led to quick new development of tests that were published in the resources below!</p>
-				<p>The CVC dataset could be analyzed at a higher level to see if commonalities or trends exist among techniques with the highest or lowest volumes of detections or tests, within certain ATT&CK Tactic categories, or for techniques visible through certain types of <a href="https://attack.mitre.org/datasources/" target="_blank">data sources</a>.</p>
-				<h4><a style="color:black">Limitations</a></h4>
-				<p>CVC simply points teams to relevant detections and tests - it does not centrally compile or host the detections/tests. The structure of and ATT&CK-mapping formats contained within the source repositories differ widely. The details below offer guidance on how to surface detections/tests within each repository. <i>Teams seeking faster navigation are highly encouraged to download the repositories locally</i> and update them over time where relevant. Internal- or non-public data/mappings/etc could also be added for internal use.</p>
-				<p>Resources included in CVC provide "out-of-the-box" detection capabilities for the tools they cover. The detections activated by default will vary depending on the tool, and many teams may have added supplemental capabilities. CVC should not be considered a replacement for a more comprehensive, validated internal control "mapping" exercise, although it may serve as a great starting point.</p>
-				<br>
-				<p id="lowestLevelSummary">The <b>Lowest Level</b> checkbox on the Lookup by Controls and Threat Alignment pages refers to ATT&CK sub-techniques, and to ATT&CK techniques for which no sub-techniques exist. In contrast, T1001 is not considered a "lowest level" technique since it contains sub-techniques. This label was created to describe techniques that the author generally finds to have the highest amount of detail or granularity in their description. The label is not formalized within MITRE ATT&CK (or, to the author's knowledge, within the wider community).</p>
-			</div>
-			<div>
-				<h3 style="color:black">Policy & Process Control Resources</h3>
-				<h4><a style="color:black" id="mitigations">MITRE ATT&CK Mitigations</a></h4>
-				<p><b>URL:</b> <a href="https://attack.mitre.org/mitigations/enterprise/" target="_blank">https://attack.mitre.org/mitigations/enterprise/</a></p>
-				<p><b>Repository last updated:</b> November 2021</p>
-				<p><b>Last accessed by CVC:</b> March 11, 2022</p>
-				<p><b>Overview:</b> Per the link above, "Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed."</p>
-				<p><b>How to navigate:</b> ATT&CK technique/sub-technique mappings can be surfaced by navigating into a particular mitigation's dedicated page.</p>
-				<h4><a style="color:black" id="nist">NIST 800-53 Revision 5 Control Mappings</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/blob/main/frameworks/attack_9_0/nist800_53_r5/layers/nist800-53-r5-overview.json" target="_blank">https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/blob/main/frameworks/attack_9_0/nist800_53_r5/layers/nist800-53-r5-overview.json</a></p>
-				<p><b>Repository last updated:</b> January 2022</p>
-				<p><b>Last accessed by CVC:</b> September 26, 2021</p>
-				<p><b>Overview:</b> A comprehensive, community-sourced set of mappings of the <a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank">NIST Special Publication (SP) 800-53 Revision 5</a> security and policy controls to MITRE ATT&CK v9.0.</p>
-				<p><b>How to navigate:</b> Mappings between NIST controls and ATT&CK can be found in the linked json file or spreadsheet format <a href="https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/releases/download/v1.5.0/attack-9.0-nist800-53-r5-mappings.xlsx" target="_blank">here</a>.</p>
-				<h4><a style="color:black" id="cis">CIS Controls v8 ATT&CK Mappings</a></h4>
-				<p><b>URL:</b> <a href="https://www.cisecurity.org/controls/cis-controls-navigator/" target="_blank">https://www.cisecurity.org/controls/cis-controls-navigator/</a></p>
-				<p><b>Repository last updated:</b> April 2021</p>
-				<p><b>Last accessed by CVC:</b> September 25, 2021</p>
-				<p><b>Overview:</b> Per the CIS site, "CIS Critical Security Controls (CIS Controls) are a prioritized set of Safeguards to mitigate the most prevalent cyber-attacks against systems and networks".</p>
-				<p><b>How to navigate:</b> Mappings to ATT&CK v8.2 can be surfaced by adding/checking the appropriate box in the linked Navigator tool (<code>Add</code> > Select <code>MITRE Enterprise ATT&CK v8.2</code> > <code>Apply Mappings</code>).</p>
-				<h4><a style="color:black" id="d3fend">MITRE D3FEND</a></h4>
-				<p><b>URL:</b> <a href="https://d3fend.mitre.org/tools/attack-mapper" target="_blank">https://d3fend.mitre.org/tools/attack-mapper</a></p>
-				<p><b>Repository last updated:</b> June 2021</p>
-				<p><b>Last accessed by CVC:</b> April 1, 2022</p>
-				<p><b>Overview:</b> MITRE D3FEND is a framework/knowledge base of encoded cybersecurity countermeasure components and capabilities.</p>
-				<p><b>How to navigate:</b> Surface ATT&CK mappings by adding techniques/sub-techniques in the linked tool and running it.</p>
-				<h4><a style="color:black" id="engage">MITRE Engage</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/mitre/engage/blob/main/Data/json/attack_mapping.json" target="_blank">https://github.com/mitre/engage/blob/main/Data/json/attack_mapping.json</a></p>
-				<p><b>Repository last updated:</b> February 2022</p>
-				<p><b>Last accessed by CVC:</b> April 1, 2022</p>
-				<p><b>Overview:</b> Per its website, MITRE Engage "is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals." The framework is organized into "Adversary Vulnerabilities" and defender "Engagement Activities", which are mapped to MITRE ATT&CK.</p>
-				<p><b>How to navigate:</b> Mappings to Adversary Vulnerabilities (<code>eav</code>) and Engagement Activities (<code>eac</code>) are contained in the linked json file.</p>
-				<h3 style="color:black">Detection & Test Resources</h3>
-				<h4><a style="color:black" id="splunk">Splunk</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/splunk/security_content/tree/develop/detections" target="_blank">https://github.com/splunk/security_content/tree/develop/detections</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> January 10, 2022</p>
-				<p><b>Overview:</b> Splunk's "Security Content" repository containing a library of publicly accessible detection searches for Splunk SIEM. New detection searches are added regularly.</p>
-				<p><b>How to navigate:</b> Navigate into each folder contained within the <code>detections</code> folder linked above to access Splunk searches saved individually in YAML format. ATT&CK technique mappings are contained in each YAML file's <code>mitre_attack_id</code> tag. A map of all the detections' ATT&CK technique tags can be found <a href="https://github.com/splunk/security_content/tree/develop/detections" target="_blank">here</a>.</p>
-				<h4><a style="color:black" id="splunk_threatHunting">ThreatHunting Splunk app</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/olafhartong/ThreatHunting/blob/master/default/savedsearches.conf" target="_blank">https://github.com/olafhartong/ThreatHunting/blob/master/default/savedsearches.conf</a></p>
-				<p><b>Repository last updated:</b> May 2019</p>
-				<p><b>Last accessed by CVC:</b> January 10, 2022</p>
-				<p><b>Description:</b> A Splunk app containing ATT&CK-focused dashboards and a series of Splunk searches mapped to ATT&CK. A map of the full set of searches can be found <a href="https://github.com/olafhartong/ThreatHunting/tree/master/attack_matrix" target="_blank">here</a>.</p>
-				<p><b>Navigation:</b> Each block of search query language within the page linked above begins with a header containing its ATT&CK mapping.</p>
-				<h4><a style="color:black" id="elastic">Elastic Stack</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/elastic/detection-rules/tree/main/rules" target="_blank">https://github.com/elastic/detection-rules/tree/main/rules</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> January 16, 2022</p>
-				<p><b>Description:</b> A repository of out-of-the-box detection rules for the Elastic Security capability. New rules are added regularly.</p>
-				<p><b>Navigation:</b> The linked <code>rules</code> folder contains .toml files, each containing logic for an Elastic search. The searches are organized into sub-folders per platform (e.g. Windows, Linux, etc). Rules mapped to ATT&CK techniques will contain ATT&CK identifiers under the <code>rule.threat.technique</code> and <code>rule.threat.subtechnique</code> tags.</p>
-				<h4><a style="color:black" id="eql_analytics">EQL Analytics Library</a></h4>
-				<p><b>URL:</b> <a href="https://eqllib.readthedocs.io/en/latest/analytics.html" target="_blank">https://eqllib.readthedocs.io/en/latest/analytics.html</a></p>
-				<p><b>Repository last updated:</b> February 2020</p>
-				<p><b>Last accessed by CVC:</b> January 12, 2022</p>
-				<p><b>Description:</b> A repository of event-based analytics written in Elastic Event Query Language (EQL).</p>
-				<p><b>Navigation:</b> Surface rules by searching for ATT&CK techniques in the far-right column of the table on the page linked above.</p>
-				<h4><a style="color:black" id="azure_fullStack">Azure full stack mappings</a></h4>
-				<p><b>URL:</b> <a href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html" target="_blank">https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html</a></p>
-				<p><b>Repository last updated:</b> June 2021</p>
-				<p><b>Last accessed by CVC:</b> January 16, 2021</p>
-				<p><b>Description:</b> A comprehensive, community-sourced set of mappings of the Microsoft Azure Infrastructure as a Services security controls to ATT&CK.</p>
-				<p><b>Navigation:</b> Surface the mapped controls by searching on the linked page for MITRE ATT&CK identifiers of interest.</p>
-				<h4><a style="color:black" id="azure_sentinel">Sentinel detection mappings</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections" target="_blank">https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections</a></p>
-				<p><b>Repository last updated:</b> November 2020</p>
-				<p><b>Last accessed by CVC:</b> January 12, 2022</p>
-				<p><b>Description:</b> A repository of Kusto detection rules provided by the third-party <a href="https://github.com/BlueTeamLabs" target="_blank">BlueTeamLabs</a>.</p>
-				<p><b>Navigation:</b> Surface mapped detections by searching the linked <code>detections</code> repository folder by MITRE ATT&CK identifier.</p>
-				<h4><a style="color:black" id="logpoint">LogPoint</a></h4>
-				<p><b>URL:</b> <a href="https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html" target="_blank">https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html</a></p>
-				<p><b>Repository last updated:</b> February 2022</p>
-				<p><b>Last accessed by CVC:</b> February 17, 2022</p>
-				<p><b>Description:</b> A repository of analytics integrated into LogPoint SIEM.</p>
-				<p><b>Navigation:</b> Surface mapped detection rule logic by searching the linked Analytics page by MITRE ATT&CK identifier.</p>
-				<h4><a style="color:black" id="proofpoint_emergingThreats">Network Security Monitoring rule mappings</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/0xtf/nsm-attack" target="_blank">https://github.com/0xtf/nsm-attack</a></p>
-				<p><b>Repository last updated:</b> April 2020</p>
-				<p><b>Last accessed by CVC:</b> January 16, 2022</p>
-				<p><b>Description:</b> A repository of third-party mappings of the Proofpoint <a href="https://rules.emergingthreats.net/open/suricata-4.0/" target="_blank">Emerging Threats</a> library, a feed of <a href="https://suricata.readthedocs.io/en/suricata-6.0.4/index.html" target="_blank">Suricata</a>/network security monitoring <a href="https://suricata.readthedocs.io/en/latest/rules/intro.html" target="_blank">rules/signatures</a>.</p>
-				<p><b>Navigation:</b> Each folder in the linked <code>nsm-attack</code> respository is organized by and labeled with a relevant ATT&CK navigator.</p>
-				<h4><a style="color:black" id="tanium_threatResponse">Tanium Threat Response</a></h4>
-				<p><b>URL:</b> <a href="https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html" target="_blank">https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html</a></p>
-				<p><b>Repository last updated:</b> February 2022</p>
-				<p><b>Last accessed by CVC:</b> January 16, 2022</p>
-				<p><b>Description:</b> A repository of detection "signals" for the Tanium Threat Response endpoint security solution.</p>
-				<p><b>Navigation:</b> The full library of detection signals can be downloaded at the link above. Each rule within the downloaded <code>signals</code> file contains mappings to MITRE ATT&CK identifiers.</p>
-				<h4><a style="color:black" id="aws">AWS security control mappings</a></h4>
-				<p><b>URL:</b> <a href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html" target="_blank">https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html</a></p>
-				<p><b>Repository last updated:</b> September 2021</p>
-				<p><b>Last accessed by CVC:</b> January 16, 2022</p>
-				<p><b>Description:</b> A comprehensive, community-sourced set of mappings of the Amazon Web Services (AWS) security controls to ATT&CK.</p>
-				<p><b>Navigation:</b> Surface the mapped controls by searching on the linked page for MITRE ATT&CK identifiers of interest.</p>
-				<h4><a style="color:black" id="gcp">GCP Community Security Analytics</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/GoogleCloudPlatform/security-analytics/tree/main/src" target="_blank">https://github.com/GoogleCloudPlatform/security-analytics/tree/main/src</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> March 26, 2022</p>
-				<p><b>Description:</b> A community-driven list of sample security analytics for detecting threats to data in Google Cloud Platform ("GCP").</p>
-				<p><b>Navigation:</b> Analytics are stored in the linked <code>src</code> folder. ATT&CK mappings for the analytics can be found in the table <a href="https://github.com/GoogleCloudPlatform/security-analytics#security-analytics-use-cases" target="_blank">here</a>.</p>
-				<h4><a style="color:black" id="car">Cyber Analytics Repository</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/mitre-attack/car/tree/master/analytics" target="_blank">https://github.com/mitre-attack/car/tree/master/analytics</a></p>
-				<p><b>Repository last updated:</b> February 2022</p>
-				<p><b>Last accessed by CVC:</b> January 17, 2022</p>
-				<p><b>Description:</b> The Cyber Analytics Repository ("CAR") is a knowledge base of analytics published by MITRE. All analytics provide a generic "pseudocode"-format example, and many also have examples formatted for specific security tools and "unit test(s)" to test the detection logic.</p>
-				<p><b>Navigation:</b> Each analytic in the linked <code>analytics</code> folder contains ATT&CK technique and/or subtechnique mappings under the <code>coverage</code> field.</p>
-				<h4><a style="color:black" id="atc">Atomic Threat Coverage</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules" target="_blank">https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules</a></p>
-				<p><b>Repository last updated:</b> November 2020</p>
-				<p><b>Last accessed by CVC:</b> January 17, 2022</p>
-				<p><b>Description:</b> Atomic Threat Coverage ("ATC") is a framework/tool with a goal of enabling users to automatically generate knowledge bases of detection rules, tests, and supporting information, all mapped to MITRE ATT&CK. ATC's Github repository also provides a sizable library of actual detection rules.</p>
-				<p><b>Navigation:</b> Files within the linked <code>Detection_Rules</code> folder contain mappings to relevant ATT&CK techniques. One quick way to surface relevant detections is by searching the <code><a href="https://raw.githubusercontent.com/atc-project/atomic-threat-coverage/master/analytics/generated/analytics.csv" target="_blank">analytics.csv</a></code> file for ATT&CK identifiers of interest, then searching the linked <code>Detection_Rules</code> folder for the name of the relevant rule(s).</p>
-				<h4><a style="color:black" id="sigma">Sigma rules public repository</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/SigmaHQ/sigma/tree/master/rules" target="_blank">https://github.com/SigmaHQ/sigma/tree/master/rules</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> January 17, 2022</p>
-				<p><b>Description:</b> Sigma is a generic, open signature format for describing relevant log events. The rule format is designed to be applicable to any type of log file and can be automatically converted into specific query language formats used by a number of commercial security tools. The linked Github repository contains a large library of publicly accessible Sigma rules. It is updated frequently.</p>
-				<p><b>Navigation:</b> Sigma rules in the linked <code>rules</code> folder that are mapped to ATT&CK will contain the relevant identifiers within the <code>tags</code> field. The <a href="https://github.com/SigmaHQ/sigma/blob/master/tools/sigma/sigma2attack.py" target="_blank"><code>sigma2attack</code></a> python script is a utility that can process all ATT&CK-mapped Sigma rules in the repository and produce an aggregated ATT&CK Navigator heatmap layer file.</p>
-				<h4><a style="color:black" id="th_playbook">ThreatHunter Playbook</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows" target="_blank">https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows</a></p>
-				<p><b>Repository last updated:</b> February 2022</p>
-				<p><b>Last accessed by CVC:</b> January 18, 2022</p>
-				<p><b>Description:</b> Threat Hunter Playbook is a community-driven, open source project with a goal of making detection development more efficient. It contains a repository of detection logic aligned with MITRE ATT&CK.</p>
-				<p><b>Navigation:</b> Files containing detection logic are arranged according to MITRE ATT&CK Tactic in the linked <code>windows</code> folder. Mappings of the files to ATT&CK techniques can be found in the embedded ATT&CK Navigator <a href="https://threathunterplaybook.com/notebooks/windows/intro.html" target="_blank">here</a>.</p>
-				<h4><a style="color:black" id="art">Atomic Red Team</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics" target="_blank">https://github.com/redcanaryco/atomic-red-team/tree/master/atomics</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> January 18, 2022</p>
-				<p><b>Description:</b> Atomic Red Team is an open source and community-developed library of tests mapped to MITRE ATT&CK. The repository of tests is updated frequently.</p>
-				<p><b>Navigation:</b> All tests are organized according to ATT&CK techniques and subtechniques in the linked <code>atomics</code> folder.</p>
-				<h4><a style="color:black" id="car_red">Cyber Analytics Repository</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/mitre-attack/car/tree/master/analytics" target="_blank">https://github.com/mitre-attack/car/tree/master/analytics</a></p>
-				<p><b>Repository last updated:</b> February 2022</p>
-				<p><b>Last accessed by CVC:</b> January 17, 2022</p>
-				<p><b>Description:</b> The Cyber Analytics Repository ("CAR") is a knowledge base of analytics published by MITRE. All analytics provide a generic "pseudocode"-format example, and many also have examples formatted for specific security tools and "unit test(s)" to test the detection logic.</p>
-				<p><b>Navigation:</b> Each item in the linked <code>analytics</code> folder, which contain detection logic as well as unit test(s), contains ATT&CK technique and/or subtechnique mappings under the <code>coverage</code> field.</p>
-				<h4><a style="color:black" id="rta">Red Team Automation</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/endgameinc/RTA/tree/master/red_ttp" target="_blank">https://github.com/endgameinc/RTA/tree/master/red_ttp</a></p>
-				<p><b>Repository last updated:</b> August 2018</p>
-				<p><b>Last accessed by CVC:</b> January 18, 2022</p>
-				<p><b>Description:</b> Red Team Automation provides a series of Python scripts designed to simulate actual adversary TTPs.</p>
-				<p><b>Navigation:</b> Scripts contained in the linked <code>red_ttp</code> folder contain mappings to ATT&CK. A mapping of the overall repository can be found in the <code><a href="https://github.com/endgameinc/RTA/blob/master/attack-navigator-coverage.json" target="_blank">attack-navigator-coverage.json</a></code> file.</p>
-				<h4><a style="color:black" id="prelude">Prelude Community TTPs</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/preludeorg/community/tree/master/ttps" target="_blank">https://github.com/preludeorg/community/tree/master/ttps</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> January 18, 2022</p>
-				<p><b>Description:</b> This repository contains files for publicly-accessible, open source "Community" TTPs intended for use with the Prelude Operator automated offensive security and training platform. The repository is updated regularly.</p>
-				<p><b>Navigation:</b> TTP files in the linked <code>ttps</code> folder are organized by MITRE ATT&CK Tactic. Each TTP contains an ATT&CK technique or subtechnique mapping within the <code>technique</code> field of the YAML file.</p>
-				<h4><a style="color:black" id="stockpile">CALDERA Stockpile</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/mitre/stockpile/tree/master/data/abilities" target="_blank">https://github.com/mitre/stockpile/tree/master/data/abilities</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> January 18, 2022</p>
-				<p><b>Description:</b> This repository contains TTPs, as well as adversary profiles, intended for use with the Stockpile plugin for the MITRE CALDERA automated adversary emulation platform.</p>
-				<p><b>Navigation:</b> TTP files in the linked <code>abilities</code> folder are organized by MITRE ATT&CK Tactic. Each TTP contains an ATT&CK technique or subtechnique mapping within the <code>technique</code> field of the YAML file.</p>
-				<h4><a style="color:black" id="scythe">Scythe</a></h4>
-				<p><b>URL:</b> <a href="https://github.com/scythe-io/community-threats" target="_blank">https://github.com/scythe-io/community-threats</a></p>
-				<p><b>Repository last updated:</b> March 2022</p>
-				<p><b>Last accessed by CVC:</b> February 16, 2022</p>
-				<p><b>Description:</b> The Community Threats Library contains publicly-accessible, open source files outlining "attack chains", each of which contain multiple discrete simulations of adversary TTPs. The chains are intended for use in the SCYTHE adversary emulation platform. The repository is updated regularly.</p>
-				<p><b>Navigation:</b> Attack chains are organized by adversary in the linked <code>community-threats</code> repository. Where relevant, ATT&CK mappings are provided in the <code>rtags</code> field of the attack chain's json file (usually in the format <code>[ADVERSARY]_scythe_threat.json</code>.</p>
-			</div>
-		</div>
+  </div>
+
+  <div class="col" style="height:110px;width:10%;float:right;padding:20px 40px 0px 0px">
+	<p style="text-align:right;padding:3px">
+	<a class="github-button" href="https://github.com/ControlCompass/ControlCompass.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star ControlCompass/ControlCompass.github.io on GitHub">Star</a>
+	<br>
+	<a class="github-button" href="https://github.com/ControlCompass/ControlCompass.github.io/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ControlCompass/ControlCompass.github.io on GitHub">Fork</a><br>
+	<a
+class="nav-link"
+href="https://github.com/tropChaud" target="_blank" style="text-align:right;padding:1px"
+><svg
+xmlns="http://www.w3.org/2000/svg"
+width="20"
+height="20"
+fill="#dddddd"
+class="bi bi-github footer-icons"
+viewBox="0 0 16 16"
+>
+<path
+  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+/></svg
+> TropChaud</a><br>
+	<a
+class="nav-link"
+href="https://twitter.com/IntelScott" target="_blank" style="text-align:right;padding:1px"
+><svg
+xmlns="http://www.w3.org/2000/svg"
+width="20"
+height="20"
+fill="#dddddd"
+class="bi bi-twitter footer-icons"
+viewBox="0 0 16 16"
+>
+<path
+  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+/></svg
+> @IntelScott</a>
+	</p>
+  </div>
+
+  <div style="text-align:center">
+	<a href="https://controlcompass.github.io/" class="btn choice"><strong>Lookup by Technique</strong></a>
+	 <a href="https://controlcompass.github.io/controls" class="btn choice"><strong>Lookup by Controls</strong></a>
+	 <a href="https://controlcompass.github.io/threat-model" class="btn choice"><strong>Threat Model</strong></a>
+	 <a href="https://controlcompass.github.io/risk" class="btn choice"><strong>Threat Alignment</strong></a>
+	 <a href="https://controlcompass.github.io/resources" class="btn emphasis"><strong>Knowledge Center</strong></a>
+  </div>
+
+  <div id="main" style="padding:0px 10px 0px 10px;margin-left:7%;margin-right:7%">
+	<div style="padding:10px 0px 1px 0px">
+		<p>The <b>Knowledge Center</b> provides general resources to help teams getting started with or maturing their threat modeling, cyber threat intelligence, and control validation capabilities. Many of these resources directly inspired and informed the development of Control Validation Compass.</p>
+		<h4 style="color:black">Threat Modeling</h4>
+		<h5><a href="https://www.youtube.com/watch?v=b0ShMaKDidU" target="_blank">Resistance Isn't Futile: A Practical Approach to Prioritizing Defenses</a></h5>
+		<h5><a href="https://www.youtube.com/watch?v=V--wxuSEMD0" target="_blank">Using Threat Intelligence to Focus ATT&CK Activities</a></h5>
+		<h4 style="color:black">MITRE ATT&CK®</h4>
+		<h5><a href="https://medium.com/mitre-attack/getting-started/home" target="_blank">Getting Started with ATT&CK</a> Series</h5>
+		<h5><a href="https://www.youtube.com/watch?v=PdCQChYrxXg" target="_blank">Hunting for Post-Exploitation Stage Attacks with Elastic Stack and the MITRE ATT&CK Framework</a></h5>
+		<h4 style="color:black">Cyber Threat Intelligence (CTI)</h4>
+		<h5><a href="https://medium.com/mitre-attack/getting-started-with-attack-cti-4eb205be4b2f" target="_blank">Getting Started with ATT&CK: Threat Intelligence</a></h5>
+		<h5><a href="https://github.com/tropChaud/Presentations/blob/main/2022_05_GRIMMCon/Resources.md#sourcing-ttp-focused-intelligence" target="_blank">Sourcing TTP-Focused Intelligence</a></h5>
+		<h4 style="color:black">Control Validation</h4>
+		<h5><a href="https://www.linkedin.com/pulse/intelligence-led-security-validation-scott-small/" target="_blank">Intelligence-Led Security Validation</a></h5>
+		<h4 style="color:black">Control Validation Compass Use Cases</h4>
+		<h5><a href="https://www.linkedin.com/pulse/developing-red-team-tests-mitre-attck-intelligence-compass-small/" target="_blank">Developing Red Team Tests with MITRE ATT&CK, Intelligence, and a Compass</a></h5>
+		<h5><a href="https://www.linkedin.com/pulse/cyber-risk-modeling-lite-made-easy-scott-small" target="_blank">Cyber Risk Modeling (Lite), Made Easy</a></h5>
+	</div>
+	<div style="padding:0px 0px 1px 0px">
+		<h3 style="color:black">Frequently Asked Questions (FAQ)</h3>
+		<h4><a style="color:black">What is Control Validation Compass?</a></h4>
+		<p>Control Validation Compass ("CVC") is an open source tool and <a href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv" target="_blank">dataset</a> designed to speed the process of a) identifying security control gaps and b) closing those gaps by pointing teams to relevant detections. CVC promotes a control validation or "purple team" approach and mindset by also pointing teams to relevant offensive security tests, so they can immediately validate the effectiveness of new (or existing) controls.</p>
+		<h4><a style="color:black">Anticipated Uses</a></h4>
+		<p><b>Intelligence Teams:</b> CVC was built with intelligence teams in mind. These teams identify threats to the organizations they support, but often have less immediate visibility into their internal controls landscape (or may have little/no visibility into detection capabilities if using a managed service). CVC puts more resources and potential context directly into these teams' hands.</p>
+		<p><b>Defenders / Blue Teams:</b> The <a href="https://controlcompass.github.io/risk" target="_blank">Threat Alignment</a> page provides a quick & easy way for any team to instantly identify potential gaps in control coverage that should be filled with new detections and then tested. If new detections must be created, each page of CVC points teams to many resources with potentially relevant logic.</p>
+		<p><b>Offensive Security / Red Teams:</b> Red teams can use CVC to identify where control coverage may be lighter, and build simulation/emulation exercises around this knowledge. CVC's author used the tool to identify many cases where detection logic exists around a given technique, yet no offensive tests exist yet (publicly) - this led to quick new development of tests that were published in the resources below!</p>
+		<p>The CVC dataset could be analyzed at a higher level to see if commonalities or trends exist among techniques with the highest or lowest volumes of detections or tests, within certain ATT&CK Tactic categories, or for techniques visible through certain types of <a href="https://attack.mitre.org/datasources/" target="_blank">data sources</a>.</p>
+		<h4><a style="color:black">Limitations</a></h4>
+		<p>CVC simply points teams to relevant detections and tests - it does not centrally compile or host the detections/tests. The structure of and ATT&CK-mapping formats contained within the source repositories differ widely. The details below offer guidance on how to surface detections/tests within each repository. <i>Teams seeking faster navigation are highly encouraged to download the repositories locally</i> and update them over time where relevant. Internal- or non-public data/mappings/etc could also be added for internal use.</p>
+		<p>Resources included in CVC provide "out-of-the-box" detection capabilities for the tools they cover. The detections activated by default will vary depending on the tool, and many teams may have added supplemental capabilities. CVC should not be considered a replacement for a more comprehensive, validated internal control "mapping" exercise, although it may serve as a great starting point.</p>
+		<br>
+		<p id="lowestLevelSummary">The <b>Lowest Level</b> checkbox on the Lookup by Controls and Threat Alignment pages refers to ATT&CK sub-techniques, and to ATT&CK techniques for which no sub-techniques exist. In contrast, T1001 is not considered a "lowest level" technique since it contains sub-techniques. This label was created to describe techniques that the author generally finds to have the highest amount of detail or granularity in their description. The label is not formalized within MITRE ATT&CK (or, to the author's knowledge, within the wider community).</p>
+	</div>
+	<div style="padding:20px 0px 0px 0px">
+		<p style="font-size:13px"><i>This section was last updated in April 2022</i></p>
+	</div>
+	<div>
+		<h3 style="color:black">Policy & Process Control Resources</h3>
+		<h4><a style="color:black" id="mitigations">MITRE ATT&CK Mitigations</a></h4>
+		<p><b>URL:</b> <a href="https://attack.mitre.org/mitigations/enterprise/" target="_blank">https://attack.mitre.org/mitigations/enterprise/</a></p>
+		<p><b>Repository last updated:</b> November 2021</p>
+		<p><b>Last accessed by CVC:</b> March 11, 2022</p>
+		<p><b>Overview:</b> Per the link above, "Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed."</p>
+		<p><b>How to navigate:</b> ATT&CK technique/sub-technique mappings can be surfaced by navigating into a particular mitigation's dedicated page.</p>
+		<h4><a style="color:black" id="nist">NIST 800-53 Revision 5 Control Mappings</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/blob/main/frameworks/attack_9_0/nist800_53_r5/layers/nist800-53-r5-overview.json" target="_blank">https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/blob/main/frameworks/attack_9_0/nist800_53_r5/layers/nist800-53-r5-overview.json</a></p>
+		<p><b>Repository last updated:</b> January 2022</p>
+		<p><b>Last accessed by CVC:</b> September 26, 2021</p>
+		<p><b>Overview:</b> A comprehensive, community-sourced set of mappings of the <a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank">NIST Special Publication (SP) 800-53 Revision 5</a> security and policy controls to MITRE ATT&CK v9.0.</p>
+		<p><b>How to navigate:</b> Mappings between NIST controls and ATT&CK can be found in the linked json file or spreadsheet format <a href="https://github.com/center-for-threat-informed-defense/attack-control-framework-mappings/releases/download/v1.5.0/attack-9.0-nist800-53-r5-mappings.xlsx" target="_blank">here</a>.</p>
+		<h4><a style="color:black" id="cis">CIS Controls v8 ATT&CK Mappings</a></h4>
+		<p><b>URL:</b> <a href="https://www.cisecurity.org/controls/cis-controls-navigator/" target="_blank">https://www.cisecurity.org/controls/cis-controls-navigator/</a></p>
+		<p><b>Repository last updated:</b> April 2021</p>
+		<p><b>Last accessed by CVC:</b> September 25, 2021</p>
+		<p><b>Overview:</b> Per the CIS site, "CIS Critical Security Controls (CIS Controls) are a prioritized set of Safeguards to mitigate the most prevalent cyber-attacks against systems and networks".</p>
+		<p><b>How to navigate:</b> Mappings to ATT&CK v8.2 can be surfaced by adding/checking the appropriate box in the linked Navigator tool (<code>Add</code> > Select <code>MITRE Enterprise ATT&CK v8.2</code> > <code>Apply Mappings</code>).</p>
+		<h4><a style="color:black" id="d3fend">MITRE D3FEND</a></h4>
+		<p><b>URL:</b> <a href="https://d3fend.mitre.org/tools/attack-mapper" target="_blank">https://d3fend.mitre.org/tools/attack-mapper</a></p>
+		<p><b>Repository last updated:</b> June 2021</p>
+		<p><b>Last accessed by CVC:</b> April 1, 2022</p>
+		<p><b>Overview:</b> MITRE D3FEND is a framework/knowledge base of encoded cybersecurity countermeasure components and capabilities.</p>
+		<p><b>How to navigate:</b> Surface ATT&CK mappings by adding techniques/sub-techniques in the linked tool and running it.</p>
+		<h4><a style="color:black" id="engage">MITRE Engage</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/mitre/engage/blob/main/Data/json/attack_mapping.json" target="_blank">https://github.com/mitre/engage/blob/main/Data/json/attack_mapping.json</a></p>
+		<p><b>Repository last updated:</b> February 2022</p>
+		<p><b>Last accessed by CVC:</b> April 1, 2022</p>
+		<p><b>Overview:</b> Per its website, MITRE Engage "is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals." The framework is organized into "Adversary Vulnerabilities" and defender "Engagement Activities", which are mapped to MITRE ATT&CK.</p>
+		<p><b>How to navigate:</b> Mappings to Adversary Vulnerabilities (<code>eav</code>) and Engagement Activities (<code>eac</code>) are contained in the linked json file.</p>
+		<h3 style="color:black">Detection & Test Resources</h3>
+		<h4><a style="color:black" id="splunk">Splunk</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/splunk/security_content/tree/develop/detections" target="_blank">https://github.com/splunk/security_content/tree/develop/detections</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> January 10, 2022</p>
+		<p><b>Overview:</b> Splunk's "Security Content" repository containing a library of publicly accessible detection searches for Splunk SIEM. New detection searches are added regularly.</p>
+		<p><b>How to navigate:</b> Navigate into each folder contained within the <code>detections</code> folder linked above to access Splunk searches saved individually in YAML format. ATT&CK technique mappings are contained in each YAML file's <code>mitre_attack_id</code> tag. A map of all the detections' ATT&CK technique tags can be found <a href="https://github.com/splunk/security_content/tree/develop/detections" target="_blank">here</a>.</p>
+		<h4><a style="color:black" id="splunk_threatHunting">ThreatHunting Splunk app</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/olafhartong/ThreatHunting/blob/master/default/savedsearches.conf" target="_blank">https://github.com/olafhartong/ThreatHunting/blob/master/default/savedsearches.conf</a></p>
+		<p><b>Repository last updated:</b> May 2019</p>
+		<p><b>Last accessed by CVC:</b> January 10, 2022</p>
+		<p><b>Description:</b> A Splunk app containing ATT&CK-focused dashboards and a series of Splunk searches mapped to ATT&CK. A map of the full set of searches can be found <a href="https://github.com/olafhartong/ThreatHunting/tree/master/attack_matrix" target="_blank">here</a>.</p>
+		<p><b>Navigation:</b> Each block of search query language within the page linked above begins with a header containing its ATT&CK mapping.</p>
+		<h4><a style="color:black" id="elastic">Elastic Stack</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/elastic/detection-rules/tree/main/rules" target="_blank">https://github.com/elastic/detection-rules/tree/main/rules</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> January 16, 2022</p>
+		<p><b>Description:</b> A repository of out-of-the-box detection rules for the Elastic Security capability. New rules are added regularly.</p>
+		<p><b>Navigation:</b> The linked <code>rules</code> folder contains .toml files, each containing logic for an Elastic search. The searches are organized into sub-folders per platform (e.g. Windows, Linux, etc). Rules mapped to ATT&CK techniques will contain ATT&CK identifiers under the <code>rule.threat.technique</code> and <code>rule.threat.subtechnique</code> tags.</p>
+		<h4><a style="color:black" id="eql_analytics">EQL Analytics Library</a></h4>
+		<p><b>URL:</b> <a href="https://eqllib.readthedocs.io/en/latest/analytics.html" target="_blank">https://eqllib.readthedocs.io/en/latest/analytics.html</a></p>
+		<p><b>Repository last updated:</b> February 2020</p>
+		<p><b>Last accessed by CVC:</b> January 12, 2022</p>
+		<p><b>Description:</b> A repository of event-based analytics written in Elastic Event Query Language (EQL).</p>
+		<p><b>Navigation:</b> Surface rules by searching for ATT&CK techniques in the far-right column of the table on the page linked above.</p>
+		<h4><a style="color:black" id="azure_fullStack">Azure full stack mappings</a></h4>
+		<p><b>URL:</b> <a href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html" target="_blank">https://center-for-threat-informed-defense.github.io/security-stack-mappings/Azure/README.html</a></p>
+		<p><b>Repository last updated:</b> June 2021</p>
+		<p><b>Last accessed by CVC:</b> January 16, 2021</p>
+		<p><b>Description:</b> A comprehensive, community-sourced set of mappings of the Microsoft Azure Infrastructure as a Services security controls to ATT&CK.</p>
+		<p><b>Navigation:</b> Surface the mapped controls by searching on the linked page for MITRE ATT&CK identifiers of interest.</p>
+		<h4><a style="color:black" id="azure_sentinel">Sentinel detection mappings</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections" target="_blank">https://github.com/BlueTeamLabs/sentinel-attack/tree/master/detections</a></p>
+		<p><b>Repository last updated:</b> November 2020</p>
+		<p><b>Last accessed by CVC:</b> January 12, 2022</p>
+		<p><b>Description:</b> A repository of Kusto detection rules provided by the third-party <a href="https://github.com/BlueTeamLabs" target="_blank">BlueTeamLabs</a>.</p>
+		<p><b>Navigation:</b> Surface mapped detections by searching the linked <code>detections</code> repository folder by MITRE ATT&CK identifier.</p>
+		<h4><a style="color:black" id="logpoint">LogPoint</a></h4>
+		<p><b>URL:</b> <a href="https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html" target="_blank">https://docs.logpoint.com/docs/alert-rules/en/latest/MITRE.html</a></p>
+		<p><b>Repository last updated:</b> February 2022</p>
+		<p><b>Last accessed by CVC:</b> February 17, 2022</p>
+		<p><b>Description:</b> A repository of analytics integrated into LogPoint SIEM.</p>
+		<p><b>Navigation:</b> Surface mapped detection rule logic by searching the linked Analytics page by MITRE ATT&CK identifier.</p>
+		<h4><a style="color:black" id="proofpoint_emergingThreats">Network Security Monitoring rule mappings</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/0xtf/nsm-attack" target="_blank">https://github.com/0xtf/nsm-attack</a></p>
+		<p><b>Repository last updated:</b> April 2020</p>
+		<p><b>Last accessed by CVC:</b> January 16, 2022</p>
+		<p><b>Description:</b> A repository of third-party mappings of the Proofpoint <a href="https://rules.emergingthreats.net/open/suricata-4.0/" target="_blank">Emerging Threats</a> library, a feed of <a href="https://suricata.readthedocs.io/en/suricata-6.0.4/index.html" target="_blank">Suricata</a>/network security monitoring <a href="https://suricata.readthedocs.io/en/latest/rules/intro.html" target="_blank">rules/signatures</a>.</p>
+		<p><b>Navigation:</b> Each folder in the linked <code>nsm-attack</code> respository is organized by and labeled with a relevant ATT&CK navigator.</p>
+		<h4><a style="color:black" id="tanium_threatResponse">Tanium Threat Response</a></h4>
+		<p><b>URL:</b> <a href="https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html" target="_blank">https://content.tanium.com/files/misc/ThreatResponse/ThreatResponse.html</a></p>
+		<p><b>Repository last updated:</b> February 2022</p>
+		<p><b>Last accessed by CVC:</b> January 16, 2022</p>
+		<p><b>Description:</b> A repository of detection "signals" for the Tanium Threat Response endpoint security solution.</p>
+		<p><b>Navigation:</b> The full library of detection signals can be downloaded at the link above. Each rule within the downloaded <code>signals</code> file contains mappings to MITRE ATT&CK identifiers.</p>
+		<h4><a style="color:black" id="aws">AWS security control mappings</a></h4>
+		<p><b>URL:</b> <a href="https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html" target="_blank">https://center-for-threat-informed-defense.github.io/security-stack-mappings/AWS/README.html</a></p>
+		<p><b>Repository last updated:</b> September 2021</p>
+		<p><b>Last accessed by CVC:</b> January 16, 2022</p>
+		<p><b>Description:</b> A comprehensive, community-sourced set of mappings of the Amazon Web Services (AWS) security controls to ATT&CK.</p>
+		<p><b>Navigation:</b> Surface the mapped controls by searching on the linked page for MITRE ATT&CK identifiers of interest.</p>
+		<h4><a style="color:black" id="gcp">GCP Community Security Analytics</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/GoogleCloudPlatform/security-analytics/tree/main/src" target="_blank">https://github.com/GoogleCloudPlatform/security-analytics/tree/main/src</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> March 26, 2022</p>
+		<p><b>Description:</b> A community-driven list of sample security analytics for detecting threats to data in Google Cloud Platform ("GCP").</p>
+		<p><b>Navigation:</b> Analytics are stored in the linked <code>src</code> folder. ATT&CK mappings for the analytics can be found in the table <a href="https://github.com/GoogleCloudPlatform/security-analytics#security-analytics-use-cases" target="_blank">here</a>.</p>
+		<h4><a style="color:black" id="car">Cyber Analytics Repository</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/mitre-attack/car/tree/master/analytics" target="_blank">https://github.com/mitre-attack/car/tree/master/analytics</a></p>
+		<p><b>Repository last updated:</b> February 2022</p>
+		<p><b>Last accessed by CVC:</b> January 17, 2022</p>
+		<p><b>Description:</b> The Cyber Analytics Repository ("CAR") is a knowledge base of analytics published by MITRE. All analytics provide a generic "pseudocode"-format example, and many also have examples formatted for specific security tools and "unit test(s)" to test the detection logic.</p>
+		<p><b>Navigation:</b> Each analytic in the linked <code>analytics</code> folder contains ATT&CK technique and/or subtechnique mappings under the <code>coverage</code> field.</p>
+		<h4><a style="color:black" id="atc">Atomic Threat Coverage</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules" target="_blank">https://github.com/atc-project/atomic-threat-coverage/tree/master/Atomic_Threat_Coverage/Detection_Rules</a></p>
+		<p><b>Repository last updated:</b> November 2020</p>
+		<p><b>Last accessed by CVC:</b> January 17, 2022</p>
+		<p><b>Description:</b> Atomic Threat Coverage ("ATC") is a framework/tool with a goal of enabling users to automatically generate knowledge bases of detection rules, tests, and supporting information, all mapped to MITRE ATT&CK. ATC's Github repository also provides a sizable library of actual detection rules.</p>
+		<p><b>Navigation:</b> Files within the linked <code>Detection_Rules</code> folder contain mappings to relevant ATT&CK techniques. One quick way to surface relevant detections is by searching the <code><a href="https://raw.githubusercontent.com/atc-project/atomic-threat-coverage/master/analytics/generated/analytics.csv" target="_blank">analytics.csv</a></code> file for ATT&CK identifiers of interest, then searching the linked <code>Detection_Rules</code> folder for the name of the relevant rule(s).</p>
+		<h4><a style="color:black" id="sigma">Sigma rules public repository</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/SigmaHQ/sigma/tree/master/rules" target="_blank">https://github.com/SigmaHQ/sigma/tree/master/rules</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> January 17, 2022</p>
+		<p><b>Description:</b> Sigma is a generic, open signature format for describing relevant log events. The rule format is designed to be applicable to any type of log file and can be automatically converted into specific query language formats used by a number of commercial security tools. The linked Github repository contains a large library of publicly accessible Sigma rules. It is updated frequently.</p>
+		<p><b>Navigation:</b> Sigma rules in the linked <code>rules</code> folder that are mapped to ATT&CK will contain the relevant identifiers within the <code>tags</code> field. The <a href="https://github.com/SigmaHQ/sigma/blob/master/tools/sigma/sigma2attack.py" target="_blank"><code>sigma2attack</code></a> python script is a utility that can process all ATT&CK-mapped Sigma rules in the repository and produce an aggregated ATT&CK Navigator heatmap layer file.</p>
+		<h4><a style="color:black" id="th_playbook">ThreatHunter Playbook</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows" target="_blank">https://github.com/OTRF/ThreatHunter-Playbook/tree/master/docs/notebooks/windows</a></p>
+		<p><b>Repository last updated:</b> February 2022</p>
+		<p><b>Last accessed by CVC:</b> January 18, 2022</p>
+		<p><b>Description:</b> Threat Hunter Playbook is a community-driven, open source project with a goal of making detection development more efficient. It contains a repository of detection logic aligned with MITRE ATT&CK.</p>
+		<p><b>Navigation:</b> Files containing detection logic are arranged according to MITRE ATT&CK Tactic in the linked <code>windows</code> folder. Mappings of the files to ATT&CK techniques can be found in the embedded ATT&CK Navigator <a href="https://threathunterplaybook.com/notebooks/windows/intro.html" target="_blank">here</a>.</p>
+		<h4><a style="color:black" id="art">Atomic Red Team</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics" target="_blank">https://github.com/redcanaryco/atomic-red-team/tree/master/atomics</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> January 18, 2022</p>
+		<p><b>Description:</b> Atomic Red Team is an open source and community-developed library of tests mapped to MITRE ATT&CK. The repository of tests is updated frequently.</p>
+		<p><b>Navigation:</b> All tests are organized according to ATT&CK techniques and subtechniques in the linked <code>atomics</code> folder.</p>
+		<h4><a style="color:black" id="car_red">Cyber Analytics Repository</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/mitre-attack/car/tree/master/analytics" target="_blank">https://github.com/mitre-attack/car/tree/master/analytics</a></p>
+		<p><b>Repository last updated:</b> February 2022</p>
+		<p><b>Last accessed by CVC:</b> January 17, 2022</p>
+		<p><b>Description:</b> The Cyber Analytics Repository ("CAR") is a knowledge base of analytics published by MITRE. All analytics provide a generic "pseudocode"-format example, and many also have examples formatted for specific security tools and "unit test(s)" to test the detection logic.</p>
+		<p><b>Navigation:</b> Each item in the linked <code>analytics</code> folder, which contain detection logic as well as unit test(s), contains ATT&CK technique and/or subtechnique mappings under the <code>coverage</code> field.</p>
+		<h4><a style="color:black" id="rta">Red Team Automation</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/endgameinc/RTA/tree/master/red_ttp" target="_blank">https://github.com/endgameinc/RTA/tree/master/red_ttp</a></p>
+		<p><b>Repository last updated:</b> August 2018</p>
+		<p><b>Last accessed by CVC:</b> January 18, 2022</p>
+		<p><b>Description:</b> Red Team Automation provides a series of Python scripts designed to simulate actual adversary TTPs.</p>
+		<p><b>Navigation:</b> Scripts contained in the linked <code>red_ttp</code> folder contain mappings to ATT&CK. A mapping of the overall repository can be found in the <code><a href="https://github.com/endgameinc/RTA/blob/master/attack-navigator-coverage.json" target="_blank">attack-navigator-coverage.json</a></code> file.</p>
+		<h4><a style="color:black" id="prelude">Prelude Community TTPs</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/preludeorg/community/tree/master/ttps" target="_blank">https://github.com/preludeorg/community/tree/master/ttps</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> January 18, 2022</p>
+		<p><b>Description:</b> This repository contains files for publicly-accessible, open source "Community" TTPs intended for use with the Prelude Operator automated offensive security and training platform. The repository is updated regularly.</p>
+		<p><b>Navigation:</b> TTP files in the linked <code>ttps</code> folder are organized by MITRE ATT&CK Tactic. Each TTP contains an ATT&CK technique or subtechnique mapping within the <code>technique</code> field of the YAML file.</p>
+		<h4><a style="color:black" id="stockpile">CALDERA Stockpile</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/mitre/stockpile/tree/master/data/abilities" target="_blank">https://github.com/mitre/stockpile/tree/master/data/abilities</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> January 18, 2022</p>
+		<p><b>Description:</b> This repository contains TTPs, as well as adversary profiles, intended for use with the Stockpile plugin for the MITRE CALDERA automated adversary emulation platform.</p>
+		<p><b>Navigation:</b> TTP files in the linked <code>abilities</code> folder are organized by MITRE ATT&CK Tactic. Each TTP contains an ATT&CK technique or subtechnique mapping within the <code>technique</code> field of the YAML file.</p>
+		<h4><a style="color:black" id="scythe">Scythe</a></h4>
+		<p><b>URL:</b> <a href="https://github.com/scythe-io/community-threats" target="_blank">https://github.com/scythe-io/community-threats</a></p>
+		<p><b>Repository last updated:</b> March 2022</p>
+		<p><b>Last accessed by CVC:</b> February 16, 2022</p>
+		<p><b>Description:</b> The Community Threats Library contains publicly-accessible, open source files outlining "attack chains", each of which contain multiple discrete simulations of adversary TTPs. The chains are intended for use in the SCYTHE adversary emulation platform. The repository is updated regularly.</p>
+		<p><b>Navigation:</b> Attack chains are organized by adversary in the linked <code>community-threats</code> repository. Where relevant, ATT&CK mappings are provided in the <code>rtags</code> field of the attack chain's json file (usually in the format <code>[ADVERSARY]_scythe_threat.json</code>.</p>
+	</div>
+    <br>
   </div>
 
 <footer style="font-size:13px;text-align:center">
 	<p>
-		<br>
-		<a class="github-button" href="https://github.com/ControlCompass/ControlCompass.github.io" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ControlCompass/ControlCompass.github.io on GitHub" style="text-align:center">Star</a>
-		<a class="github-button" href="https://github.com/ControlCompass/ControlCompass.github.io/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork ControlCompass/ControlCompass.github.io on GitHub" style="text-align:center">Fork</a>
-		<br>
-		<br>
 		MITRE ATT&CK® is a registered trademark of The MITRE Corporation, and MITRE D3FEND is a trademark of The MITRE Corporation.<br>
-		Feedback & improvement suggestions welcome! Get in touch on <a target="_blank" href="https://twitter.com/IntelScott" >Twitter</a> or <a target="_blank" href="https://github.com/ControlCompass">Github</a> (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/issues">submit an issue</a>)<br>
 		View the raw data (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv">csv</a>, <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json">json</a>) and <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io">site source code</a><br>
 	</p>
 </footer>
