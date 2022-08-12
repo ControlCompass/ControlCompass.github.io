@@ -15,6 +15,9 @@
   <meta name="twitter:description" content='Lookup attacker technique-mapped detections and tests across your security stack' />
   <meta name="twitter:image" content="" />
   <style>
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: montserrat, sans-serif;
     font-weight: 400;
@@ -116,14 +119,15 @@ viewBox="0 0 16 16"
 			<label><input type="checkbox" value="" id="d3fend" style="margin-right:5px;margin-left:10px" checked>MITRE D3FEND</label>
 			<label><input type="checkbox" value="" id="engage" style="margin-right:5px;margin-left:10px" checked>MITRE Engage</label>
 			<h4>Defensive Capabilities</h4>
-			<p style="font-size:16px;margin:5px 0px">Network & Endpoint Telemetry</p>
+			<p style="font-size:16px;margin:5px 0px">Network & Endpoint Telemetry - Native Controls</p>
 			<label><input type="checkbox" value="" id="splunk" style="margin-right:5px" checked>Splunk</label>
 			<label><input type="checkbox" value="" id="splunk_threatHunting" style="margin-right:5px;margin-left:10px" checked>Threat Hunting Splunk App</label>
 			<label><input type="checkbox" value="" id="elastic" style="margin-right:5px;margin-left:10px" checked>Elastic Stack</label>
 			<label><input type="checkbox" value="" id="eql_analytics" style="margin-right:5px;margin-left:10px" checked>EQL Analytics Library</label>
+			<label><input type="checkbox" value="" id="sentinel_defender" style="margin-right:5px;margin-left:10px" checked>Microsoft Sentinel & Defender (Unified)</label>
 			<label><input type="checkbox" value="" id="azure_sentinel" style="margin-right:5px;margin-left:10px" checked>Sentinel detection mappings</label>
 			<label><input type="checkbox" value="" id="logpoint" style="margin-right:5px;margin-left:10px" checked>LogPoint</label>
-			<br>
+			<p style="font-size:16px;margin:5px 0px">Network & Endpoint Telemetry - Network & Endpoint Telemetry - Third-Party Rule Repositories</p>
 			<label><input type="checkbox" value="" id="car" style="margin-right:5px" checked>Cyber Analytics Repository</label>
 			<label><input type="checkbox" value="" id="atc" style="margin-right:5px;margin-left:10px" checked>Atomic Threat Coverage</label>
 			<label><input type="checkbox" value="" id="sigma" style="margin-right:5px;margin-left:10px" checked>Sigma rules public repository</label>
