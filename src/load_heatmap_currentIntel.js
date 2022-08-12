@@ -133,8 +133,6 @@
                         threat_intelligence_out.appendChild(div_nav)
 
                     }
-
-                    window.location.href = '#threat_intelligence_out'
                 };
 			}
 		});

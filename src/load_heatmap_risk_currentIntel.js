@@ -70,8 +70,6 @@
                     threat_intelligence_out.style.visibility = "visible"
                     const output_threat = document.getElementById("output_threat")
                     output_threat.innerHTML = suggestion.value
-
-                    window.location.href = '#threat_intelligence_out'
                 };
 			}
 		});
