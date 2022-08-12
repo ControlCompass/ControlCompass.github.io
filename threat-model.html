@@ -4,18 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cxn6qie.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.27/jquery.autocomplete.min.js"></script>
-  <title>Control Validation Compass | Threat Model</title>
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc.png">
+  <title>Control Validation Compass | Threat Model | Threat Modeling Aide & Purple Team Content Repository</title>
+  <link rel="icon" type="image/x-icon" href="docs/images/cvc.png">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@IntelScott" />
-  <meta name="twitter:title" content="Control Validation Compass | Threat Model" />
-  <meta name="twitter:description" content='Instantly build your threat model & surface relevant countermeasures' />
+  <meta name="twitter:title" content="Control Validation Compass | Threat Model | Threat Modeling Aide & Purple Team Content Repository" />
+  <meta name="twitter:description" content='Instantly build your cyber adversary threat model' />
   <meta name="twitter:image" content="" />
   <style>
   html {
     scroll-behavior: smooth;
+  }
+  body {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   .div { }
    .category-select:hover { background-color: #e7e7e7; border-radius: 5px }
@@ -80,7 +86,7 @@
 <body>
   <div class="col" style="height:110px;width:90%;float:left">
 	  <p style="text-align:right;padding:10px 18% 0px 0px">
-		<a href="https://controlcompass.github.io/"><img src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc-banner.png" alt="Control Validation Compass" style="width:67%;max-width:654px"></a>
+		<a href="https://controlcompass.github.io/"><img src="docs/images/cvc-banner_color4-2.png" alt="Control Validation Compass" style="width:67%;max-width:654px"></a>
 	  </p>
   </div>
 
@@ -429,12 +435,13 @@ viewBox="0 0 16 16"
 						<p><i>Coming soon!</i></p>
 							<div class="row"></div>
 				</details>
-				<details class="details model_red" style="text-align:center;padding:0.4rem 0px 0.4rem 0px">
+				<details class="details model_red" style="text-align:center;margin-bottom:1rem;padding:0.4rem 0px 0.4rem 0px">
 					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
-						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Current Intelligence <i>(Coming Soon!)</i>
+						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Current Intelligence
 					</summary>
-						<p><i>Coming soon!</i></p>
-							<div class="row"></div>
+						<p style="font-size:15px;margin-top:0.5rem">View the <b><a href="https://github.com/tropChaud/Cyber-Adversary-Heatmaps" target="_blank">full library of recent adversary TTP intelligence heatmaps</a></b> and source content.</p>
+						<p style="font-size:15px;margin-bottom:1rem"><i>Consider using this <a href="https://github.com/tropChaud/webpage2attack" target="_blank">handy script</a> to easily generate TTP heatmap files from open-source intel reports!</i></p>
+						<input style="margin-bottom:1rem" type="text" name="in" id="current_intelligence" size="75" placeholder="Lookup threats from recent intelligence reporting"/>
 				</details>
 				<div id="threat_intelligence_out" style="margin-top:3rem;visibility:hidden">
 					<div style="text-align:center">
@@ -463,6 +470,7 @@ viewBox="0 0 16 16"
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
-<script defer type="text/javascript" src="load_heatmap1.js"></script>
-<script defer type="text/javascript" src="load_heatmap2.js"></script>
-<script defer type="text/javascript" src="selectionReview.js"></script>
+<script defer type="text/javascript" src="src/selectionReview.js"></script>
+<script defer type="text/javascript" src="src/load_heatmap1.js"></script>
+<script defer type="text/javascript" src="src/load_heatmap2.js"></script>
+<script defer type="text/javascript" src="src/load_heatmap_currentIntel.js"></script>

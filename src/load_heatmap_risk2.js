@@ -1,20 +1,20 @@
-function loadHeatmap_risk1() {
+function loadHeatmap_risk2() {
 
     const req2 = new XMLHttpRequest();
-    req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Categorized-Adversary-TTPs/main/docs/heatmaps/lookup_index_all_categories.json',true);
+    req2.open("GET",'https://raw.githubusercontent.com/tropChaud/Categorized-Adversary-TTPs/main/docs/heatmaps/all_adversaries/Categorized_Adversary_TTPs_CVC.json',true);
     req2.send();
     req2.onload = function(){
 
         const data = JSON.parse(req2.responseText);
 
-        const adversary_selection = document.querySelectorAll(".adversary_selection");
-        for (var a = 0; a < adversary_selection.length; a++) {
-            if (adversary_selection[a].checked) {
-                adversary_selection[a].checked = false
+        const category_selection = document.querySelectorAll(".category_selection");
+        for (var a = 0; a < category_selection.length; a++) {
+            if (category_selection[a].checked) {
+                category_selection[a].checked = false
             }
         }
 
-        const selections = document.querySelectorAll(".category_selection");
+        const selections = document.querySelectorAll(".adversary_selection");
         selections_array = []
         adversary_list = []
         for (var i = 0; i < selections.length; i++) {
@@ -27,7 +27,7 @@ function loadHeatmap_risk1() {
 
             for (var y = 0; y < data.length; y++) {
 
-                if (selections_array[x] == data[y].id) {
+                if (selections_array[x] == data[y].mitre_attack_name) {
 
                     const adversary_meta = document.getElementById("adversary_meta")
                     const div_JSONinput = document.getElementById("div_JSONinput")
@@ -65,10 +65,10 @@ function loadHeatmap_risk1() {
                     textarea.rows = "10"
                     div_JSONinput.appendChild(textarea)
 
-                    url = data[y].url
+                    url = data[y].heatmap_url
 
                     const req = new XMLHttpRequest();
-                    req.open("GET", url, true);
+                    req.open("GET",url,true);
                     req.send();
                     req.onload = function(){
                         document.getElementById("JSONinput").textContent = req.responseText;
@@ -80,7 +80,7 @@ function loadHeatmap_risk1() {
                     const threat_intelligence_out = document.getElementById("threat_intelligence_out")
                     threat_intelligence_out.style.visibility = "visible"
                     const output_threat = document.getElementById("output_threat")
-                    output_threat.innerHTML = data[y].id + ' (All Adversaries)'
+                    output_threat.innerHTML = data[y].merged_name
 
                 }
 
@@ -88,7 +88,7 @@ function loadHeatmap_risk1() {
 
         }
 
-        window.location.href = 'https://controlcompass.github.io/risk#threat_intelligence_out'
+        window.location.href = '#threat_intelligence_out'
 
     }
 

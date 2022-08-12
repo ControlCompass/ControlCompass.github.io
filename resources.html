@@ -2,12 +2,24 @@
  <html lang="en">
  <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cxn6qie.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.27/jquery.autocomplete.min.js"></script>
-  <title>Control Validation Compass - Home</title>
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc.png">
+  <title>Control Validation Compass | Knowledge Center | Threat Modeling Aide & Purple Team Content Repository</title>
+  <link rel="icon" type="image/x-icon" href="docs/images/cvc.png">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@IntelScott" />
+  <meta name="twitter:title" content="Control Validation Compass | Knowledge Center | Threat Modeling Aide & Purple Team Content Repository" />
+  <meta name="twitter:description" content='Threat modeling, CTI, and control validation guidance & resources' />
+  <meta name="twitter:image" content="" />
   <style>
+  body {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   .aligncenter { text-align:center }
   .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
 	.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
@@ -19,13 +31,16 @@
 	.emphasis { border: 2px solid black; border-color: #e7e7e7; color: black; }
 	.emphasis:hover { background: #e7e7e7; }
 	.choice:hover { background: #e7e7e7; }
+  h4 { padding: 0px 0px 0px 2rem }
+  h5 { padding: 0px 4rem 0px 4rem }
+  p { padding: 0px 4rem 0px 4rem }
   </style>
 </head>
 <body>
 
   <div class="col" style="height:110px;width:90%;float:left">
 	  <p style="text-align:right;padding:10px 18% 0px 0px">
-		<a href="https://controlcompass.github.io/"><img src="https://raw.githubusercontent.com/ControlCompass/ControlCompass.github.io/main/cvc-banner.png" alt="Control Validation Compass" style="width:67%;max-width:654px"></a>
+		<a href="https://controlcompass.github.io/"><img src="docs/images/cvc-banner_color4-2.png" alt="Control Validation Compass" style="width:67%;max-width:654px"></a>
 	  </p>
   </div>
 
@@ -76,24 +91,33 @@ viewBox="0 0 16 16"
   </div>
 
   <div id="main" style="padding:0px 10px 0px 10px;margin-left:7%;margin-right:7%">
-	<div style="padding:10px 0px 1px 0px">
-		<p>The <b>Knowledge Center</b> provides general resources to help teams getting started with or maturing their threat modeling, cyber threat intelligence, and control validation capabilities. Many of these resources directly inspired and informed the development of Control Validation Compass.</p>
+	<div style="text-align:center;padding:10px 0px 1px 0px">
+		<p style="padding:0px">Control Validation Compass is brought to you by a security practicioner and former consultant to enterprise security & intelligence teams. The <b>Knowledge Center</b> provides general resources to help teams getting started with - or maturing - their threat modeling, cyber threat intelligence, and control validation capabilities (many of which directly inspired & informed development of this tool!)</p>
+	</div>
+	<div>
+		<h3 style="color:black">Tutorials</h3>
+		<h4 style="color:black">How to Use Control Validation Compass (Series)</h4>
+		<p><i>Coming soon!</i></p>
+		<h4 style="color:black">Use Case Walkthroughs</h4>
+		<h5><a href="https://www.linkedin.com/pulse/developing-red-team-tests-mitre-attck-intelligence-compass-small/" target="_blank">Developing Red Team Tests with MITRE ATT&CK, Intelligence, and a Compass</a></h5>
+		<h5><a href="https://www.linkedin.com/pulse/cyber-risk-modeling-lite-made-easy-scott-small" target="_blank">Cyber Risk Modeling (Lite), Made Easy</a></h5>
+		<h5><a href="https://www.linkedin.com/pulse/cisas-top-malware-report-technique-overlap-resources-scott-small/" target="_blank">CISA's "Top Malware" Report: Technique Overlap & Operational Resources</a></h5>
+	</div>
+	<div>
+		<h3 style="color:black">General Knowledge</h3>
 		<h4 style="color:black">Threat Modeling</h4>
 		<h5><a href="https://www.youtube.com/watch?v=b0ShMaKDidU" target="_blank">Resistance Isn't Futile: A Practical Approach to Prioritizing Defenses</a></h5>
 		<h5><a href="https://www.youtube.com/watch?v=V--wxuSEMD0" target="_blank">Using Threat Intelligence to Focus ATT&CK Activities</a></h5>
 		<h4 style="color:black">MITRE ATT&CK®</h4>
-		<h5><a href="https://medium.com/mitre-attack/getting-started/home" target="_blank">Getting Started with ATT&CK</a> Series</h5>
+		<h5><a href="https://medium.com/mitre-attack/getting-started/home" target="_blank">Getting Started with ATT&CK (Series)</a></h5>
 		<h5><a href="https://www.youtube.com/watch?v=PdCQChYrxXg" target="_blank">Hunting for Post-Exploitation Stage Attacks with Elastic Stack and the MITRE ATT&CK Framework</a></h5>
 		<h4 style="color:black">Cyber Threat Intelligence (CTI)</h4>
 		<h5><a href="https://medium.com/mitre-attack/getting-started-with-attack-cti-4eb205be4b2f" target="_blank">Getting Started with ATT&CK: Threat Intelligence</a></h5>
 		<h5><a href="https://github.com/tropChaud/Presentations/blob/main/2022_05_GRIMMCon/Resources.md#sourcing-ttp-focused-intelligence" target="_blank">Sourcing TTP-Focused Intelligence</a></h5>
 		<h4 style="color:black">Control Validation</h4>
 		<h5><a href="https://www.linkedin.com/pulse/intelligence-led-security-validation-scott-small/" target="_blank">Intelligence-Led Security Validation</a></h5>
-		<h4 style="color:black">Control Validation Compass Use Cases</h4>
-		<h5><a href="https://www.linkedin.com/pulse/developing-red-team-tests-mitre-attck-intelligence-compass-small/" target="_blank">Developing Red Team Tests with MITRE ATT&CK, Intelligence, and a Compass</a></h5>
-		<h5><a href="https://www.linkedin.com/pulse/cyber-risk-modeling-lite-made-easy-scott-small" target="_blank">Cyber Risk Modeling (Lite), Made Easy</a></h5>
 	</div>
-	<div style="padding:0px 0px 1px 0px">
+	<div>
 		<h3 style="color:black">Frequently Asked Questions (FAQ)</h3>
 		<h4><a style="color:black">What is Control Validation Compass?</a></h4>
 		<p>Control Validation Compass ("CVC") is an open source tool and <a href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv" target="_blank">dataset</a> designed to speed the process of a) identifying security control gaps and b) closing those gaps by pointing teams to relevant detections. CVC promotes a control validation or "purple team" approach and mindset by also pointing teams to relevant offensive security tests, so they can immediately validate the effectiveness of new (or existing) controls.</p>
@@ -105,14 +129,11 @@ viewBox="0 0 16 16"
 		<h4><a style="color:black">Limitations</a></h4>
 		<p>CVC simply points teams to relevant detections and tests - it does not centrally compile or host the detections/tests. The structure of and ATT&CK-mapping formats contained within the source repositories differ widely. The details below offer guidance on how to surface detections/tests within each repository. <i>Teams seeking faster navigation are highly encouraged to download the repositories locally</i> and update them over time where relevant. Internal- or non-public data/mappings/etc could also be added for internal use.</p>
 		<p>Resources included in CVC provide "out-of-the-box" detection capabilities for the tools they cover. The detections activated by default will vary depending on the tool, and many teams may have added supplemental capabilities. CVC should not be considered a replacement for a more comprehensive, validated internal control "mapping" exercise, although it may serve as a great starting point.</p>
-		<br>
-		<p id="lowestLevelSummary">The <b>Lowest Level</b> checkbox on the Lookup by Controls and Threat Alignment pages refers to ATT&CK sub-techniques, and to ATT&CK techniques for which no sub-techniques exist. In contrast, T1001 is not considered a "lowest level" technique since it contains sub-techniques. This label was created to describe techniques that the author generally finds to have the highest amount of detail or granularity in their description. The label is not formalized within MITRE ATT&CK (or, to the author's knowledge, within the wider community).</p>
-	</div>
-	<div style="padding:20px 0px 0px 0px">
-		<p style="font-size:13px"><i>This section was last updated in April 2022</i></p>
+		<p id="lowestLevelSummary">The <b>Lowest Level</b> checkbox on the Controls Lookup and Threat Alignment / Risk pages refers to ATT&CK sub-techniques, and to ATT&CK techniques for which no sub-techniques exist. In contrast, T1001 is not considered a "lowest level" technique since it contains sub-techniques. This label was created to describe techniques that the author generally finds to have the highest amount of detail or granularity in their description. The label is not formalized within MITRE ATT&CK (or, to the author's knowledge, within the wider community).</p>
 	</div>
 	<div>
 		<h3 style="color:black">Policy & Process Control Resources</h3>
+		<p><i>This section was last updated in April 2022</i></p>
 		<h4><a style="color:black" id="mitigations">MITRE ATT&CK Mitigations</a></h4>
 		<p><b>URL:</b> <a href="https://attack.mitre.org/mitigations/enterprise/" target="_blank">https://attack.mitre.org/mitigations/enterprise/</a></p>
 		<p><b>Repository last updated:</b> November 2021</p>
@@ -143,7 +164,8 @@ viewBox="0 0 16 16"
 		<p><b>Last accessed by CVC:</b> April 1, 2022</p>
 		<p><b>Overview:</b> Per its website, MITRE Engage "is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals." The framework is organized into "Adversary Vulnerabilities" and defender "Engagement Activities", which are mapped to MITRE ATT&CK.</p>
 		<p><b>How to navigate:</b> Mappings to Adversary Vulnerabilities (<code>eav</code>) and Engagement Activities (<code>eac</code>) are contained in the linked json file.</p>
-		<h3 style="color:black">Detection & Test Resources</h3>
+		<h3 style="color:black">Technical Control / Detection Resources</h3>
+		<p><i>This section was last updated in April 2022</i></p>
 		<h4><a style="color:black" id="splunk">Splunk</a></h4>
 		<p><b>URL:</b> <a href="https://github.com/splunk/security_content/tree/develop/detections" target="_blank">https://github.com/splunk/security_content/tree/develop/detections</a></p>
 		<p><b>Repository last updated:</b> March 2022</p>
@@ -234,6 +256,8 @@ viewBox="0 0 16 16"
 		<p><b>Last accessed by CVC:</b> January 18, 2022</p>
 		<p><b>Description:</b> Threat Hunter Playbook is a community-driven, open source project with a goal of making detection development more efficient. It contains a repository of detection logic aligned with MITRE ATT&CK.</p>
 		<p><b>Navigation:</b> Files containing detection logic are arranged according to MITRE ATT&CK Tactic in the linked <code>windows</code> folder. Mappings of the files to ATT&CK techniques can be found in the embedded ATT&CK Navigator <a href="https://threathunterplaybook.com/notebooks/windows/intro.html" target="_blank">here</a>.</p>
+		<h3 style="color:black">Offensive Security / Red Team Testing Resources</h3>
+		<p><i>This section was last updated in April 2022</i></p>
 		<h4><a style="color:black" id="art">Atomic Red Team</a></h4>
 		<p><b>URL:</b> <a href="https://github.com/redcanaryco/atomic-red-team/tree/master/atomics" target="_blank">https://github.com/redcanaryco/atomic-red-team/tree/master/atomics</a></p>
 		<p><b>Repository last updated:</b> March 2022</p>
