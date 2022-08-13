@@ -444,16 +444,13 @@ viewBox="0 0 16 16"
 					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
 						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Input Your Own Data
 					</summary>
-						<br>
-						<label for="fileUpload">Upload a json file (ATT&CK Navigator layer)</label>
+						<input type="text" name="in" id="urlLookup" size="50" style="margin-top:2rem" placeholder='Input URL to an ATT&CK Navigator json "layer file"'/>
+						<button type="button" id="urlLookupSubmit">Lookup URL</button><br>
+						<label for="fileUpload" style="margin-top:2.5rem">Upload a Navigator json layer file</label>
 						<input class="file_input" type="file" id="fileUpload" name="fileUpload" accept=".json, .txt">
-						<br>
-						<input type="text" name="in" id="urlLookup" size="50" placeholder='Input URL to a Navigator json "layer file"'/>
-						<button type="button" id="urlLookupSubmit">Lookup URL</button>
-						<br>
-						<br>
-						<input type="radio" id="Skip" name="Skip" value="Skip">
-						<label for="Skip">Skip this step (See all the threat data)</label><br>
+						<p style="margin-top:2.5rem"><i>Paste Navigator json contents into the text box below</i></p>
+						<input type="radio" id="Skip" name="Skip" value="Skip" style="margin-top:1.5rem;margin-bottom:.5rem">
+						<label for="Skip">Skip this step (See results for all the threat data)</label><br>
 				</details>
 				<div id="threat_intelligence_out" style="margin-top:1rem">
 					<div style="text-align:center">

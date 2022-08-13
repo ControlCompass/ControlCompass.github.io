@@ -30,7 +30,8 @@ function skipCTI() {
 		const JSONinput_final = document.getElementById("JSONinput")
 		JSONinput_final.textContent = req.responseText;
 
-		window.location.href = 'https://controlcompass.github.io/risk#controls'
+		window.location.href = '#controls'
+        document.getElementById("controlsDropdown").open = true;
 	};
 };
 $('#Skip').on('click', skipCTI)

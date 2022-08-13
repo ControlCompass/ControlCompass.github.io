@@ -89,7 +89,7 @@ function loadHeatmap_risk2() {
         }
 
         window.location.href = '#threat_intelligence_out'
-
+        document.getElementById("Skip").checked = false;
     }
 
   }
