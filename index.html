@@ -15,168 +15,82 @@
   <meta name="twitter:description" content='Pointing cybersecurity teams to 10k+ controls & testing resources aligned with common attacker techniques' />
   <meta name="twitter:image" content="" />
   <style>
-  body {
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .aligncenter { text-align:center }
-  .btn { color: black; padding: 11px; cursor: pointer; text-align:center }
-	.emphasis { border: 2px solid black; border-color: #e7e7e7; color: black; }
-	.emphasis:hover { background: #e7e7e7; }
-	.choice:hover { background: #e7e7e7; }
-  .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
-	.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
-	.autocomplete-selected { background: #F0F0F0; }
-	.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
-	.autocomplete-group { padding: 2px 5px; }
-	.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
-  </style>
+    body {
+      font-family: montserrat, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .aligncenter { text-align:center }
+    .content {
+      position: relative;
+      width: 50%;
+      margin: auto;
+    }
+
+    .content-image{
+      width: 100%;
+      border-radius: 20px
+    }
+
+
+    </style>
 </head>
 <body>
-  <div class="container" style="padding:10px 10px">
+  <div class="container" style="padding:10px 10px 0px 10px">
 	  <p class="aligncenter">
 		  <a href="https://controlcompass.github.io/"><img src="docs/images/cvc-banner_color4-2.png" alt="Control Validation Compass"width="701px" height="90px"></a>
 	  </p>
-	<h4 style="padding:15px;text-align:center">Pointing cybersecurity teams to <b>9,000+</b> publicly-accessible technical and policy controls and <b>2,100+</b> offensive security tests, aligned with over <b>500</b> common attacker techniques</h4>
-	 <div class="row">
-		 <div class="col-md-12 text-center">
-			<a href="https://controlcompass.github.io/" class="btn emphasis"><strong>Lookup by Technique</strong></a>
-			 <a href="https://controlcompass.github.io/controls" class="btn choice"><strong>Lookup by Controls</strong></a>
-			 <a href="https://controlcompass.github.io/threat-model" class="btn choice"><strong>Threat Model</strong></a>
-			 <a href="https://controlcompass.github.io/risk" class="btn choice"><strong>Threat Alignment</strong></a>
-			 <a href="https://controlcompass.github.io/resources" class="btn choice"><strong>Knowledge Center</strong></a>
-		 </div>
-	 </div>
-	<div id="main">
-		<div class="row">
-		<div class="col-md-12 text-center">
-			  <br>
-				<span style="color:#7466BF"><i>Major Resources updates have landed! Select resources now point directly to the latest detection rules, tests, or control mappings, and more updates are coming soon. Jump directly into the new content by browsing the <b><a style="text-decoration:underline" target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/tree/main/resources">new Resources folder</a></b>.</i></span>
-			</div>
-		<form class="form-group col-sm-10">
-			<div class="form-group col-sm-10">
-			  <br>
-				<label><a style="text-decoration:underline" target="_blank" href="https://attack.mitre.org/techniques/enterprise/">MITRE ATT&CK Identifier</a>:</label>
-			  <input type="text" name="in" id="autocomplete" size="39" autofocus placeholder="e.g. T1027, T1059.001, OS Credential Dumping"/>
-			</div>
-		</form>
-                </div>
-		<div>
-			<span id="value"></span>
-		</div>
-		<div>
-			<span id="tactics"></span>
-		</div>
-		<div>
-			<span id="policy-process_header"></span>
-		</div>
-		<div>
-			<span id="policy-process_text"></span>
-		</div>
-		<div>
-			<span id="mitigations"></span>
-		</div>
-		<div>
-			<span id="nist"></span>
-		</div>
-		<div>
-			<span id="cis"></span>
-		</div>
-		<div>
-			<span id="d3fend"></span>
-		</div>
-		<div>
-			<span id="engage"></span>
-		</div>
-		<div>
-			<span id="detect_header"></span>
-		</div>
-		<div>
-			<span id="detect_text"></span>
-		</div>
-		<div>
-			<span id="splunk"></span>
-		</div>
-		<div>
-			<span id="splunk_threatHunting"></span>
-		</div>
-		<div>
-			<span id="elastic"></span>
-		</div>
-		<div>
-			<span id="eql_analytics"></span>
-		</div>
-		<div>
-			<span id="azure_fullStack"></span>
-		</div>
-		<div>
-			<span id="azure_sentinel"></span>
-		</div>
-		<div>
-			<span id="logpoint"></span>
-		</div>
-		<div>
-			<span id="proofpoint_emergingThreats"></span>
-		</div>
-		<div>
-			<span id="tanium_threatResponse"></span>
-		</div>
-		<div>
-			<span id="aws"></span>
-		</div>
-		<div>
-			<span id="gcp"></span>
-		</div>
-		<div>
-			<span id="car"></span>
-		</div>
-		<div>
-			<span id="atc"></span>
-		</div>
-		<div>
-			<span id="sigma"></span>
-		</div>
-		<div>
-			<span id="th_playbook"></span>
-		</div>
-		<div>
-			<span id="test_header"></span>
-		</div>
-		<div>
-			<span id="test_text"></span>
-		</div>
-		<div>
-			<span id="art"></span>
-		</div>
-		<div>
-			<span id="car_red"></span>
-		</div>
-		<div>
-			<span id="rta"></span>
-		</div>
-		<div>
-			<span id="prelude"></span>
-		</div>
-		<div>
-			<span id="stockpile"></span>
-		</div>
-		<div>
-			<span id="scythe"></span>
-		</div>
-		<div>
-			<span id="validate_header"></span>
-		</div>
-		<div>
-			<span id="validate_text1"></span>
-		</div>
-	  	<div>
-			<span id="validate_text2"></span>
-		</div>
-	</div>
+	<h4 style="padding:15px 0px 0px 0px;text-align:center"><b>Threat modeling aide & purple team content repository</b>, pointing security & intelligence teams to <b>10,000+</b> publicly-accessible technical and policy controls and <b>2,100+</b> offensive security tests, aligned with nearly <b>600</b> common attacker techniques</h4>
+	<h4 style="padding:25px 0px 0px 0px;text-align:center">Choose a feature to get started (watch the overview <a href="https://www.youtube.com/watch?v=5J0SCJmBQmU" target="_blank">here</a>):</h4>
+
+    <div class="row">
+        <div class="content" style="float:left;width:40%;margin-left:8%">
+          <h3 class="content-title" style="text-align:center">Risk (Threat Alignment)</h3>
+          <a href="https://controlcompass.github.io/risk">
+            <div class="content-overlay"></div>
+            <img class="content-image" style="outline: 2px solid #7466BF" src="docs/images/risk.png" id="risk" onmouseover="risk()" onmouseout="riskOut()" alt="Control Validation Compass Risk Workflow">
+          </a>
+          <h4 class="content-title" style="text-align:center"><b>Best for:</b> Purple, CTI, Blue, & Red teams</h4>
+        </div>
+
+        <div class="content" style="float:right;width:40%;margin-right:8%">
+          <h3 class="content-title" style="text-align:center">Threat Modeling</h3>
+          <a href="https://controlcompass.github.io/threat-model">
+            <div class="content-overlay"></div>
+            <img class="content-image" style="outline: 2px solid #bf2026" src="docs/images/threat-model.png" id="threat" onmouseover="threat()" onmouseout="threatOut()" alt="Control Validation Compass Threat Modeling">
+          </a>
+          <h4 class="content-title" style="text-align:center"><b>Best for:</b> CTI & Risk teams</h4>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="content" style="float:left;width:40%;margin-left:8%">
+          <h3 class="content-title" style="text-align:center">Control Stack</h3>
+          <a href="https://controlcompass.github.io/controls">
+            <div class="content-overlay"></div>
+            <img class="content-image" style="outline: 2px solid #1565c0" src="docs/images/controls.png" id="controls" onmouseover="controls()" onmouseout="controlsOut()" alt="Control Validation Control Stack Workflow">
+          </a>
+          <h4 class="content-title" style="text-align:center"><b>Best for:</b> Security engineering & Blue teams</h4>
+        </div>
+
+        <div class="content" style="float:right;width:40%;margin-right:8%">
+          <h3 class="content-title" style="text-align:center">TTP Research</h3>
+          <a href="https://controlcompass.github.io/ttps">
+            <div class="content-overlay"></div>
+            <img class="content-image" style="outline: 2px solid #7466BF" src="docs/images/ttps.png" id="ttps" onmouseover="ttps()" onmouseout="ttpsOut()" alt="TTP Research">
+          </a>
+          <h4 class="content-title" style="text-align:center"><b>Best for:</b> Purple, CTI, Blue, & Red teams</h4>
+        </div>
+
+    </div>
   </div>
 
-  <div style="text-align:center;padding:0px 0px 10px 0px">
+    <div style="text-align:center;padding:10px 0px 25px 0px">
+      <h3><a href="https://controlcompass.github.io/resources" target="_blank">Knowledge Center</a></h3>
+    </div>
+
+  <div style="text-align:center;padding:0px 0px 20px 0px">
 
         <a class="github-button" href="https://github.com/ControlCompass/ControlCompass.github.io" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ControlCompass/ControlCompass.github.io on GitHub">Star</a>
         <a class="github-button" href="https://github.com/ControlCompass/ControlCompass.github.io/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork ControlCompass/ControlCompass.github.io on GitHub">Fork</a>
@@ -217,14 +131,46 @@
 
     </div>
 
-  <footer style="font-size:13px;text-align:center">
-	<p>
-		MITRE ATT&CK® is a registered trademark of The MITRE Corporation, and MITRE D3FEND is a trademark of The MITRE Corporation.<br>
-		View the raw data (<a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/Control_Validation_Compass.csv">csv</a>, <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io/blob/main/cvc.json">json</a>) and <a target="_blank" href="https://github.com/ControlCompass/ControlCompass.github.io">site source code</a><br>
-	</p>
-  </footer>
-
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
-<script type="text/javascript" src="src/cvc.js"></script>
+<script type="text/javascript">
+function risk() {
+    document.getElementById("risk").src = "docs/images/risk.gif";
+}
+</script>
+<script type="text/javascript">
+function riskOut() {
+    document.getElementById("risk").src = "docs/images/risk.png";
+}
+</script>
+<script type="text/javascript">
+function threat() {
+    document.getElementById("threat").src = "docs/images/threat-model.gif";
+}
+</script>
+<script type="text/javascript">
+function threatOut() {
+    document.getElementById("threat").src = "docs/images/threat-model.png";
+}
+</script>
+<script type="text/javascript">
+function controls() {
+    document.getElementById("controls").src = "docs/images/controls.gif";
+}
+</script>
+<script type="text/javascript">
+function controlsOut() {
+    document.getElementById("controls").src = "docs/images/controls.png";
+}
+</script>
+<script type="text/javascript">
+function ttps() {
+    document.getElementById("ttps").src = "docs/images/ttps.gif";
+}
+</script>
+<script type="text/javascript">
+function ttpsOut() {
+    document.getElementById("ttps").src = "docs/images/ttps.png";
+}
+</script>
