@@ -38,6 +38,10 @@
     .model_red[open] { background: #FFFFFF }
     .model_red[open]:hover { background: #FFFFFF }
     .model_red:hover { background: #efc9d0 }
+	.controls { outline: 2px solid #1565c0; border-radius: 8px}
+    .controls[open] { background: #FFFFFF }
+    .controls[open]:hover { background: #FFFFFF }
+    .controls:hover { background: #ACCDE7 }
     .selection_level2 { cursor: pointer; padding: 5px 0px 0px 0px }
   .summary { cursor: pointer; display: list-item; }
   	.block { display: block }
@@ -451,96 +455,97 @@ viewBox="0 0 16 16"
 						<input type="radio" id="Skip" name="Skip" value="Skip">
 						<label for="Skip">Skip this step (See all the threat data)</label><br>
 				</details>
-				<div id="threat_intelligence_out" style="margin-top:1rem;visibility:hidden">
+				<div id="threat_intelligence_out" style="margin-top:1rem">
 					<div style="text-align:center">
 						<h3>Threat Model for:</h3>
-						<h3 id="output_threat" style="color:#bf2026ff;font-style:italic"></h3>
-						<p style="font-size:18px;margin-top:2rem;margin-bottom:2rem">You may complete just the Threat Modeling half of this workflow - which provides additional visuals - <b><a href="https://controlcompass.github.io/risk" target="_blank">here</a></b>.</p>
+						<h3 id="output_threat" style="color:#bf2026ff;font-style:italic">TrickBot</h3>
+						<p style="font-size:18px;margin-top:2rem;margin-bottom:2rem">You can complete just the Threat Modeling half of this workflow (with additional visuals!) <b><a href="https://controlcompass.github.io/threat-model" target="_blank">here</a></b></p>
 					</div>
 					<div class="row" style="margin-bottom:1rem">
 						<div class="column" id="adversary_meta" style="width:25%;float:left;text-align:center;padding:2rem"><p></p></div>
-						<div class="column" id="div_JSONinput" style="width:50%"></div>
+						<div class="column" id="div_JSONinput" style="width:50%">
+							<textarea class="form-control" id="JSONinput" rows="10"></textarea>
+						</div>
 						<div class="column" id="diamond_graphic" style="width:25%"></div>
 					</div>
 				</div>
 			</div>
 
 		 <div class="row">
-			 <div style="margin-left:8%;margin-right:8%">
-				<div class="col-md-12" id="controls">
-						<details id="controlsDropdown">
-							<summary class="summary block" style="text-align:center;color: #1565c0;font-size:22px">
-								<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Controls
-							</summary>
-								<p style="font-size:16px">Toggle the controls & testing capabilities used in your environment or otherwise relevant to you. Click the triangles to reveal options within each category.</p>
-								<button type="button" id="uncheck-box" class="button" style="background:#e7e7e7">Uncheck all boxes</button>
-								<button type="button" id="check-all" class="button" style="background:#e7e7e7">Check all boxes</button>
-								<h4>Policy/Process Controls</h4>
-								<details open>
-									<summary class="summary" style="font-size:16px;margin:5px 0px">
-										Frameworks
-									</summary>
-										<label><input type="checkbox" value="" id="mitigations" style="margin-right:5px" checked>MITRE ATT&CK Mitigations</label>
-										<label><input type="checkbox" value="" id="nist" style="margin-right:5px;margin-left:10px" checked>NIST 800-53 Mappings</label>
-										<label><input type="checkbox" value="" id="cis" style="margin-right:5px;margin-left:10px" checked>CIS Controls</label>
-										<label><input type="checkbox" value="" id="d3fend" style="margin-right:5px;margin-left:10px" checked>MITRE D3FEND</label>
-										<label><input type="checkbox" value="" id="engage" style="margin-right:5px;margin-left:10px" checked>MITRE Engage</label>
-								</details>
-								<h4>Defensive Capabilities</h4>
-								<details open>
-									<summary class="summary" style="font-size:16px;margin:5px 0px">
-										Network & Endpoint Telemetry - Native Controls
-									</summary>
-										<label><input type="checkbox" value="" id="splunk" style="margin-right:5px" checked>Splunk</label>
-										<label><input type="checkbox" value="" id="splunk_threatHunting" style="margin-right:5px;margin-left:10px" checked>Threat Hunting Splunk App</label>
-										<label><input type="checkbox" value="" id="elastic" style="margin-right:5px;margin-left:10px" checked>Elastic Stack</label>
-										<label><input type="checkbox" value="" id="eql_analytics" style="margin-right:5px;margin-left:10px" checked>EQL Analytics Library</label>
-										<label><input type="checkbox" value="" id="sentinel_defender" style="margin-right:5px;margin-left:10px" checked>Microsoft Sentinel & Defender (Unified)</label>
-										<label><input type="checkbox" value="" id="azure_sentinel" style="margin-right:5px;margin-left:10px" checked>Sentinel detection mappings</label>
-										<label><input type="checkbox" value="" id="logpoint" style="margin-right:5px;margin-left:10px" checked>LogPoint</label>
-								</details>
-								<details open>
-									<summary class="summary" style="font-size:16px;margin:5px 0px">
-										Network & Endpoint Telemetry - Third-Party Rule Repositories
-									</summary>
-										<label><input type="checkbox" value="" id="car" style="margin-right:5px" checked>Cyber Analytics Repository</label>
-										<label><input type="checkbox" value="" id="atc" style="margin-right:5px;margin-left:10px" checked>Atomic Threat Coverage</label>
-										<label><input type="checkbox" value="" id="sigma" style="margin-right:5px;margin-left:10px" checked>Sigma rules public repository</label>
-										<label><input type="checkbox" value="" id="th_playbook" style="margin-right:5px;margin-left:10px" checked>ThreatHunter Playbook</label>
-								</details>
-								<details open>
-									<summary class="summary" style="font-size:16px;margin:5px 0px">
-										Network Telemetry
-									</summary>
-										<label><input type="checkbox" value="" id="proofpoint_emergingThreats" style="margin-right:5px" checked>Network Security Monitoring rule mappings</label>
-								</details>
-								<details open>
-									<summary class="summary" style="font-size:16px;margin:5px 0px">
-										Endpoint Telemetry
-									</summary>
-										<label><input type="checkbox" value="" id="tanium_threatResponse" style="margin-right:5px" checked>Tanium Threat Response</label>
-								</details>
-								<details open>
-									<summary class="summary" style="font-size:16px;margin:5px 0px">
-										Cloud
-									</summary>
-										<label><input type="checkbox" value="" id="azure_fullStack" style="margin-right:5px" checked>Azure full stack mappings</label>
-										<label><input type="checkbox" value="" id="aws" style="margin-right:5px;margin-left:10px" checked>AWS security control mappings</label>
-										<label><input type="checkbox" value="" id="gcp" style="margin-right:5px;margin-left:10px" checked>GCP Community Security Analytics</label>
-								</details>
-								<h4>Offensive Capabilities</h4>
-								<details open>
-									<summary class="summary" style="font-size:16px;margin:5px 0px">
-										Unit Tests
-									</summary>
-										<label><input type="checkbox" value="" id="art" style="margin-right:5px" checked>Atomic Red Team</label>
-										<label><input type="checkbox" value="" id="car_red" style="margin-right:5px" checked>Cyber Analytics Repository</label>
-										<label><input type="checkbox" value="" id="rta" style="margin-right:5px;margin-left:10px" checked>Red Team Automation</label>
-										<label><input type="checkbox" value="" id="prelude" style="margin-right:5px;margin-left:10px" checked>Prelude Community TTPs</label>
-										<label><input type="checkbox" value="" id="stockpile" style="margin-right:5px;margin-left:10px" checked>CALDERA Stockpile</label>
-										<label><input type="checkbox" value="" id="scythe" style="margin-right:5px;margin-left:10px" checked>Scythe</label>
-								</details>
-						</details>
+			<div class="col-md-12" id="controls" style="margin-top:2rem">
+					<details class="details controls" id="controlsDropdown" style="padding:4px 25px">
+						<summary class="summary block" style="text-align:center;color: #1565c0;font-size:22px">
+							<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Control Stack
+						</summary>
+							<p style="font-size:16px">Toggle the controls & testing capabilities used in your environment or otherwise relevant to you. Click the triangles to reveal options within each category.</p>
+							<button type="button" id="uncheck-box" class="button" style="background:#e7e7e7">Uncheck all boxes</button>
+							<button type="button" id="check-all" class="button" style="background:#e7e7e7">Check all boxes</button>
+							<h4>Policy/Process Controls</h4>
+							<details open>
+								<summary class="summary" style="font-size:16px;margin:5px 0px">
+									Frameworks
+								</summary>
+									<label><input type="checkbox" value="" id="mitigations" style="margin-right:5px" checked>MITRE ATT&CK Mitigations</label>
+									<label><input type="checkbox" value="" id="nist" style="margin-right:5px;margin-left:10px" checked>NIST 800-53 Mappings</label>
+									<label><input type="checkbox" value="" id="cis" style="margin-right:5px;margin-left:10px" checked>CIS Controls</label>
+									<label><input type="checkbox" value="" id="d3fend" style="margin-right:5px;margin-left:10px" checked>MITRE D3FEND</label>
+									<label><input type="checkbox" value="" id="engage" style="margin-right:5px;margin-left:10px" checked>MITRE Engage</label>
+							</details>
+							<h4>Defensive Capabilities</h4>
+							<details open>
+								<summary class="summary" style="font-size:16px;margin:5px 0px">
+									Network & Endpoint Telemetry - Native Controls
+								</summary>
+									<label><input type="checkbox" value="" id="splunk" style="margin-right:5px" checked>Splunk</label>
+									<label><input type="checkbox" value="" id="splunk_threatHunting" style="margin-right:5px;margin-left:10px" checked>Threat Hunting Splunk App</label>
+									<label><input type="checkbox" value="" id="elastic" style="margin-right:5px;margin-left:10px" checked>Elastic Stack</label>
+									<label><input type="checkbox" value="" id="eql_analytics" style="margin-right:5px;margin-left:10px" checked>EQL Analytics Library</label>
+									<label><input type="checkbox" value="" id="sentinel_defender" style="margin-right:5px;margin-left:10px" checked>Microsoft Sentinel & Defender (Unified)</label>
+									<label><input type="checkbox" value="" id="azure_sentinel" style="margin-right:5px;margin-left:10px" checked>Sentinel detection mappings</label>
+									<label><input type="checkbox" value="" id="logpoint" style="margin-right:5px;margin-left:10px" checked>LogPoint</label>
+							</details>
+							<details open>
+								<summary class="summary" style="font-size:16px;margin:5px 0px">
+									Network & Endpoint Telemetry - Third-Party Rule Repositories
+								</summary>
+									<label><input type="checkbox" value="" id="car" style="margin-right:5px" checked>Cyber Analytics Repository</label>
+									<label><input type="checkbox" value="" id="atc" style="margin-right:5px;margin-left:10px" checked>Atomic Threat Coverage</label>
+									<label><input type="checkbox" value="" id="sigma" style="margin-right:5px;margin-left:10px" checked>Sigma rules public repository</label>
+									<label><input type="checkbox" value="" id="th_playbook" style="margin-right:5px;margin-left:10px" checked>ThreatHunter Playbook</label>
+							</details>
+							<details open>
+								<summary class="summary" style="font-size:16px;margin:5px 0px">
+									Network Telemetry
+								</summary>
+									<label><input type="checkbox" value="" id="proofpoint_emergingThreats" style="margin-right:5px" checked>Network Security Monitoring rule mappings</label>
+							</details>
+							<details open>
+								<summary class="summary" style="font-size:16px;margin:5px 0px">
+									Endpoint Telemetry
+								</summary>
+									<label><input type="checkbox" value="" id="tanium_threatResponse" style="margin-right:5px" checked>Tanium Threat Response</label>
+							</details>
+							<details open>
+								<summary class="summary" style="font-size:16px;margin:5px 0px">
+									Cloud
+								</summary>
+									<label><input type="checkbox" value="" id="azure_fullStack" style="margin-right:5px" checked>Azure full stack mappings</label>
+									<label><input type="checkbox" value="" id="aws" style="margin-right:5px;margin-left:10px" checked>AWS security control mappings</label>
+									<label><input type="checkbox" value="" id="gcp" style="margin-right:5px;margin-left:10px" checked>GCP Community Security Analytics</label>
+							</details>
+							<h4>Offensive Capabilities</h4>
+							<details open>
+								<summary class="summary" style="font-size:16px;margin:5px 0px">
+									Unit Tests
+								</summary>
+									<label><input type="checkbox" value="" id="art" style="margin-right:5px" checked>Atomic Red Team</label>
+									<label><input type="checkbox" value="" id="car_red" style="margin-right:5px" checked>Cyber Analytics Repository</label>
+									<label><input type="checkbox" value="" id="rta" style="margin-right:5px;margin-left:10px" checked>Red Team Automation</label>
+									<label><input type="checkbox" value="" id="prelude" style="margin-right:5px;margin-left:10px" checked>Prelude Community TTPs</label>
+									<label><input type="checkbox" value="" id="stockpile" style="margin-right:5px;margin-left:10px" checked>CALDERA Stockpile</label>
+									<label><input type="checkbox" value="" id="scythe" style="margin-right:5px;margin-left:10px" checked>Scythe</label>
+							</details>
+					</details>
 				</div>
 				<div class="col-md-12 text-center" id="advanced_options">
 					<details id="optionsDropdown">
@@ -573,7 +578,6 @@ viewBox="0 0 16 16"
 						</div>
 				</details>
 				</div>
-			 </div>
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<br>
@@ -625,6 +629,7 @@ viewBox="0 0 16 16"
 </html>
 <script type="text/javascript" src="src/all_adversaries_setup.js"></script>
 <script type="text/javascript" src="src/check_uncheckAll.js"></script>
+<script type="text/javascript" src="src/risk/defaultHeatmap.js"></script>
 <script defer type="text/javascript" src="src/risk/controlsOpen.js"></script>
 <script defer type="text/javascript" src="src/risk/optionsOpen.js"></script>
 <script defer type="text/javascript" src="src/selectionReview_risk.js"></script>
