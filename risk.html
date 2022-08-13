@@ -139,7 +139,7 @@ viewBox="0 0 16 16"
 	<div id="main" style="padding:0px 10px 0px 10px;margin-left:2%;margin-right:2%">
 
 		 <div id="intro" class="row">
-			<p style="padding:15px;text-align:center;font-size:16px">Click <b><a href="#process-data" style="color:#7466BF">Line It Up!</a></b> to immediately begin exploring controls & tests related to an example threat: <a style="text-decoration:underline" target="_blank" href="https://attack.mitre.org/software/S0266/">Trickbot</a>, a <a style="text-decoration:underline" target="_blank" href="https://therecord.media/trickbot-new-attacks-see-the-botnet-deploy-new-banking-module-new-ransomware/">prolific malware</a>. Or modify your <a href="#threat_intelligence">threat model</a>, <a href="#controls">control stack</a>, and <a href="#advanced_options">other options</a> below to highly customize your results.</p>
+			<p style="padding:15px;text-align:center;font-size:16px">Click <b><a href="#process-data" style="color:#7466BF">Line It Up!</a></b> to immediately begin exploring controls & tests related to an example threat: <a style="text-decoration:underline" target="_blank" href="https://attack.mitre.org/software/S0266/">Trickbot</a>, a <a style="text-decoration:underline" target="_blank" href="https://therecord.media/trickbot-new-attacks-see-the-botnet-deploy-new-banking-module-new-ransomware/">prolific malware</a>. Or modify your <a href="#threat_intelligence">threat model</a>, <a href="#controls" onclick="controlsOpen()">control stack</a>, and <a href="#advanced_options" onclick="optionsOpen()">other options</a> below to highly customize your results.</p>
 
 			<div id="threat_intelligence">
 				<details class="details model_red" style="text-align:center;margin-bottom:1rem;padding:0.4rem 0px 0.4rem 0px">
@@ -430,14 +430,7 @@ viewBox="0 0 16 16"
 				</details>
 				<details class="details model_red" style="text-align:center;margin-bottom:1rem;padding:0.4rem 0px 0.4rem 0px">
 					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
-						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Look-Up Adversaries by Name or Alias <i>(Coming Soon!)</i>
-					</summary>
-						<p><i>Coming soon!</i></p>
-							<div class="row"></div>
-				</details>
-				<details class="details model_red" style="text-align:center;margin-bottom:1rem;padding:0.4rem 0px 0.4rem 0px">
-					<summary class="summary block" style="text-align:center;color: #bf2026ff;font-size:20px">
-						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Current Intelligence
+						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Recent Intelligence
 					</summary>
 						<p style="font-size:15px;margin-top:0.5rem">View the <b><a href="https://github.com/tropChaud/Cyber-Adversary-Heatmaps" target="_blank">full library of recent adversary TTP intelligence heatmaps</a></b> and source content.</p>
 						<p style="font-size:15px;margin-bottom:1rem"><i>Consider using this <a href="https://github.com/tropChaud/webpage2attack" target="_blank">handy script</a> to easily generate TTP heatmap files from open-source intel reports!</i></p>
@@ -475,7 +468,7 @@ viewBox="0 0 16 16"
 		 <div class="row">
 			 <div style="margin-left:8%;margin-right:8%">
 				<div class="col-md-12" id="controls">
-						<details>
+						<details id="controlsDropdown">
 							<summary class="summary block" style="text-align:center;color: #1565c0;font-size:22px">
 								<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Controls
 							</summary>
@@ -550,7 +543,7 @@ viewBox="0 0 16 16"
 						</details>
 				</div>
 				<div class="col-md-12 text-center" id="advanced_options">
-					<details>
+					<details id="optionsDropdown">
 					<summary class="summary block" style="font-size:18px">
 						<br>
 						<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding:0px 5px 0px 0px"></span>Advanced Options
@@ -632,6 +625,8 @@ viewBox="0 0 16 16"
 </html>
 <script type="text/javascript" src="src/all_adversaries_setup.js"></script>
 <script type="text/javascript" src="src/check_uncheckAll.js"></script>
+<script defer type="text/javascript" src="src/risk/controlsOpen.js"></script>
+<script defer type="text/javascript" src="src/risk/optionsOpen.js"></script>
 <script defer type="text/javascript" src="src/selectionReview_risk.js"></script>
 <script defer type="text/javascript" src="src/load_heatmap_risk1.js"></script>
 <script defer type="text/javascript" src="src/load_heatmap_risk2.js"></script>
