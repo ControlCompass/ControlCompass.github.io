@@ -139,7 +139,7 @@ viewBox="0 0 16 16"
   <div id="main" style="padding:0px 10px 0px 10px;margin-left:2%;margin-right:2%">
 
 		 <div id="intro" class="row">
-			<p style="padding:15px;text-align:center;font-size:16px"><b>Choose one of the following starting points</b> to instantly build your threat model based on a <b><a href="https://github.com/tropChaud/Categorized-Adversary-TTPs#readme" target="_blank">unique, extensive collection</a></b> of adversary TTP intelligence.</p>
+			<p style="padding:15px;text-align:center;font-size:16px"><b>Choose one of the following starting points</b> to instantly build your threat model based on a <b><a href="https://github.com/tropChaud/Categorized-Adversary-TTPs#readme" target="_blank">unique, extensive collection</a></b> of adversary TTP intelligence</p>
 
 			<div id="threat_intelligence">
 				<details class="details model_red" style="text-align:center;margin-bottom:2rem;padding:0.4rem 0px 0.4rem 0px">
@@ -422,7 +422,7 @@ viewBox="0 0 16 16"
 								<div id="category_list" style="max-height:200px;overflow:auto;background-color:#e7e7e7;padding:15px;border-radius:5px">
 									<em>No adversaries match selected criteria</em>
 								</div>
-								<h4>Or, select a single relevant adversary:</h4>
+								<h4 id="adversaryResults"></h4>
 								<div id="adversary_list" style="max-height:450px;overflow:auto;background-color:#e7e7e7;padding:15px;border-radius:5px">
 									<em>No adversaries match selected criteria</em>
 								</div>
@@ -470,6 +470,7 @@ viewBox="0 0 16 16"
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
+<script type="text/javascript" src="src/all_adversaries_setup.js"></script>
 <script defer type="text/javascript" src="src/selectionReview.js"></script>
 <script defer type="text/javascript" src="src/load_heatmap1.js"></script>
 <script defer type="text/javascript" src="src/load_heatmap2.js"></script>

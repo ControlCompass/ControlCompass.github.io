@@ -74,6 +74,17 @@ function selectionReview() {
                 }
             };
 
+        } else {
+
+            for (var x = 0; x < data.length; x++) {
+                adversary_list.push(
+                    {
+                        'merged_name' : data[x].merged_name,
+                        'mitre_attack_name' : data[x].mitre_attack_name
+                    }
+                )
+            };
+
         }
 
 //        if (! adversary_list.includes(data[x].heatmap_url)) {
@@ -95,5 +106,7 @@ function selectionReview() {
             document.getElementById("adversary_list").style.padding = '15px'
             document.getElementById("adversary_list").style.backgroundColor = '#e7e7e7'
         }
+
+        document.getElementById("adversaryResults").innerHTML = 'Or, select a relevant adversary / grouping from the following ' + adversary_list.length + ' option(s):'
     }
 }
